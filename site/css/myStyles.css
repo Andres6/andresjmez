@@ -282,6 +282,11 @@ body#resume a#resumeNav {
     text-transform: uppercase;
 }
 
+.social-icons {
+    height: 70px;
+
+}
+
 /* end of footer and styles */
 
 
