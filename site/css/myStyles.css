@@ -23,10 +23,12 @@ html {
 
 html,
 body {
-  margin: 0;
-  padding: 0;
-  height: 100%;
-  background-color: #ffffff;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+	background-image: url(../media/textured_paper.png);
+    background-repeat: repeat;
+    //background-color: #ffffff;
 }
 
 body {
@@ -64,7 +66,8 @@ body {
 }
 
 .pages {
-    background: #74757D;
+    background: #ffffff;
+    //background: #74757D;
     height: 50px;
 	//display: block;
 }
@@ -116,7 +119,7 @@ body {
   font-weight: 400;
   letter-spacing: -1px;
   text-transform: uppercase;
-  color: #ffffff;
+  color: #5C5D64;
   /* IE8 proofing */
   position: relative;
   display: block;
@@ -182,6 +185,7 @@ body#resume a#resumeNav {
     //border: 1px solid blue;
 }
 
+/*********** home page ***********/
 
 .text-photo {
     //border: 1px solid green;
@@ -212,14 +216,12 @@ body#resume a#resumeNav {
     text-transform: uppercase;
 }
 
-/** home page name **/
+//#First  { color: #dea98c; }
+#First  { color: #313136; }
+#Last  { color: #313136; }
+//#Last   { color: #4bbee5; }
 
-#First  { color: #dea98c; }
-
-#Last   { color: #4bbee5; }
-
-
-/** home page image of me **/
+/* home page image of me */
 
 .bg {
 	background-image: url(../media/me2blue12k.png);
@@ -232,7 +234,7 @@ body#resume a#resumeNav {
 }
 
 
-/** home page area under image of me **/
+/* home page area under image of me */
 
 .intro-area {
     height: 50px;
@@ -248,11 +250,50 @@ body#resume a#resumeNav {
 
 .intro-area p{
     color: #74757D;
-    font-size: 30px;
+    font-size: 15px;
     font-weight: 300;
     letter-spacing: 1px;
     line-height: 50px;
 }
+
+
+/*********** about page ***********/
+
+.about_content {
+    width: 800px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.about_name { 
+    //border: 1px solid red;
+    width: 255px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#about_first  { 
+    color: #dea98c;
+    float: left;
+    //border: 1px solid red;
+}
+#about_last  { 
+    color: #4bbee5; 
+}
+
+.about_name p {
+	//border: 1px solid red;
+    //color: #ffffff;
+    font-family: 'Roboto', sans-serif;
+    font-size: 30px;
+    font-weight: 300;
+    letter-spacing: 1px;
+    //line-height: 55px;
+    text-transform: uppercase;
+}
+
 
 /* end of body */
 
