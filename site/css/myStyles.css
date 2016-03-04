@@ -119,7 +119,7 @@ body {
   font-weight: 400;
   letter-spacing: -1px;
   text-transform: uppercase;
-  color: #5C5D64;
+  color: #313136;
   /* IE8 proofing */
   position: relative;
   display: block;
@@ -139,7 +139,7 @@ body {
 
 .masthead-nav > li > a:hover,
 .masthead-nav > li > a:focus {
-  color: #4bbee5;
+  color: #4092bd;
   background-color: transparent;
   //background-color: #4bbee5;
   //opacity: 0.3;
@@ -156,7 +156,7 @@ body#about a#aboutNav,
 body#contact a#contactNav,
 body#portfolio a#portfolioNav,
 body#resume a#resumeNav {
-    background: #4bbee5;
+    background: #4092bd;
     color: #ffffff;
     //border-bottom: 4px solid;
     //border-bottom-color: #FF8E1A;
@@ -224,7 +224,7 @@ body#resume a#resumeNav {
 /* home page image of me */
 
 .bg {
-	background-image: url(../media/me2blue12k.png);
+	background-image: url(../media/me2real12k.png);
 	background-repeat: no-repeat;
 	background-size: contain;
 	height: 624px; 
@@ -239,7 +239,7 @@ body#resume a#resumeNav {
 .intro-area {
     height: 50px;
     width: 800px;
-    border: 2px solid #74757D;
+    border: 2px solid #313136;
     border-left: none;
     border-right: none;
     border-bottom: none;
@@ -249,7 +249,7 @@ body#resume a#resumeNav {
 }
 
 .intro-area p{
-    color: #74757D;
+    color: #313136;
     font-size: 15px;
     font-weight: 300;
     letter-spacing: 1px;
@@ -318,7 +318,7 @@ body#resume a#resumeNav {
 }
 
 .footer-name p {
-	color: #74757D;
+	color: #313136;
     line-height: 8px;
     letter-spacing: 1px;
     font-size: 12px;
