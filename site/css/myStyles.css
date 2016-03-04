@@ -72,27 +72,12 @@ body {
 	//display: block;
 }
 
-/*
-.brand { 
-    width: 20px;
-    height: 20px;
-    background: #ffffff;
-    float: left;
-    list-style-type: none;
-    //display: inline-block;
-    //vertical-align: top;
-}
-*/
-
 .masthead-nav {
-	//background: #138fe2;
 	//border: 2px solid yellow;
     position: relative;
     top: 50%;
     //left: 50%;
     transform: translateY(-50%); translateX(-50%);
-    //float: right;
-    //height: 60px;
 }
 
 .nav.masthead.nav {
@@ -103,8 +88,6 @@ body {
 .masthead-nav > li {
   display: inline-block;
   //border: 2px solid blue;
-  //width: 100px;
-  //height: 100px;
 }
 
 .masthead-nav > li + li {
@@ -124,11 +107,6 @@ body {
   position: relative;
   display: block;
   padding: 0px 0px;
-  //border: 2px solid green;
-  //position: relative;
-  //top: 50%;
-  //left: 50%;
-  //transform: translateY(-50%) translateX(-50%);
   //color: rgba(255,255,255,.75);
   //border-top-left-radius: 25px;
   //border-top-right-radius: 25px;
@@ -185,7 +163,7 @@ body#resume a#resumeNav {
     //border: 1px solid blue;
 }
 
-/*********** home page ***********/
+/******************** home page *************************/
 
 .text-photo {
     //border: 1px solid green;
@@ -236,8 +214,7 @@ body#resume a#resumeNav {
 
 /* home page area under image of me */
 
-.intro-area {
-    height: 50px;
+.intro_line {
     width: 800px;
     border: 2px solid #313136;
     border-left: none;
@@ -248,7 +225,7 @@ body#resume a#resumeNav {
     transform: translateX(-50%);
 }
 
-.intro-area p{
+.hello-world p{
     color: #313136;
     font-size: 15px;
     font-weight: 300;
@@ -257,41 +234,53 @@ body#resume a#resumeNav {
 }
 
 
-/*********** about page ***********/
+/********************* about page **********************/
 
-.about_content {
+.about_text {
     width: 800px;
     position: relative;
     left: 50%;
     transform: translateX(-50%);
 }
 
-.about_name { 
-    //border: 1px solid red;
-    width: 255px;
+.about_line {
+    width: 800px;
+    border: 2px solid #4092bd;
+    border-left: none;
+    border-right: none;
+    border-bottom: none;
     position: relative;
     left: 50%;
     transform: translateX(-50%);
 }
 
-#about_first  { 
-    color: #dea98c;
-    float: left;
+
+.about_heading { 
     //border: 1px solid red;
-}
-#about_last  { 
-    color: #4bbee5; 
+    width: 280px;
+    margin-top: 10px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
-.about_name p {
-	//border: 1px solid red;
-    //color: #ffffff;
+#about_name { 
+    color: #313136;
     font-family: 'Roboto', sans-serif;
     font-size: 30px;
     font-weight: 300;
-    letter-spacing: 1px;
-    //line-height: 55px;
+    letter-spacing: -1px;
     text-transform: uppercase;
+    //float: left;
+    //border: 1px solid red;
+}
+
+.about_text p{
+    color: #313136;
+    font-size: 15px;
+    font-weight: 300;
+    letter-spacing: 1px;
+    line-height: 50px;
 }
 
 
@@ -330,8 +319,10 @@ body#resume a#resumeNav {
 
 }
 
+
+
 .social-icons a {
-    margin-left: 50px;
+    margin-left: 20px;
 }
 /* end of footer and styles */
 
