@@ -66,7 +66,7 @@ body {
 }
 
 .pages {
-    background: #ffffff;
+    background: #313136;
     //background: #74757D;
     height: 50px;
 	//display: block;
@@ -94,6 +94,8 @@ body {
   width: 100px;
 }
 
+/** styles of inactive menu items **/
+
 .masthead-nav > li > a {
   width: 100px;
   line-height: 50px;
@@ -102,7 +104,7 @@ body {
   font-weight: 400;
   letter-spacing: -1px;
   text-transform: uppercase;
-  color: #313136;
+  color: #ffffff;
   /* IE8 proofing */
   position: relative;
   display: block;
@@ -135,7 +137,8 @@ body#contact a#contactNav,
 body#portfolio a#portfolioNav,
 body#resume a#resumeNav {
     background: #4092bd;
-    color: #ffffff;
+    background: #ffffff;
+    color: #313136;
     //border-bottom: 4px solid;
     //border-bottom-color: #FF8E1A;
     //width: 100px;
@@ -202,7 +205,7 @@ body#resume a#resumeNav {
 /* home page image of me */
 
 .bg {
-	background-image: url(../media/me2real12k.png);
+	background-image: url(../media/silhouette12k.png);
 	background-repeat: no-repeat;
 	background-size: contain;
 	height: 624px; 
@@ -295,7 +298,7 @@ body#resume a#resumeNav {
     bottom: 0px;
     height: 150px;
     width: 100%;
-    background-color: #ffffff;
+    background-color: #313136;
     //border-top: 1px solid black;
 }
 
@@ -307,7 +310,7 @@ body#resume a#resumeNav {
 }
 
 .footer-name p {
-	color: #313136;
+	color: #ffffff;
     line-height: 8px;
     letter-spacing: 1px;
     font-size: 12px;
