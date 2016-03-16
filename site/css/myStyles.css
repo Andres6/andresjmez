@@ -134,8 +134,7 @@ body {
 body#home a#homeNav,
 body#about a#aboutNav,
 body#contact a#contactNav,
-body#portfolio a#portfolioNav,
-body#resume a#resumeNav {
+body#portfolio a#portfolioNav {
     background: #4092bd;
     background: #ffffff;
     color: #313136;
@@ -248,6 +247,7 @@ body#resume a#resumeNav {
 
 .about_line {
     width: 800px;
+    margin-bottom: 20px;
     border: 2px solid #313136;
     border-left: none;
     border-right: none;
@@ -259,34 +259,38 @@ body#resume a#resumeNav {
 
 .about_heading { 
     //border: 1px solid red;
-    //width: 350px;
+    max-width: 800px;
     margin-top: 10px;
     position: relative;
     left: 50%;
     transform: translateX(-50%);
 }
 
-#about_headline {
+#about_punchline {
     color: #313136;
+    text-align: left;
     font-size: 17px;
     font-weight: 300;
     letter-spacing: 1px;
     //line-height: 50px;
 }
 
-#about_name { 
+#about_name {
+    margin: 0;
     color: #313136;
     font-family: 'Roboto', sans-serif;
     font-size: 30px;
     font-weight: 300;
     letter-spacing: -1px;
     text-transform: uppercase;
+    text-align: left;
     //float: left;
     //border: 1px solid red;
 }
 
 .about_text p{
     color: #313136;
+    text-align: right;
     font-size: 15px;
     font-weight: 300;
     letter-spacing: 1px;
@@ -324,12 +328,15 @@ body#resume a#resumeNav {
     text-transform: uppercase;
 }
 
-.social-icons {
-    padding-bottom: 10px;
-
+#dev_note {
+    font-size: 10px;
+    line-height: 10px;
 }
 
+.social-icons {
+    padding-bottom: 20px;
 
+}
 
 .social-icons a {
     margin-left: 20px;
