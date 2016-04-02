@@ -290,7 +290,7 @@ body#portfolio a#portfolioNav {
 
 .about_text p{
     color: #313136;
-    text-align: right;
+    text-align: justify;
     font-size: 15px;
     font-weight: 300;
     letter-spacing: 1px;
