@@ -9,8 +9,8 @@
         <meta name="keywords" content="andres, jimenez, tenafly, njit, software">
         <meta name="description" content="Personal Web Page of Andres Jimenez">
         <meta name="author" content="Andres Jimenez">
-        <link rel="icon" href="site/media/favicon.ico" type="image/x-icon">
-        <link rel="shortcut icon" href="site/media/favicon.ico" type="image/x-icon">
+        <link rel="icon" href="../site/media/favicon.ico" type="image/x-icon">
+        <link rel="shortcut icon" href="../site/media/favicon.ico" type="image/x-icon">
         <title>Web-page of Andres Jimenez</title>
 
         <!-- Bootstrap -->
@@ -18,7 +18,7 @@
         <!-- <link href="css/bootstrap.min.css" rel="stylesheet"> -->
         
         <!-- Custom styles for site -->
-        <link href="site/css/myStyles.css" rel="stylesheet">
+        <link href="../site/css/myStyles.css" rel="stylesheet">
         
         <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
         <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -54,10 +54,10 @@
                 <ul class="nav masthead-nav">
                     <div class="brand">
                     </div>
-                    <li><a href="index.php" id="homeNav">Home</a></li>
-                    <li><a href="about.php" id="aboutNav">About</a></li>
-                    <li><a href="contact.php" id="contactNav">Contact</a></li>
-                    <li><a href="portfolio.php" id="portfolioNav">Portfolio</a></li>
+                    <li><a href="../" id="homeNav">Home</a></li>
+                    <li><a href="../about/" id="aboutNav">About</a></li>
+                    <li><a href="../contact/" id="contactNav">Contact</a></li>
+                    <li><a href="../portfolio/" id="portfolioNav">Portfolio</a></li>
                     <!--
                     <li><a href="cs345f14.html">Fall</a></li>  -->
                 </ul>
@@ -90,8 +90,8 @@
             <div class="mastfoot">
                 <div class="footer-name">
                     <div class="social-icons"> 
-                        <a href="https://github.com/Andres6" target="_blank" title="GitHub"><img src="site/media/github_white.png" width="48" height="48" alt="Github"/></a> 
-                        <a href="contact.php" title="Contact Me"><img src="site/media/mail.png" width="48" height="48" alt="Email"/></a> 
+                        <a href="https://github.com/Andres6" target="_blank" title="GitHub"><img src="../site/media/github_white.png" width="48" height="48" alt="Github"/></a> 
+                        <a href="../contact/" title="Contact Me"><img src="../site/media/mail.png" width="48" height="48" alt="Email"/></a> 
                     </div>
                     <p>Website designed and built by Andres Jimenez</p>
                     <p id="dev_note">*site under development, check back soon!<p>
