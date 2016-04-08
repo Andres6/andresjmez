@@ -54,10 +54,10 @@
                 <ul class="nav masthead-nav">
                     <div class="brand">
                     </div>
-                    <li><a href="index.html" id="homeNav">Home</a></li>
-                    <li><a href="about.html" id="aboutNav">About</a></li>
-                    <li><a href="contact.html" id="contactNav">Contact</a></li>
-                    <li><a href="portfolio.html" id="portfolioNav">Portfolio</a></li>
+                    <li><a href="index.php" id="homeNav">Home</a></li>
+                    <li><a href="about.php" id="aboutNav">About</a></li>
+                    <li><a href="contact.php" id="contactNav">Contact</a></li>
+                    <li><a href="portfolio.php" id="portfolioNav">Portfolio</a></li>
                     <!--
                     <li><a href="cs345f14.html">Fall</a></li>  -->
                 </ul>
@@ -89,7 +89,7 @@
                 <div class="footer-name">
                     <div class="social-icons">
                         <a href="https://github.com/Andres6" target="_blank" title="GitHub"><img src="site/media/github_white.png" width="48" height="48" alt="Github"/></a>
-                        <a href="contact.html" title="Contact Me"><img src="site/media/mail.png" width="48" height="48" alt="Email"/></a>
+                        <a href="contact.php" title="Contact Me"><img src="site/media/mail.png" width="48" height="48" alt="Email"/></a>
                     </div>
                     <p>Website designed and built by Andres Jimenez</p>
                     <p id="dev_note">*site under development, check back soon!<p>

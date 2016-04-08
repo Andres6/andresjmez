@@ -39,7 +39,7 @@
         </script>  
     </head>
 
-    <body id="portfolio">    
+    <body id="about">    
         <!-- Full Site -->
         <div class="site-wrapper">
             
@@ -54,10 +54,10 @@
                 <ul class="nav masthead-nav">
                     <div class="brand">
                     </div>
-                    <li><a href="index.html" id="homeNav">Home</a></li>
-                    <li><a href="about.html" id="aboutNav">About</a></li>
-                    <li><a href="contact.html" id="contactNav">Contact</a></li>
-                    <li><a href="portfolio.html" id="portfolioNav">Portfolio</a></li>
+                    <li><a href="index.php" id="homeNav">Home</a></li>
+                    <li><a href="about.php" id="aboutNav">About</a></li>
+                    <li><a href="contact.php" id="contactNav">Contact</a></li>
+                    <li><a href="portfolio.php" id="portfolioNav">Portfolio</a></li>
                     <!--
                     <li><a href="cs345f14.html">Fall</a></li>  -->
                 </ul>
@@ -72,12 +72,18 @@
             <div class="content">
                 <div class="about_heading">
                     <p id="about_name">Andres Jimenez</p>
+                    <p id="about_punchline">a little about me...<p> 
                     <!-- <p id="about_last">Jimenez</p> --> 
                 </div>
                 <div class="about_line">
                 </div>
                 <div class="about_text">
-                    <p>Oops! still under development... 
+                    <!-- <p>About Me</p> -->
+                    <p>I am a software developer based in northern New Jersey/New York City. I enjoy designing and programming software for different types of applications. I like taking intricate problems and applying logic to solve and create efficient applications.</p>
+                    <p>I developed this website myself to learn the ways of web development and also to play around with some fun project ideas. I am constantly working and updating my website and learning new skills in the process which is something I really enjoy.<p>
+                    <p>When my face is not chock-full o' code, I enjoy playing video games, playing sports, and just being outside(also inside) with my dogs. Pretty simple huh. Well thats me!</p>
+                    <p>If you want to know more feel free to contact me or view my resume below</p>
+                    <p><u>Link to resume coming soon</u></p>
                 </div>
             </div>
             <!-- Footer -->
@@ -85,10 +91,10 @@
                 <div class="footer-name">
                     <div class="social-icons"> 
                         <a href="https://github.com/Andres6" target="_blank" title="GitHub"><img src="site/media/github_white.png" width="48" height="48" alt="Github"/></a> 
-                        <a href="contact.html" title="Contact Me"><img src="site/media/mail.png" width="48" height="48" alt="Email"/></a> 
+                        <a href="contact.php" title="Contact Me"><img src="site/media/mail.png" width="48" height="48" alt="Email"/></a> 
                     </div>
                     <p>Website designed and built by Andres Jimenez</p>
-                    <p id="dev_note">*site under development, check back soon!<p> 
+                    <p id="dev_note">*site under development, check back soon!<p>
                 </div>
             </div>
 
