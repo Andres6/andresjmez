@@ -34,7 +34,7 @@ body {
 body {
     display: block;
     font-family: 'Roboto', sans-serif;  
-    color: #74757D;
+    color: #313136;
     text-align: center;
     text-shadow: 0 1px 1px rgba(0,0,0,.5);
 }
@@ -298,6 +298,75 @@ body#portfolio a#portfolioNav {
 }
 
 
+/********************* contact page **********************/
+
+.contact_logo {
+    height: 70px;
+    width: 70px;
+    margin: 0 auto;
+    background-image: url(../media/mail.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.contact_area p {
+    margin-top: 10px;
+    font-size: 15px;
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+
+form {
+    margin: 0 auto;
+    width: 400px;
+    text-align: initial;
+}
+
+input, textarea {
+    display: block;
+    outline: none;
+    width: 400px;
+    height: 37px;
+    background: #efefef;
+    border: none;
+    border-bottom: 3px solid #c9c9c9;
+    transition: border 0.5s;
+    margin-top: 10px;
+    padding: 10px;
+    font-size: 15px;
+    color: #313136;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+}
+
+textarea {
+    height: 200px;
+}
+
+input:focus, textarea:focus {
+    border-bottom: 3px solid #494950;
+    box-shadow: 0px 1px 5px 0px #494950;
+}
+
+#submit {
+    display: block;
+    margin: 0 auto;
+    padding: 0;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: none;
+    width: 150px;
+    color: #efefef;
+    background-color: #fa1f18;
+    background-image: linear-gradient(to bottom, #fa1f18, #bc1526);
+    box-shadow: 0px 1px 3px 0px #494950;
+}
+
+#submit:hover {
+    background-color: #e21c15;
+    background-image: linear-gradient(to bottom, #bc1526, #fa1f18);
+}
 /* end of body */
 
 /***********************************************************************

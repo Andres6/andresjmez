@@ -72,12 +72,21 @@
             <div class="content">
                 <div class="about_heading">
                     <p id="about_name">Andres Jimenez</p>
-                    <p id="about_punchline">contact me here...</p>
+                    <p id="about_punchline">reach me at my email address below or simply fill out the form and send. cheers...</p>
                 </div>
                 <div class="about_line">
                 </div>
-                <div class="about_text">
-                    <p>Oops! still under development... 
+                <div class="contact_area">
+                    <div class="contact_logo">
+                    </div>
+                    <p>andresjmez@gmail.com</p>
+                    <p>--or--</p>
+                    <form>
+                        <input name="name" placeholder="Your Name">
+                        <input name="email" type="email" placeholder="Your Email Address">
+                        <textarea name="message" placeholder="What's on your mind..."></textarea>
+                        <input id="submit" name="submit" type="submit" value="Deliver">
+                    </form> 
                 </div>
             </div>
             <!-- Footer -->
