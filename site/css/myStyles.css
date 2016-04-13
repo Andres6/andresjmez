@@ -383,14 +383,14 @@ input:focus, textarea:focus {
     //border-top: 1px solid black;
 }
 
-.footer-name {
+.footer_name {
     position: relative;
     top: 50%;
     left: 50%;
     transform: translateY(-50%) translateX(-50%);
 }
 
-.footer-name p {
+.footer_name p {
 	color: #ffffff;
     line-height: 8px;
     letter-spacing: 1px;
@@ -403,14 +403,26 @@ input:focus, textarea:focus {
     line-height: 10px;
 }
 
-.social-icons {
-    padding-bottom: 20px;
-
+#social_list {
+    padding: 0;
 }
 
-.social-icons a {
-    margin-left: 20px;
+#social_list li {
+    display: inline;
+    margin-left: 10px;
+    margin-right: 10px;
 }
+
+#footer_github {
+    width: 48px;
+    height: 48px;
+}
+
+#footer_contact {
+    width: 48px;
+    height: 48px;
+}
+
 /* end of footer and styles */
 
 
