@@ -72,12 +72,13 @@
             <div class="content">
                 <div class="about_heading">
                     <p id="about_name">Andres Jimenez</p>
-                    <p id="about_punchline">reach me at my email address below or simply fill out the form and send. cheers...</p>
+                    <p id="about_punchline">reach me at my email address below or simply fill out the form and send...</p>
                 </div>
                 <div class="about_line">
                 </div>
                 <div class="contact_area">
-                    <div class="contact_logo">
+                    <div class="mail_logo">
+                        <a href="mailto:andresjmez@gmail.com"><img src="../site/media/mail.png" id="contact_logo"></a> 
                     </div>
                     <p>andresjmez@gmail.com</p>
                     <p>--or--</p>

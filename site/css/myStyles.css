@@ -300,13 +300,14 @@ body#portfolio a#portfolioNav {
 
 /********************* contact page **********************/
 
-.contact_logo {
+#contact_logo {
     height: 70px;
     width: 70px;
+    border: 0;
     margin: 0 auto;
-    background-image: url(../media/mail.png);
-    background-repeat: no-repeat;
-    background-size: contain;
+    //background-image: url(../media/mail.png);
+    //background-repeat: no-repeat;
+    //background-size: contain;
 }
 
 .contact_area p {
