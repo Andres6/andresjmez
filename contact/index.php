@@ -9,8 +9,11 @@
 
         $headers = "From:" . $from;
 
-        mail($to,$subject,$message,$headers);
-        echo "mail sent, thank you";
+        if (mail($to,$subject,$message,$headers)){
+            echo "mail sent, thank you";
+        } else {
+            echo "try again";
+        }
     }
 
     //$body = "From: $name\n Email: $email\n Message: $message\n";
