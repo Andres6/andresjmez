@@ -1,3 +1,21 @@
+<?php
+    $name = $_POST['name'];
+    $email = $_POST['email'];
+    $message = $_POST['message'];
+    $from = 'From: andre';
+    $to = 'andresjmez@gmail.com';
+    $subject = $_POST['Hello'];
+    
+    $body = "From: $name\n Email: $email\n Message: $message\n";
+
+    if ($_POST['submit']) {
+        if (mail ($to, $subject, $body, $from)) {
+            echo '<p>your message was sent!</p>';
+        } else {
+            echo '<p>something went wrong, try again!</p>';
+        }
+    }
+?>
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -82,7 +100,7 @@
                     </div>
                     <p>andresjmez@gmail.com</p>
                     <p>--or--</p>
-                    <form>
+                    <form method="post" action="index.php">
                         <input name="name" placeholder="Your Name">
                         <input name="email" type="email" placeholder="Your Email Address">
                         <textarea name="message" placeholder="What's on your mind..."></textarea>
