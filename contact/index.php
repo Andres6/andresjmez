@@ -111,7 +111,7 @@
                     </div>
                     <p>andresjmez@gmail.com</p>
                     <p>--or--</p>
-                    <form method="post" action="index.php">
+                    <form method="post" action="">
                         <input name="name" placeholder="Your Name">
                         <input name="email" type="email" placeholder="Your Email Address">
                         <textarea name="message" placeholder="What's on your mind..."></textarea>
