@@ -1,20 +1,28 @@
 <?php
-    $name = $_POST['name'];
-    $email = $_POST['email'];
-    $message = $_POST['message'];
-    $from = 'From: andre';
-    $to = 'andresjmez@gmail.com';
-    $subject = $_POST['Hello'];
-    
-    $body = "From: $name\n Email: $email\n Message: $message\n";
 
+    if(isset($_POST['submit'])) {
+        $to = "andresjmez@gmail.com";
+        $from = $_POST['email'];
+        $name = $_POST['name'];
+        $subject = "Hello";
+        $message = $_POST['message'];
+
+        $headers = "From:" . $from;
+
+        mail($to,$subject,$message,$headers);
+        echo "mail sent, thank you";
+    }
+
+    //$body = "From: $name\n Email: $email\n Message: $message\n";
+
+    /*
     if ($_POST['submit']) {
         if (mail ($to, $subject, $body, $from)) {
             echo '<p>your message was sent!</p>';
         } else {
             echo '<p>something went wrong, try again!</p>';
         }
-    }
+    } */
 ?>
 <!DOCTYPE html>
 <html lang="en">
