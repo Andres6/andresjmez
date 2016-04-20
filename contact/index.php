@@ -1,31 +1,3 @@
-<?php
-    if(isset($_POST['submit'])) {
-        $to = "andresjmez@gmail.com";
-        $from = $_POST['email'];
-        $name = $_POST['name'];
-        $subject = "Hello, I'm" . $name;
-        $message = $_POST['message'];
-
-        $headers = "From:" . $from;
-
-        if (mail($to,$subject,$message,$headers)){
-            echo "You mail has been sent.";
-        } else {
-            echo "Error sending mail, please check all fields and try again";
-        }
-    }
-
-    //$body = "From: $name\n Email: $email\n Message: $message\n";
-
-    /*
-    if ($_POST['submit']) {
-        if (mail ($to, $subject, $body, $from)) {
-            echo '<p>your message was sent!</p>';
-        } else {
-            echo '<p>something went wrong, try again!</p>';
-        }
-    } */
-?>
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -105,6 +77,23 @@
                 <div class="about_line">
                 </div>
                 <div class="contact_area">
+                    <?php
+                        if(isset($_POST['submit'])) {
+                            $to = "andresjmez@gmail.com";
+                            $from = $_POST['email'];
+                            $name = $_POST['name'];
+                            $subject = "Hello, I'm " . $name;
+                            $message = $_POST['message'];
+
+                            $headers = "From:" . $from;
+
+                            if (mail($to,$subject,$message,$headers)){
+                                echo "You mail has been sent.";
+                            } else {
+                                echo "Error sending mail, please check all fields and try again";
+                            }
+                        }
+                    ?>
                     <div class="mail_logo">
                         <a href="mailto:andresjmez@gmail.com"><img src="../site/media/mail.png" id="contact_logo"></a> 
                     </div>
