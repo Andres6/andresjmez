@@ -1,18 +1,17 @@
 <?php
-
     if(isset($_POST['submit'])) {
         $to = "andresjmez@gmail.com";
         $from = $_POST['email'];
         $name = $_POST['name'];
-        $subject = "Hello";
+        $subject = "Hello, I'm" . $name;
         $message = $_POST['message'];
 
         $headers = "From:" . $from;
 
         if (mail($to,$subject,$message,$headers)){
-            echo "mail sent, thank you";
+            echo "You mail has been sent.";
         } else {
-            echo "try again";
+            echo "Error sending mail, please check all fields and try again";
         }
     }
 
