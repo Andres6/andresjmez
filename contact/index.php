@@ -88,7 +88,7 @@
                             $headers = "From:" . $from;
 
                             if (mail($to,$subject,$message,$headers)){
-                                echo "You mail has been sent.";
+                                echo "You message has been sent.";
                             } else {
                                 echo "Error sending mail, please check all fields and try again";
                             }
@@ -100,9 +100,9 @@
                     <p>andresjmez@gmail.com</p>
                     <p>--or--</p>
                     <form method="post" action="">
-                        <input name="name" placeholder="Your Name">
-                        <input name="email" type="email" placeholder="Your Email Address">
-                        <textarea name="message" placeholder="What's on your mind..."></textarea>
+                        <input name="name" placeholder="Your Name" required>
+                        <input name="email" type="email" placeholder="Your Email Address" required>
+                        <textarea name="message" placeholder="Your Message..." required></textarea>
                         <input id="submit" name="submit" type="submit" value="Deliver">
                     </form> 
                 </div>

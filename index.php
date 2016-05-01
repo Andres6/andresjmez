@@ -94,7 +94,7 @@
                          </ul> 
                      </div> 
                      <p>Website designed and built by Andres Jimenez</p> 
-                     <p id="dev_note">*site under development, check back soon!<p>  
+                     <p id="dev_note">*site under development, more coming soon!<p>  
                  </div> 
             </div>
 
