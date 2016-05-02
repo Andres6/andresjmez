@@ -88,6 +88,7 @@
                             $headers = "From:" . $from;
 
                             if (mail($to,$subject,$message,$headers)){
+                                header('Location: http://www.andresjmez.com/contact/');
                                 echo "You message has been sent.";
                             } else {
                                 echo "Error sending mail, please check all fields and try again";
