@@ -134,7 +134,7 @@ body {
 body#home a#homeNav,
 body#about a#aboutNav,
 body#contact a#contactNav,
-body#portfolio a#portfolioNav {
+body#projects a#projectsNav {
     background: #4092bd;
     background: #ffffff;
     color: #313136;
@@ -368,6 +368,32 @@ input:focus, textarea:focus {
     background-color: #e21c15;
     background-image: linear-gradient(to bottom, #bc1526, #fa1f18);
 }
+
+
+/********************* contact sent page **********************/
+
+.sent_area { 
+    //border: 1px solid blue;
+    margin-top: 50px;
+}
+
+.sent_area p {
+    margin-top: 10px;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+
+#sent_logo {
+    height: 90px;
+    width: 90px;
+    border: 0;
+    margin: 0 auto;
+    //background-image: url(../media/mail.png);
+    //background-repeat: no-repeat;
+    //background-size: contain;
+}
+
 /* end of body */
 
 /***********************************************************************

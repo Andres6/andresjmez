@@ -57,7 +57,7 @@
                     <li><a href="../" id="homeNav">Home</a></li>
                     <li><a href="../about/" id="aboutNav">About</a></li>
                     <li><a href="../contact/" id="contactNav">Contact</a></li>
-                    <li><a href="../portfolio/" id="portfolioNav">Portfolio</a></li>
+                    <li><a href="../projects/" id="projectsNav">Projects</a></li>
                     <!--
                     <li><a href="cs345f14.html">Fall</a></li>  -->
                 </ul>
@@ -88,8 +88,7 @@
                             $headers = "From:" . $from;
 
                             if (mail($to,$subject,$message,$headers)){
-                                header('Location: http://www.andresjmez.com/contact/');
-                                echo "You message has been sent.";
+                                header('Location: http://www.andresjmez.com/contact/sent.php');
                             } else {
                                 echo "Error sending mail, please check all fields and try again";
                             }
@@ -118,7 +117,7 @@
                         </ul>
                     </div>
                     <p>Website designed and built by Andres Jimenez</p>
-                    <p id="dev_note">*site under development, check back soon!<p> 
+                    <p id="dev_note">*site under development, more coming soon!<p> 
                 </div>
             </div>
 

@@ -39,7 +39,7 @@
         </script>  
     </head>
 
-    <body id="portfolio">    
+    <body id="projects">    
         <!-- Full Site -->
         <div class="site-wrapper">
             
@@ -57,7 +57,7 @@
                     <li><a href="../" id="homeNav">Home</a></li>
                     <li><a href="../about/" id="aboutNav">About</a></li>
                     <li><a href="../contact/" id="contactNav">Contact</a></li>
-                    <li><a href="../portfolio/" id="portfolioNav">Portfolio</a></li>
+                    <li><a href="../projects/" id="projectsNav">Projects</a></li>
                     <!--
                     <li><a href="cs345f14.html">Fall</a></li>  -->
                 </ul>
@@ -72,12 +72,12 @@
             <div class="content">
                 <div class="about_heading">
                     <p id="about_name">Andres Jimenez</p>
-                    <p id="about_punchline">contact me here...</p>
+                    <p id="about_punchline">check out some of my projects...</p>
                 </div>
                 <div class="about_line">
                 </div>
                 <div class="about_text">
-                    <p>Oops! still under development... 
+                    <p>Oops! still under development, come back soon... 
                 </div>
             </div>
             <!-- Footer -->
@@ -90,7 +90,7 @@
                          </ul> 
                      </div> 
                      <p>Website designed and built by Andres Jimenez</p> 
-                     <p id="dev_note">*site under development, check back soon!<p>  
+                     <p id="dev_note">*site under development, more coming soon!<p>  
                  </div> 
             </div>
 

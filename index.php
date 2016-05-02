@@ -57,7 +57,7 @@
                     <li><a href="." id="homeNav">Home</a></li>
                     <li><a href="about/" id="aboutNav">About</a></li>
                     <li><a href="contact/" id="contactNav">Contact</a></li>
-                    <li><a href="portfolio/" id="portfolioNav">Portfolio</a></li>
+                    <li><a href="projects/" id="projectsNav">Projects</a></li>
                     <!--
                     <li><a href="cs345f14.html">Fall</a></li>  -->
                 </ul>
