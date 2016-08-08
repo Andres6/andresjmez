@@ -2,6 +2,12 @@
 <html lang="en">
     <head>
         <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300|Open+Sans:400,300' rel='stylesheet' type='text/css'>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+        <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/themes/flick/jquery-ui.css" />
+        <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/jquery-ui.min.js"></script>
+
+
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -11,6 +17,7 @@
         <meta name="author" content="Andres Jimenez">
         <link rel="icon" href="site/media/favicon.ico" type="image/x-icon">
         <link rel="shortcut icon" href="site/media/favicon.ico" type="image/x-icon">
+        
         <title>Web-page of Andres Jimenez</title>
 
         <!-- Bootstrap -->
@@ -90,7 +97,7 @@
                      <div class="social_icons"> 
                          <ul id="social_list"> 
                              <li><a href="https://github.com/Andres6" target="_blank" title="GitHub"><img src="site/media/github_white.png" id="footer_github"/></a></li>  
-                             <li><a href="../contact/" title="Contact Me"><img src="site/media/mail.png" id="footer_contact"/></a></li> 
+                             <li><a href="contact/" title="Contact Me"><img src="site/media/mail.png" id="footer_contact"/></a></li> 
                          </ul> 
                      </div> 
                      <p>Website designed and built by Andres Jimenez</p> 
@@ -104,11 +111,8 @@
         <!-- ============================== -->
         <!-- JQuery and Boostrap Javascript -->
         <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
         <!-- Include all compiled plugins (below), or include individual files as needed -->
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha256-KXn5puMvxCw+dAYznun+drMdG1IFl3agK0p/pqT9KAo= sha512-2e8qq0ETcfWRI4HJBzQiA3UoyFk6tbNyG+qSaIBZLyW9Xf3sWZHN/lxe9fTh1U45DpPf07yj94KsUHHWe4Yk1A==" crossorigin="anonymous"></script>
         <!-- <script src="js/bootstrap.min.js"></script> -->
         <!-- ============================== -->       
-
     </body>
 </html>

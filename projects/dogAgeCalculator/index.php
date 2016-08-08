@@ -2,15 +2,25 @@
 <html lang="en">
     <head>
         <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300|Open+Sans:400,300' rel='stylesheet' type='text/css'>
+
+        
+        <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+        <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+        <link href="jquery-ui.css" rel="stylesheet">
+
+        <!-- FIX JQUERY VERSIONSSSSSSSS     -->
+
+
         <meta charset="utf-8">
+
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
         <meta name="keywords" content="andres, jimenez, tenafly, njit, software">
         <meta name="description" content="Personal Web Page of Andres Jimenez">
         <meta name="author" content="Andres Jimenez">
-        <link rel="icon" href="../site/media/favicon.ico" type="image/x-icon">
-        <link rel="shortcut icon" href="../site/media/favicon.ico" type="image/x-icon">
+        <link rel="icon" href="../../site/media/favicon.ico" type="image/x-icon">
+        <link rel="shortcut icon" href="../../site/media/favicon.ico" type="image/x-icon">
         <title>Web-page of Andres Jimenez</title>
 
         <!-- Bootstrap -->
@@ -18,7 +28,10 @@
         <!-- <link href="css/bootstrap.min.css" rel="stylesheet"> -->
         
         <!-- Custom styles for site -->
-        <link href="../site/css/myStyles.css" rel="stylesheet">
+        <link href="../../site/css/myStyles.css" rel="stylesheet">
+        
+        
+        
         
         <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
         <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -39,7 +52,7 @@
         </script>  
     </head>
 
-    <body id="contact">    
+    <body id="projects">    
         <!-- Full Site -->
         <div class="site-wrapper">
             
@@ -54,10 +67,10 @@
                 <ul class="nav masthead-nav">
                     <div class="brand">
                     </div>
-                    <li><a href="../" id="homeNav">Home</a></li>
-                    <li><a href="../about/" id="aboutNav">About</a></li>
-                    <li><a href="../contact/" id="contactNav">Contact</a></li>
-                    <li><a href="../projects/" id="projectsNav">Projects</a></li>
+                    <li><a href="../../" id="homeNav">Home</a></li>
+                    <li><a href="../../about/" id="aboutNav">About</a></li>
+                    <li><a href="../../contact/" id="contactNav">Contact</a></li>
+                    <li><a href="../../projects/" id="projectsNav">Projects</a></li>
                     <!--
                     <li><a href="cs345f14.html">Fall</a></li>  -->
                 </ul>
@@ -71,65 +84,56 @@
             </div> -->
             <div class="content">
                 <div class="about_heading">
-                    <p id="about_name">Andres Jimenez</p>
-                    <p id="about_punchline">reach me at my email address below or simply fill out the form and send...</p>
+                    <p id="about_name">Dog Age Calculator</p>
+                    <p id="about_punchline">find out how old your dog really isss...</p>
                 </div>
                 <div class="about_line">
                 </div>
-                <div class="contact_area">
-                    <?php
-                        if(isset($_POST['submit'])) {
-                            $to = "andresjmez@gmail.com";
-                            $from = $_POST['email'];
-                            $name = $_POST['name'];
-                            $subject = "Hello, I'm " . $name;
-                            $message = $_POST['message'];
-
-                            $headers = "From:" . $from;
-
-                            if (mail($to,$subject,$message,$headers)){
-                                header('Location: http://www.andresjmez.com/contact/sent.php');
-                            } else {
-                                echo "Error sending mail, please check all fields and try again";
-                            }
-                        }
-                    ?>
-                    <div class="mail_logo">
-                        <a href="mailto:andresjmez@gmail.com"><img src="../site/media/mail.png" id="contact_logo"></a> 
+                <div class="about_text">
+                    <p>Oops! still under development, come back soon...</p>
+                    <div id="dogAgeCalcDiv">
+                        <form>
+                            <fieldset id="radio">
+                                <legend>select dog size</legend><br>
+                                <input type="radio" id="dogSmall" name="dogAgeRadio" value="1"><label for="dogSmall">small<br><small>0-20 lbs.</small></label>
+                                <input type="radio" id="dogMedium" name="dogAgeRadio" value="2"><label for="dogMedium">medium<br><small>21-50 lbs.</small></label>
+                                <input type="radio" id="dogLarge" name="dogAgeRadio" value="3"><label for="dogLarge">large<br><small>51-90 lbs.</small></label>
+                                <input type="radio" id="dogXLarge" name="dogAgeRadio" value="4"><label for="dogXLarge">x-large<br><small>90+ lbs</small></label>
+                            </fieldset>
+                            <label for="humanAge">Enter age in human years</label><br>
+                            <input class="ageInput" id="humanAge" type="text" maxlength="6" size="7" required><br>
+                            <button class="dogAgeButton" type="button">Calculate</button>
+                        </form>
                     </div>
-                    <p>andresjmez@gmail.com</p>
-                    <p>--or--</p>
-                    <form id="contactForm" method="post" action="">
-                        <label><input type="text" class="contactMe" id="contactMeName" name="name" placeholder="Your Name" required></label>
-                        <label><input type="text" class="contactMe" id="contactMeEmail" name="email" type="email" placeholder="Your Email Address" required></label>
-                        <label><textarea id="contactMeMessage" name="message" placeholder="Your Message..." required></textarea></label>
-                        <input type="submit" id="contactMeSubmit" name="submit" value="Deliver">
-                    </form> 
+                    <div id="ageResult">
+                        <p>Your dog is</p>
+                        <p id="answer"></p>
+                        <p>Years old</p>
+                    </div>
                 </div>
             </div>
             <!-- Footer -->
             <div class="mastfoot">
-                <div class="footer_name">
-                    <div class="social_icons">
-                        <ul id="social_list">
-                            <li><a href="https://github.com/Andres6" target="_blank" title="GitHub"><img src="../site/media/github_white.png" id="footer_github"/></a></li> 
-                            <li><a href="../contact/" title="Contact Me"><img src="../site/media/mail.png" id="footer_contact"/></a></li>
-                        </ul>
-                    </div>
-                    <p>Website designed and built by Andres Jimenez</p>
-                    <p id="dev_note">*site under development, more coming soon!<p> 
-                </div>
+                 <div class="footer_name"> 
+                     <div class="social_icons"> 
+                         <ul id="social_list"> 
+                             <li><a href="https://github.com/Andres6" target="_blank" title="GitHub"><img src="../../site/media/github_white.png" id="footer_github"/></a></li>  
+                             <li><a href="../../contact/" title="Contact Me"><img src="../../site/media/mail.png" id="footer_contact"/></a></li> 
+                         </ul> 
+                     </div> 
+                     <p>Website designed and built by Andres Jimenez</p> 
+                     <p id="dev_note">*site under development, more coming soon!<p>  
+                 </div> 
             </div>
 
         </div>   
-
+        
 
         <!-- ============================== -->
         <!-- JQuery and Boostrap Javascript -->
         <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
         <!-- Include all compiled plugins (below), or include individual files as needed -->
-        <!-- <script src="js/bootstrap.min.js"></script> -->
+        <script type="text/javascript" src="dog.js"></script>
         <!-- ============================== -->       
 
     </body>

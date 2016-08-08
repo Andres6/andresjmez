@@ -165,6 +165,33 @@ body#projects a#projectsNav {
     //border: 1px solid blue;
 }
 
+legend {
+  color: #313136 !important;
+  text-align: left;
+  font-size: 15px;
+  font-weight: 400;
+  letter-spacing: 1px;
+  display: initial;
+  width: initial;
+  padding: initial;
+  margin-bottom: initial;
+  line-height: initial;
+  color: initial;
+  border: initial;
+  border: none;
+}
+
+label {
+  color: #313136;
+  text-align: left;
+  font-size: 15px;
+  font-weight: 400;
+  letter-spacing: 1px;
+  display: initial;
+  max-width: initial;
+  margin: initial;
+}
+
 /******************** home page *************************/
 
 .text-photo {
@@ -317,13 +344,13 @@ body#projects a#projectsNav {
     letter-spacing: 1px;
 }
 
-form {
+#contactForm {
     margin: 0 auto;
     width: 400px;
     text-align: initial;
 }
 
-input, textarea {
+.contactMe {
     display: block;
     outline: none;
     width: 400px;
@@ -341,7 +368,22 @@ input, textarea {
     -webkit-border-radius: 5px;
 }
 
-textarea {
+
+#contactMeMessage {
+    display: block;
+    outline: none;
+    width: 400px;
+    background: #efefef;
+    border: none;
+    border-bottom: 3px solid #c9c9c9;
+    transition: border 0.5s;
+    margin-top: 10px;
+    padding: 10px;
+    font-size: 15px;
+    color: #313136;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
     height: 200px;
 }
 
@@ -350,7 +392,7 @@ input:focus, textarea:focus {
     box-shadow: 0px 1px 5px 0px #494950;
 }
 
-#submit {
+#contactMeSubmit {
     display: block;
     margin: 0 auto;
     padding: 0;
@@ -358,13 +400,17 @@ input:focus, textarea:focus {
     margin-bottom: 10px;
     border: none;
     width: 150px;
+    height: 37px;
     color: #efefef;
     background-color: #fa1f18;
     background-image: linear-gradient(to bottom, #fa1f18, #bc1526);
     box-shadow: 0px 1px 3px 0px #494950;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
 }
 
-#submit:hover {
+#contactMeSubmit:hover {
     background-color: #e21c15;
     background-image: linear-gradient(to bottom, #bc1526, #fa1f18);
 }
@@ -393,6 +439,42 @@ input:focus, textarea:focus {
     //background-repeat: no-repeat;
     //background-size: contain;
 }
+
+/********************* dog age calculator page **********************/
+
+#dogAgeCalcDiv {
+  //border: 1px solid black;
+}
+
+#humanAge {
+  font-size: 25px;
+  outline: none;
+  background: #efefef;
+  border: none;
+  border-bottom: 3px solid #c9c9c9;
+  transition: border 0.5s;
+  margin-top: 10px;
+}
+
+input#humanAge  {
+  text-align: center;
+}
+
+#humanAge:focus {
+  border-bottom: 3px solid #494950;
+  box-shadow: 0px 1px 5px 0px #494950;
+}
+
+#ageResult p {
+  text-align: center;
+}
+
+.dogAgeButton, .ui-button, .ui-button-text-only {
+  margin-right: 0;
+}
+
+
+
 
 /* end of body */
 
