@@ -469,8 +469,9 @@ input#humanAge  {
   text-align: center;
 }
 
-.dogAgeButton, .ui-button, .ui-button-text-only {
+button.dogAgeButton {
   margin-right: 0;
+  margin-top: 30px;
 }
 
 
