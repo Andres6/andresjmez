@@ -46,23 +46,30 @@ function calculateAge(age, size, Dage) {
 
 
 $(function(){
-	$("#radio").buttonset();
+	$("#dogAgeCalcDiv").show();
+	//$("#radioSet").buttonset();
+	$( "input[type='radio']" ).checkboxradio({
+		icon: false
+	});
 	$(".dogAgeButton").button();
 
 	$("#ageResult").hide();
 
 	$( ".dogAgeButton" ).click(function() {
   		
-		var age = parseFloat($("#humanAge").val());
-		var size = parseFloat($("input[name=dogAgeRadio]:checked").val());
-		var Dage = 0;
+  		if ($("#humanAge").val()){
 
-		var finalAge = calculateAge(age, size, Dage);
+			var age = parseFloat($("#humanAge").val());
+			var size = parseFloat($("input[name=dogAgeRadio]:checked").val());
+			var Dage = 0;
 
-		$("#ageResult").show();
-		$("#answer").empty();
-		$("#answer").append(finalAge);
-		//alert("dog is " + finalAge);
+			var finalAge = calculateAge(age, size, Dage);
+			$("#ageResult").hide();
+			$("#ageResult").toggle("drop");
+			$("#answer").empty();
+			$("#answer").append(finalAge);
+			//alert("dog is " + finalAge);
+		}
 
 	});
 

@@ -5,9 +5,10 @@
         <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300|Open+Sans:400,300' rel='stylesheet' type='text/css'>
 
         
-        <script src="//code.jquery.com/jquery-1.10.2.js"></script>
-        <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+        <script   src="https://code.jquery.com/jquery-3.1.0.js"   integrity="sha256-slogkvB1K3VOkzAI8QITxV3VzpOnkeNVsKvtkYLMjfk="   crossorigin="anonymous"></script>
+        <script   src="https://code.jquery.com/ui/1.12.0/jquery-ui.js"   integrity="sha256-0YPKAwZP7Mp3ALMRVB2i8GXeEndvCq3eSl/WsAl1Ryk="   crossorigin="anonymous"></script>
         <link href="jquery-ui.css" rel="stylesheet">
+        <script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.15.0/jquery.validate.min.js"></script>
 
         <!-- FIX JQUERY VERSIONSSSSSSSS     -->
 
@@ -91,25 +92,27 @@
                 <div class="about_line">
                 </div>
                 <div class="about_text">
-                    <p>Oops! still under development, come back soon...</p>
+                    <p></p>
                     <div id="dogAgeCalcDiv">
-                        <form>
-                            <fieldset id="radio">
-                                <legend>select dog size</legend><br>
-                                <input type="radio" id="dogSmall" name="dogAgeRadio" value="1"><label for="dogSmall">small<br><small>0-20 lbs.</small></label>
-                                <input type="radio" id="dogMedium" name="dogAgeRadio" value="2"><label for="dogMedium">medium<br><small>21-50 lbs.</small></label>
-                                <input type="radio" id="dogLarge" name="dogAgeRadio" value="3"><label for="dogLarge">large<br><small>51-90 lbs.</small></label>
-                                <input type="radio" id="dogXLarge" name="dogAgeRadio" value="4"><label for="dogXLarge">x-large<br><small>90+ lbs</small></label>
-                            </fieldset>
-                            <label for="humanAge">Enter age in human years</label><br>
-                            <input class="ageInput" id="humanAge" type="text" maxlength="6" size="7" required><br>
-                            <button class="dogAgeButton" type="button">Calculate</button>
-                        </form>
-                    </div>
-                    <div id="ageResult">
-                        <p>Your dog is</p>
-                        <p id="answer"></p>
-                        <p>Years old</p>
+                        <div id="dogFormDiv">
+                            <form>
+                                <fieldset id="radioSet">
+                                    <legend class="dogCalcHeadings">Select your pup's size</legend><br>
+                                    <input type="radio" id="dogSmall" name="dogAgeRadio" value="1"><label for="dogSmall">small<br><small>0-20 lbs.</small></label>
+                                    <input type="radio" id="dogMedium" name="dogAgeRadio" value="2"><label for="dogMedium">medium<br><small>21-50 lbs.</small></label>
+                                    <input type="radio" id="dogLarge" name="dogAgeRadio" value="3"><label for="dogLarge">large<br><small>51-90 lbs.</small></label>
+                                    <input type="radio" id="dogXLarge" name="dogAgeRadio" value="4"><label for="dogXLarge">x-large<br><small>90+ lbs</small></label>
+                                </fieldset>
+                                <label for="humanAge" class="dogCalcHeadings">Enter pup's age in human years</label><br>
+                                <input class="ageInput" id="humanAge" type="text" maxlength="6" size="7" required><br>
+                                <button class="dogAgeButton" type="button">Calculate</button>
+                            </form>
+                            <div id="ageResult">
+                                <p>Your dog is</p>
+                                <p id="answer"></p>
+                                <p>Years old</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
