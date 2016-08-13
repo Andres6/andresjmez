@@ -1,13 +1,5 @@
-$(function(){
-	$("#radio").buttonset();
-	$(".dogAgeButton").button();
 
-	$( ".dogAgeButton" ).click(function() {
-  		
-		var age = parseFloat($("#humanAge").val());
-		var size = parseFloat($("input[name=dogAgeRadio]:checked").val());
-		var Dage = 0;
-
+function calculateAge(age, size, Dage) {
 		if (size == 4){
 			if (age < 3){
 				if (age == 1){
@@ -46,18 +38,33 @@ $(function(){
 				}		
 			}	
 		}
-
-	    //var Dge = size + age;
-
-	    alert(Dage);
+		return Dage;
+}
 
 
+
+
+
+$(function(){
+	$("#radio").buttonset();
+	$(".dogAgeButton").button();
+
+	$("#ageResult").hide();
+
+	$( ".dogAgeButton" ).click(function() {
+  		
+		var age = parseFloat($("#humanAge").val());
+		var size = parseFloat($("input[name=dogAgeRadio]:checked").val());
+		var Dage = 0;
+
+		var finalAge = calculateAge(age, size, Dage);
+
+		$("#ageResult").show();
+		$("#answer").empty();
+		$("#answer").append(finalAge);
+		//alert("dog is " + finalAge);
 
 	});
-	
-
-    //document.getElementById("answer").innerHTML = Dage;
-
 
 })
 
