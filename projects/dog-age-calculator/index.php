@@ -105,7 +105,7 @@
                                 </fieldset>
                                 <label for="humanAge" class="dogCalcHeadings">Enter pup's age in human years</label><br>
                                 <input class="ageInput" id="humanAge" type="text" maxlength="6" size="7" required><br>
-                                <button class="dogAgeButton" type="button">Calculate</button>
+                                <button class="dogAgeButton" type="button">Woof!</button>
                             </form>
                             <div id="ageResult">
                                 <p>Your dog is</p>

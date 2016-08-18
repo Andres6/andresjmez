@@ -41,36 +41,48 @@ function calculateAge(age, size, Dage) {
 		return Dage;
 }
 
+function showTrueAge() {
 
+	if ($("#humanAge").val()){
+
+		var age = parseFloat($("#humanAge").val());
+		var size = parseFloat($("input[name=dogAgeRadio]:checked").val());
+		var Dage = 0;
+
+		var finalAge = calculateAge(age, size, Dage);
+		$("#ageResult").hide();
+		$("#ageResult").toggle("drop");
+		$("#answer").empty();
+		$("#answer").append(finalAge);
+		//alert("dog is " + finalAge);
+	}
+
+}
 
 
 
 $(function(){
 	$("#dogAgeCalcDiv").show();
-	//$("#radioSet").buttonset();
+
 	$( "input[type='radio']" ).checkboxradio({
 		icon: false
 	});
+	
 	$(".dogAgeButton").button();
 
 	$("#ageResult").hide();
 
+	//show dogs true age when clicking the submit button
 	$( ".dogAgeButton" ).click(function() {
-  		
-  		if ($("#humanAge").val()){
+		showTrueAge();
+	});
 
-			var age = parseFloat($("#humanAge").val());
-			var size = parseFloat($("input[name=dogAgeRadio]:checked").val());
-			var Dage = 0;
-
-			var finalAge = calculateAge(age, size, Dage);
-			$("#ageResult").hide();
-			$("#ageResult").toggle("drop");
-			$("#answer").empty();
-			$("#answer").append(finalAge);
-			//alert("dog is " + finalAge);
-		}
-
+	//will show dogs true age when pressing the enter key
+	$("#humanAge").keypress(function(event){
+    	if(event.keyCode == 13){
+    		event.preventDefault();
+    		showTrueAge();
+    	}
 	});
 
 })
