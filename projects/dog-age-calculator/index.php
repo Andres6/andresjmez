@@ -85,13 +85,13 @@
                 <p class="cover-heading">Coming soon</p>
             </div> -->
             <div class="content">
-                <div class="about_heading">
-                    <p id="about_name">Dog Age Calculator</p>
-                    <p id="about_punchline">find out how old your dog really isss...</p>
+                <div id="dogAge_heading">
+                    <p id="dogAge_name">Dog Age Calculator</p>
+                    <p id="dogAge_punchline">find out how old your dog really is...</p>
                 </div>
-                <div class="about_line">
+                <div id="dogAge_line">
                 </div>
-                <div class="about_text">
+                <div id="dogAgeContent">
                     <p></p>
                     <div id="dogAgeCalcDiv">
                         <div id="dogFormDiv">
