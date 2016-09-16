@@ -1,4 +1,4 @@
-
+//Calculate actual age of dog using the slope formula based on the graph values
 function calculateAge(age, size, Dage) {
 		if (size == 4){
 			if (age < 3){
@@ -41,6 +41,7 @@ function calculateAge(age, size, Dage) {
 		return Dage;
 }
 
+//show this when age is calculated using animations
 function showTrueAge() {
 
 	if ($("#humanAge").val()){
@@ -50,8 +51,10 @@ function showTrueAge() {
 		var Dage = 0;
 
 		var finalAge = calculateAge(age, size, Dage);
+		finalAge = finalAge.toFixed(1);
+
 		$("#ageResult").hide();
-		$("#ageResult").toggle("drop");
+		$("#ageResult").show("blind", 1000);
 		$("#answer").empty();
 		$("#answer").append(finalAge);
 		//alert("dog is " + finalAge);
@@ -72,18 +75,44 @@ $(function(){
 
 	$("#ageResult").hide();
 
-	//show dogs true age when clicking the submit button
-	$( ".dogAgeButton" ).click(function() {
-		showTrueAge();
+	$("#getDogInfo").validate({
+
+		messages: {
+			dogAgeRadio: "Please select a size",
+			humanAge: "Please enter a valid age"
+		},
+		errorPlacement: function(error, element) {
+			if (element.is("input[name='dogAgeRadio']")) {
+				error.appendTo("#dogSizeError");
+			}
+			if (element.is("input[name='humanAge']")) {
+				error.appendTo("#humanAgeError");
+			}
+ 		}
+		
 	});
 
-	//will show dogs true age when pressing the enter key
+
+	//show dogs true age when clicking the submit/woof button
+	$( ".dogAgeButton" ).on("click", function() {
+		if ($("#getDogInfo").valid()) {
+			showTrueAge();
+		}
+		
+	});
+
+	//show dogs true age when pressing the enter key
 	$("#humanAge").keypress(function(event){
     	if(event.keyCode == 13){
     		event.preventDefault();
-    		showTrueAge();
+			if ($("#getDogInfo").valid()) {
+				showTrueAge();
+			}
     	}
 	});
+
+
+
 
 })
 

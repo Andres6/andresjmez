@@ -8,7 +8,9 @@
         <script   src="https://code.jquery.com/jquery-3.1.0.js"   integrity="sha256-slogkvB1K3VOkzAI8QITxV3VzpOnkeNVsKvtkYLMjfk="   crossorigin="anonymous"></script>
         <script   src="https://code.jquery.com/ui/1.12.0/jquery-ui.js"   integrity="sha256-0YPKAwZP7Mp3ALMRVB2i8GXeEndvCq3eSl/WsAl1Ryk="   crossorigin="anonymous"></script>
         <link href="jquery-ui.css" rel="stylesheet">
-        <script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.15.0/jquery.validate.min.js"></script>
+        <script src="http://cdn.jsdelivr.net/jquery.validation/1.15.1/jquery.validate.min.js"></script>
+        <script type="text/javascript" src="jquery.validate.js"></script>
+
 
         <!-- FIX JQUERY VERSIONSSSSSSSS     -->
 
@@ -95,16 +97,18 @@
                     <p></p>
                     <div id="dogAgeCalcDiv">
                         <div id="dogFormDiv">
-                            <form>
+                            <form id="getDogInfo">
                                 <fieldset id="radioSet">
+                                    <div id="dogSizeError"></div>
                                     <legend class="dogCalcHeadings">Select your pup's size</legend><br>
-                                    <input type="radio" id="dogSmall" name="dogAgeRadio" value="1"><label for="dogSmall">small<br><small>0-20 lbs.</small></label>
-                                    <input type="radio" id="dogMedium" name="dogAgeRadio" value="2"><label for="dogMedium">medium<br><small>21-50 lbs.</small></label>
-                                    <input type="radio" id="dogLarge" name="dogAgeRadio" value="3"><label for="dogLarge">large<br><small>51-90 lbs.</small></label>
-                                    <input type="radio" id="dogXLarge" name="dogAgeRadio" value="4"><label for="dogXLarge">x-large<br><small>90+ lbs</small></label>
+                                    <input type="radio" id="dogSmall" name="dogAgeRadio" value="1" required><label for="dogSmall">small<br><small>0-20 lbs.</small></label>
+                                    <input type="radio" id="dogMedium" name="dogAgeRadio" value="2" required><label for="dogMedium">medium<br><small>21-50 lbs.</small></label>
+                                    <input type="radio" id="dogLarge" name="dogAgeRadio" value="3" required><label for="dogLarge">large<br><small>51-90 lbs.</small></label>
+                                    <input type="radio" id="dogXLarge" name="dogAgeRadio" value="4" required><label for="dogXLarge">x-large<br><small>90+ lbs</small></label>
                                 </fieldset>
+                                <div id="humanAgeError"></div>
                                 <label for="humanAge" class="dogCalcHeadings">Enter pup's age in human years</label><br>
-                                <input class="ageInput" id="humanAge" type="text" maxlength="6" size="7" required><br>
+                                <input class="ageInput" id="humanAge" name="humanAge" type="text" maxlength="4" required><br>
                                 <button class="dogAgeButton" type="button">Woof!</button>
                             </form>
                             <div id="ageResult">
