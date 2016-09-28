@@ -1,9 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+        <!-- google font Roboto -->
         <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300|Open+Sans:400,300' rel='stylesheet' type='text/css'>
+        <!-- jQuery and jQuery UI -->
+        <script   src="https://code.jquery.com/jquery-3.1.0.js"   integrity="sha256-slogkvB1K3VOkzAI8QITxV3VzpOnkeNVsKvtkYLMjfk="   crossorigin="anonymous"></script>
+        <script   src="https://code.jquery.com/ui/1.12.0/jquery-ui.js"   integrity="sha256-0YPKAwZP7Mp3ALMRVB2i8GXeEndvCq3eSl/WsAl1Ryk="   crossorigin="anonymous"></script>
+        <!-- <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/themes/flick/jquery-ui.css" /> -->
+
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <!-- for site responsiveness -->
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
         <meta name="keywords" content="andres, jimenez, tenafly, njit, software">
@@ -12,10 +19,6 @@
         <link rel="icon" href="../site/media/favicon.ico" type="image/x-icon">
         <link rel="shortcut icon" href="../site/media/favicon.ico" type="image/x-icon">
         <title>Web-page of Andres Jimenez</title>
-
-        <!-- Bootstrap -->
-        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" integrity="sha256-7s5uDGW3AHqw6xtJmNNtr+OBRJUlgkNJEo78P4b0yRw= sha512-nNo+yCHEyn0smMxSswnf/OnX6/KwJuZTlNZBjauKhTK0c+zT+q5JOCx0UFhXQ6rJR9jg6Es8gPuD2uZcYDLqSw==" crossorigin="anonymous">
-        <!-- <link href="css/bootstrap.min.css" rel="stylesheet"> -->
         
         <!-- Custom styles for site -->
         <link href="../site/css/myStyles.css" rel="stylesheet">
@@ -42,33 +45,20 @@
     <body id="contact">    
         <!-- Full Site -->
         <div class="site-wrapper">
-            
-            <!-- Top of Site / Header -->
-            <div class="header">
-                <div class="masthead-brand">
-                </div>
-            </div>
 
             <!-- Menu Pages list -->
             <div class="pages">
-                <ul class="nav masthead-nav">
+                <ul class="top-menu">
                     <div class="brand">
                     </div>
                     <li><a href="../" id="homeNav">Home</a></li>
                     <li><a href="../about/" id="aboutNav">About</a></li>
                     <li><a href="../contact/" id="contactNav">Contact</a></li>
                     <li><a href="../projects/" id="projectsNav">Projects</a></li>
-                    <!--
-                    <li><a href="cs345f14.html">Fall</a></li>  -->
+                    <!-- <li><a href="cs345f14.html">Fall</a></li>  -->
                 </ul>
             </div>
-            
             <!-- Main Body of Page -->
-            <!--<div class="inner cover">
-                <p class="cover-heading">Welcome</p>
-                <p class="cover-heading">Website under development</p>
-                <p class="cover-heading">Coming soon</p>
-            </div> -->
             <div class="content">
                 <div class="about_heading">
                     <p id="about_name">Andres Jimenez</p>

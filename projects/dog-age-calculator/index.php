@@ -1,25 +1,23 @@
-
 <!DOCTYPE html>
 <html lang="en">
     <head>
+        <!-- google font Roboto -->
         <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300|Open+Sans:400,300' rel='stylesheet' type='text/css'>
-
-        
+        <!-- jQuery and jQuery UI -->
         <script   src="https://code.jquery.com/jquery-3.1.0.js"   integrity="sha256-slogkvB1K3VOkzAI8QITxV3VzpOnkeNVsKvtkYLMjfk="   crossorigin="anonymous"></script>
         <script   src="https://code.jquery.com/ui/1.12.0/jquery-ui.js"   integrity="sha256-0YPKAwZP7Mp3ALMRVB2i8GXeEndvCq3eSl/WsAl1Ryk="   crossorigin="anonymous"></script>
+        <!-- custom ui theme -->
         <link href="jquery-ui.css" rel="stylesheet">
+
         <script src="http://cdn.jsdelivr.net/jquery.validation/1.15.1/jquery.validate.min.js"></script>
-        <script type="text/javascript" src="jquery.validate.js"></script>
-
-
-        <!-- FIX JQUERY VERSIONSSSSSSSS     -->
-
+        <!-- <script type="text/javascript" src="jquery.validate.js"></script> -->
 
         <meta charset="utf-8">
 
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+        
         <meta name="keywords" content="andres, jimenez, tenafly, njit, software">
         <meta name="description" content="Personal Web Page of Andres Jimenez">
         <meta name="author" content="Andres Jimenez">
@@ -28,7 +26,7 @@
         <title>Web-page of Andres Jimenez</title>
 
         <!-- Bootstrap -->
-        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" integrity="sha256-7s5uDGW3AHqw6xtJmNNtr+OBRJUlgkNJEo78P4b0yRw= sha512-nNo+yCHEyn0smMxSswnf/OnX6/KwJuZTlNZBjauKhTK0c+zT+q5JOCx0UFhXQ6rJR9jg6Es8gPuD2uZcYDLqSw==" crossorigin="anonymous">
+        <!-- <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" integrity="sha256-7s5uDGW3AHqw6xtJmNNtr+OBRJUlgkNJEo78P4b0yRw= sha512-nNo+yCHEyn0smMxSswnf/OnX6/KwJuZTlNZBjauKhTK0c+zT+q5JOCx0UFhXQ6rJR9jg6Es8gPuD2uZcYDLqSw==" crossorigin="anonymous"> -->
         <!-- <link href="css/bootstrap.min.css" rel="stylesheet"> -->
         
         <!-- Custom styles for site -->
@@ -53,39 +51,25 @@
 
             ga('create', 'UA-73977107-1', 'auto');
             ga('send', 'pageview');
-        </script>  
+        </script>
+
     </head>
 
     <body id="projects">    
         <!-- Full Site -->
         <div class="site-wrapper">
-            
-            <!-- Top of Site / Header -->
-            <div class="header">
-                <div class="masthead-brand">
-                </div>
-            </div>
 
             <!-- Menu Pages list -->
             <div class="pages">
-                <ul class="nav masthead-nav">
-                    <div class="brand">
-                    </div>
+                <ul class="top-menu">
                     <li><a href="../../" id="homeNav">Home</a></li>
                     <li><a href="../../about/" id="aboutNav">About</a></li>
                     <li><a href="../../contact/" id="contactNav">Contact</a></li>
                     <li><a href="../../projects/" id="projectsNav">Projects</a></li>
-                    <!--
-                    <li><a href="cs345f14.html">Fall</a></li>  -->
+                    <!-- <li><a href="cs345f14.html">Fall</a></li>  -->
                 </ul>
             </div>
-            
             <!-- Main Body of Page -->
-            <!--<div class="inner cover">
-                <p class="cover-heading">Welcome</p>
-                <p class="cover-heading">Website under development</p>
-                <p class="cover-heading">Coming soon</p>
-            </div> -->
             <div class="content">
                 <div id="dogAge_heading">
                     <p id="dogAge_name">Dog Age Calculator</p>

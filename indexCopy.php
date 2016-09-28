@@ -3,32 +3,10 @@
     <head>
         <!-- google font Roboto -->
         <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300|Open+Sans:400,300' rel='stylesheet' type='text/css'>
-        <!-- jQuery and jQuery UI -->
-        <script   src="https://code.jquery.com/jquery-3.1.0.js"   integrity="sha256-slogkvB1K3VOkzAI8QITxV3VzpOnkeNVsKvtkYLMjfk="   crossorigin="anonymous"></script>
-        <script   src="https://code.jquery.com/ui/1.12.0/jquery-ui.js"   integrity="sha256-0YPKAwZP7Mp3ALMRVB2i8GXeEndvCq3eSl/WsAl1Ryk="   crossorigin="anonymous"></script>
-        <!-- restive js -->
-        <script type="text/javascript" src="site/js/restive.min.js"></script>
-        <script type="text/javascript">
-            $(function(){
-                if($.restive.isPC())
-                    {
-                        $('body').restive({
-                            breakpoints: ['560', '960'],
-                            classes: ['mobi phone', 'mobi tablet'],
-                            force_dip: true
-                        });
-                    }
-                else if ($.restive.isMobile())
-                    {
-                        $('body').restive({
-                            breakpoints: ['10000'],
-                            classes: ['nb'],
-                            turbo_classes: 'is_mobile=mobi,is_phone=phone,is_tablet=tablet,is_landscape=landscape',
-                            force_dip: true
-                        });
-                    }
-            });
-        </script>
+        <!-- jQuery and jQuery UI with theme -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+        <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/themes/flick/jquery-ui.css" />
+        <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/jquery-ui.min.js"></script>
 
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -44,7 +22,7 @@
         <title>Web-site of Andres Jimenez</title>
 
         <!-- Bootstrap -->
-        <!-- <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" integrity="sha256-7s5uDGW3AHqw6xtJmNNtr+OBRJUlgkNJEo78P4b0yRw= sha512-nNo+yCHEyn0smMxSswnf/OnX6/KwJuZTlNZBjauKhTK0c+zT+q5JOCx0UFhXQ6rJR9jg6Es8gPuD2uZcYDLqSw==" crossorigin="anonymous"> -->
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" integrity="sha256-7s5uDGW3AHqw6xtJmNNtr+OBRJUlgkNJEo78P4b0yRw= sha512-nNo+yCHEyn0smMxSswnf/OnX6/KwJuZTlNZBjauKhTK0c+zT+q5JOCx0UFhXQ6rJR9jg6Es8gPuD2uZcYDLqSw==" crossorigin="anonymous">
         <!-- <link href="css/bootstrap.min.css" rel="stylesheet"> -->
         
         <!-- Custom styles for site  -->
@@ -66,30 +44,44 @@
 
             ga('create', 'UA-73977107-1', 'auto');
             ga('send', 'pageview');
-        </script>
-
+        </script> 
     </head>
 
     <body id="home">    
         <!-- Full Site -->
         <div class="site-wrapper">
+            
+            <!-- Top of Site / Header -->
+            <div class="header">
+                <div class="masthead-brand">
+                </div>
+            </div>
 
             <!-- Menu Pages list -->
             <div class="pages">
-                <ul class="top-menu">
+                <ul class="nav masthead-nav">
+                    <div class="brand">
+                    </div>
                     <li><a href="." id="homeNav">Home</a></li>
                     <li><a href="about/" id="aboutNav">About</a></li>
                     <li><a href="contact/" id="contactNav">Contact</a></li>
                     <li><a href="projects/" id="projectsNav">Projects</a></li>
-                    <!-- <li><a href="cs345f14.html">Fall</a></li>  -->
+                    <!--
+                    <li><a href="cs345f14.html">Fall</a></li>  -->
                 </ul>
             </div>
+            
             <!-- Main Body of Page -->
+            <!--<div class="inner cover">
+                <p class="cover-heading">Welcome</p>
+                <p class="cover-heading">Website under development</p>
+                <p class="cover-heading">Coming soon</p>
+            </div> -->
             <div class="content">
                 <div class="text-photo">
                     <div class="name">
-                        <p id="First">Andres</p>
-                        <p id="Last">Jimenez</p> 
+                        <h2 id="First">Andres</h2>
+                        <h2 id="Last">Jimenez</h2> 
                     </div>
                     <div class="bg">
                     </div>
