@@ -1,12 +1,12 @@
+/****************************************************************************************************************************************************
+ *																		Defaults																	*
+ ****************************************************************************************************************************************************/
+
+
 a:focus,
 a:hover {
 	color: #fff;
 }
-
-/* 
-	color:		#0073ea; blue color (hover on dog calc buttons)
-	color:		#fa1f18; red color (submit on contact page and dog calc page, mail logo on footer, )
-*/
 
 /* Custom default button */
 .btn-default,
@@ -17,6 +17,11 @@ a:hover {
 	background-color: #fff;
 	border: 1px solid #fff;
 }
+
+/******* some default colors used on site ********
+	color:		#0073ea; blue color (hover on dog calc buttons)
+	color:		#fa1f18; red color (submit on contact page and dog calc page, mail logo on footer, )
+*/
 
 /****************************************************************************************************************************************************
  *																	Base structure 																	*
@@ -68,8 +73,8 @@ body {
 
 .top-menu {
 	margin: 0;
+	padding-left: 0;
 }
-
 
 .top-menu > li {
 	display: inline-block;
@@ -180,18 +185,19 @@ label {
 /********************************************************************** home page *******************************************************************/
 
 .text-photo {
+	margin: 0 auto;
 	max-width: 800px;
-	position: relative;
+	/*position: relative;
 	left: 50%;
-	transform: translateX(-50%);
+	transform: translateX(-50%);*/
 }
 
 .name {
-	/*width: 350px;*/
 	float: left;
-	position: absolute;
+	/*width: 350px;*/
+	/*position: absolute;
 	top: 50%;
-	transform: translateY(-50%);
+	transform: translateY(-50%);*/
 }
 
 .name p {
@@ -205,7 +211,6 @@ label {
 	text-transform: uppercase;
 }
 
-
 #First  { color: #313136; }
 #Last  { color: #313136; }
 
@@ -214,20 +219,29 @@ label {
 
 
 /* home page image of me */
-.bg {
+
+.my_image_div { float: left; }
+
+#my_image { 
+	display: block;
+/*	width: auto;
+	height: auto;*/
+}
+
+/*.bg {
 	background-image: url(../media/silhouette12k.png);
 	background-repeat: no-repeat;
 	background-size: contain;
 	height: 624px; 
 	width: 450px;
 	margin-left: 350px;
-}
+}*/
 
 
 /* home page area under image of me */
 
 .intro_line {
-	width: 800px;
+	max-width: 800px;
 	border: 2px solid #313136;
 	border-left: none;
 	border-right: none;
@@ -619,6 +633,7 @@ button.dogAgeButton {
 
 .mobi.phone .top-menu > li {
 	display: block;
+	width: auto;
 }
 
 .mobi.phone .name {
@@ -628,6 +643,29 @@ button.dogAgeButton {
     transform: initial;
 }
 
+.mobi.tablet .name {
+	float: initial;
+    position: initial;
+    top: initial;
+    transform: initial;
+}
+
+.mobi.phone .top-menu > li > a { width: auto; }
+
+/* center image of me on main page */
+.mobi.phone .my_image_div { float: initial; }
+.mobi.phone #my_image {
+	max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+}
+
+.mobi.tablet .my_image_div { float: initial; }
+.mobi.tablet #my_image {
+	max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+}
 
 
 

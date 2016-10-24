@@ -91,11 +91,13 @@
                         <p id="First">Andres</p>
                         <p id="Last">Jimenez</p> 
                     </div>
-                    <div class="bg">
+                    <div class="my_image_div">
+                        <img src="site/media/silhouette12k.png" width="450" height="624" id="my_image">
                     </div>
+                    <div style="clear: both;"></div>
                 </div>
                 <div class="intro_line">
-                </div>    
+                </div>
                 <div class="hello-world">
                     <p>Hello, World! Software developer here.</p>
                 </div>
