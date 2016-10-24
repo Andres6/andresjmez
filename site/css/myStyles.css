@@ -142,6 +142,21 @@ body#projects a#projectsNav {
 	border-top-right-radius: 15px; */
 }
 
+/** hide html mobile menu **/ 
+.mobile_nav { display: none; }
+
+.slicknav_nav a {
+	text-transform: uppercase;
+}
+
+.slicknav_menu {
+	background: #313136;
+}
+
+.slicknav_btn {
+	background-color: initial;
+}
+
 
 /********************************************************************* end of header ****************************************************************/
 
@@ -632,6 +647,15 @@ button.dogAgeButton {
 /****************************************************************************************************************************************************
  *                                                                      Restiv			                                   							*
  ****************************************************************************************************************************************************/
+
+/*.mobi.phone .top-menu { display: none; }*/
+
+.mobi.phone .slicknav_btn {
+  display: inline-block;
+  float: none;
+}
+
+.mobi.phone .pages { display: none; }
 
 .mobi.phone .top-menu > li {
 	display: block;
