@@ -184,6 +184,12 @@ label {
 
 /********************************************************************** home page *******************************************************************/
 
+#home_content {
+	margin: 10px;
+	margin-left: 20px;
+	margin-right: 20px;
+}
+
 .text-photo {
 	margin: 0 auto;
 	max-width: 800px;
@@ -261,31 +267,27 @@ label {
 
 /********************************************************************** about page ******************************************************************/
 
+#about_content {
+	margin: 10px;
+	margin-left: 20px;
+	margin-right: 20px;
+}
+
 .about_text {
 	max-width: 800px;
-	position: relative;
-	left: 50%;
-	transform: translateX(-50%);
+	margin: 0 auto;
 }
 
 .about_line {
-	width: 800px;
-	margin-bottom: 20px;
-	border: 2px solid #313136;
-	border-left: none;
-	border-right: none;
-	border-bottom: none;
-	position: relative;
-	left: 50%;
-	transform: translateX(-50%);
+	max-width: 800px;
+	margin: 0 auto;
+	border: none;
+	border-top: 2px solid #313136;
 }
 
 .about_heading { 
 	max-width: 800px;
-	margin-top: 10px;
-	position: relative;
-	left: 50%;
-	transform: translateX(-50%);
+	margin: 0 auto;
 }
 
 #about_punchline {

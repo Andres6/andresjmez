@@ -6,7 +6,29 @@
         <!-- jQuery and jQuery UI -->
         <script   src="https://code.jquery.com/jquery-3.1.0.js"   integrity="sha256-slogkvB1K3VOkzAI8QITxV3VzpOnkeNVsKvtkYLMjfk="   crossorigin="anonymous"></script>
         <script   src="https://code.jquery.com/ui/1.12.0/jquery-ui.js"   integrity="sha256-0YPKAwZP7Mp3ALMRVB2i8GXeEndvCq3eSl/WsAl1Ryk="   crossorigin="anonymous"></script>
-        <!-- <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/themes/flick/jquery-ui.css" /> -->
+        <!-- restive js -->
+        <script type="text/javascript" src="../site/js/restive.min.js"></script>
+        <script type="text/javascript">
+            $(function(){
+                if($.restive.isPC())
+                    {
+                        $('body').restive({
+                            breakpoints: ['560', '960'],
+                            classes: ['mobi phone', 'mobi tablet'],
+                            force_dip: true
+                        });
+                    }
+                else if ($.restive.isMobile())
+                    {
+                        $('body').restive({
+                            breakpoints: ['10000'],
+                            classes: ['nb'],
+                            turbo_classes: 'is_mobile=mobi,is_phone=phone,is_tablet=tablet,is_landscape=landscape',
+                            force_dip: true
+                        });
+                    }
+            });
+        </script>
 
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -18,7 +40,7 @@
         <meta name="author" content="Andres Jimenez">
         <link rel="icon" href="../site/media/favicon.ico" type="image/x-icon">
         <link rel="shortcut icon" href="../site/media/favicon.ico" type="image/x-icon">
-        <title>Web-page of Andres Jimenez</title>
+        <title>Web-site of Andres Jimenez</title>
         
         <!-- Custom styles for site -->
         <link href="../site/css/myStyles.css" rel="stylesheet">
@@ -39,7 +61,8 @@
 
             ga('create', 'UA-73977107-1', 'auto');
             ga('send', 'pageview');
-        </script>  
+        </script>
+
     </head>
 
     <body id="about">    
@@ -58,20 +81,22 @@
             </div>
             <!-- Main Body of Page -->
             <div class="content">
-                <div class="about_heading">
-                    <p id="about_name">Andres Jimenez</p>
-                    <p id="about_punchline">a little about me...<p> 
-                    <!-- <p id="about_last">Jimenez</p> --> 
-                </div>
-                <div class="about_line">
-                </div>
-                <div class="about_text">
-                    <!-- <p>About Me</p> -->
-                    <p>I am a software developer based in northern New Jersey/New York City. I enjoy designing and programming software for different types of applications. I like taking intricate problems and applying logic to solve and create efficient applications.</p>
-                    <p>I developed this website myself to learn the ways of web development and also to play around with some fun project ideas. I am constantly working and updating my website and learning new skills in the process which is something I really enjoy.<p>
-                    <p>When my face is not chock-full o' code, I enjoy playing video games, playing sports, and just being outside(also inside) with my dogs. Pretty simple huh. Well thats me!</p>
-                    <p>If you want to know more feel free to contact me or view my resume below</p>
-                    <p><u>Link to resume coming soon</u></p>
+                <div id="about_content">
+                    <div class="about_heading">
+                        <p id="about_name">Andres Jimenez</p>
+                        <p id="about_punchline">a little about me...</p> 
+                        <!-- <p id="about_last">Jimenez</p> --> 
+                    </div>
+                    <div class="about_line">
+                    </div>
+                    <div class="about_text">
+                        <!-- <p>About Me</p> -->
+                        <p>I am a software developer based in northern New Jersey/New York City. I enjoy designing and programming software for different types of applications. I like taking intricate problems and applying logic to solve and create efficient applications.</p>
+                        <p>I developed this website myself to learn the ways of web development and also to play around with some fun project ideas. I am constantly working and updating my website and learning new skills in the process which is something I really enjoy.</p>
+                        <p>When my face is not chock-full o' code, I enjoy playing video games, playing sports, and just being outside(also inside) with my dogs. Pretty simple huh. Well thats me!</p>
+                        <p>If you want to know more feel free to contact me or view my resume below</p>
+                        <p><u>Link to resume coming soon</u></p>
+                    </div>
                 </div>
             </div>
             <!-- Footer -->

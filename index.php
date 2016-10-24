@@ -40,12 +40,7 @@
         <meta name="author" content="Andres Jimenez">
         <link rel="icon" href="site/media/favicon.ico" type="image/x-icon">
         <link rel="shortcut icon" href="site/media/favicon.ico" type="image/x-icon">
-        
         <title>Web-site of Andres Jimenez</title>
-
-        <!-- Bootstrap -->
-        <!-- <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" integrity="sha256-7s5uDGW3AHqw6xtJmNNtr+OBRJUlgkNJEo78P4b0yRw= sha512-nNo+yCHEyn0smMxSswnf/OnX6/KwJuZTlNZBjauKhTK0c+zT+q5JOCx0UFhXQ6rJR9jg6Es8gPuD2uZcYDLqSw==" crossorigin="anonymous"> -->
-        <!-- <link href="css/bootstrap.min.css" rel="stylesheet"> -->
         
         <!-- Custom styles for site  -->
         <link href="site/css/myStyles.css" rel="stylesheet">
@@ -86,20 +81,22 @@
             </div>
             <!-- Main Body of Page -->
             <div class="content">
-                <div class="text-photo">
-                    <div class="name">
-                        <p id="First">Andres</p>
-                        <p id="Last">Jimenez</p> 
+                <div id="home_content">
+                    <div class="text-photo">
+                        <div class="name">
+                            <p id="First">Andres</p>
+                            <p id="Last">Jimenez</p> 
+                        </div>
+                        <div class="my_image_div">
+                            <img src="site/media/silhouette12k.png" width="450" height="624" id="my_image">
+                        </div>
+                        <div style="clear: both;"></div>
                     </div>
-                    <div class="my_image_div">
-                        <img src="site/media/silhouette12k.png" width="450" height="624" id="my_image">
+                    <div class="intro_line">
                     </div>
-                    <div style="clear: both;"></div>
-                </div>
-                <div class="intro_line">
-                </div>
-                <div class="hello-world">
-                    <p>Hello, World! Software developer here.</p>
+                    <div class="hello-world">
+                        <p>Hello, World! Software developer here.</p>
+                    </div>
                 </div>
             </div>
             <!-- Footer -->

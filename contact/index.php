@@ -7,6 +7,29 @@
         <script   src="https://code.jquery.com/jquery-3.1.0.js"   integrity="sha256-slogkvB1K3VOkzAI8QITxV3VzpOnkeNVsKvtkYLMjfk="   crossorigin="anonymous"></script>
         <script   src="https://code.jquery.com/ui/1.12.0/jquery-ui.js"   integrity="sha256-0YPKAwZP7Mp3ALMRVB2i8GXeEndvCq3eSl/WsAl1Ryk="   crossorigin="anonymous"></script>
         <!-- <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/themes/flick/jquery-ui.css" /> -->
+        <!-- restive js -->
+        <script type="text/javascript" src="../site/js/restive.min.js"></script>
+        <script type="text/javascript">
+            $(function(){
+                if($.restive.isPC())
+                    {
+                        $('body').restive({
+                            breakpoints: ['560', '960'],
+                            classes: ['mobi phone', 'mobi tablet'],
+                            force_dip: true
+                        });
+                    }
+                else if ($.restive.isMobile())
+                    {
+                        $('body').restive({
+                            breakpoints: ['10000'],
+                            classes: ['nb'],
+                            turbo_classes: 'is_mobile=mobi,is_phone=phone,is_tablet=tablet,is_landscape=landscape',
+                            force_dip: true
+                        });
+                    }
+            });
+        </script>
 
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
