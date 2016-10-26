@@ -4,7 +4,7 @@ $(function(){
 
 	$('.mobile_menu').slicknav({
 		label: '',
-		duration: 1000
+		prependTo: ".wrapper"
 	});
 
 });

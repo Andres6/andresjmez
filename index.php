@@ -72,7 +72,7 @@
 
 	<body id="home">
 		<!-- Full Site -->
-		<div class="site-wrapper">
+		<div class="wrapper">
 
 			<!-- Main Menu -->
 			<div class="pages">
@@ -114,20 +114,19 @@
 				</div>
 			</div>
 
-			<!-- Footer -->
-			<div class="mastfoot">
-				<div class="footer_name"> 
-					<div class="social_icons"> 
-						<ul id="social_list"> 
-							<li><a href="https://github.com/Andres6" target="_blank" title="GitHub"><img src="site/media/github_white.png" id="footer_github"/></a></li>  
-							<li><a href="contact/" title="Contact Me"><img src="site/media/mail.png" id="footer_contact"/></a></li> 
-						</ul>
-					</div> 
-					<p>Website designed and built by Andres Jimenez</p> 
-					<p id="dev_note">*site under development, more coming soon!</p>
-				</div>
+		</div>
+		<!-- Footer -->
+		<div class="mastfoot">
+			<div class="footer_name"> 
+				<div class="social_icons"> 
+					<ul id="social_list"> 
+						<li><a href="https://github.com/Andres6" target="_blank" title="GitHub"><img src="site/media/github_white.png" id="footer_github"/></a></li>  
+						<li><a href="contact/" title="Contact Me"><img src="site/media/mail.png" id="footer_contact"/></a></li> 
+					</ul>
+				</div> 
+				<p>Website designed and built by Andres Jimenez</p> 
+				<p id="dev_note">*site under development, more coming soon!</p>
 			</div>
-
 		</div>
 	</body>
 </html>
