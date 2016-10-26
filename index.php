@@ -101,6 +101,7 @@
 						<div class="name">
 							<p id="First">Andres</p>
 							<p id="Last">Jimenez</p> 
+							<div style="clear: both;"></div>
 						</div>
 						<div class="my_image_div">
 							<img src="site/media/silhouette12k.png" width="700" height="1016" id="my_image">
