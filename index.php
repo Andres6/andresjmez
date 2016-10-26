@@ -8,7 +8,7 @@
 		<link href="site/css/myStyles.css" rel="stylesheet">
 		<!-- jQuery and jQuery UI -->
 		<script   src="https://code.jquery.com/jquery-3.1.0.js"   integrity="sha256-slogkvB1K3VOkzAI8QITxV3VzpOnkeNVsKvtkYLMjfk="   crossorigin="anonymous"></script>
-		<script   src="https://code.jquery.com/ui/1.12.0/jquery-ui.js"   integrity="sha256-0YPKAwZP7Mp3ALMRVB2i8GXeEndvCq3eSl/WsAl1Ryk="   crossorigin="anonymous"></script>
+		<!-- <script   src="https://code.jquery.com/ui/1.12.0/jquery-ui.js"   integrity="sha256-0YPKAwZP7Mp3ALMRVB2i8GXeEndvCq3eSl/WsAl1Ryk="   crossorigin="anonymous"></script> -->
 		<!-- Responsive links -->
 		<script   src="site/js/jquery.slicknav.min.js"></script>
 		<script   src="site/js/initResponsive.js"></script>
@@ -103,7 +103,7 @@
 							<p id="Last">Jimenez</p> 
 						</div>
 						<div class="my_image_div">
-							<img src="site/media/silhouette12k.png" width="450" height="624" id="my_image">
+							<img src="site/media/silhouette12k.png" width="700" height="1016" id="my_image">
 						</div>
 						<div style="clear: both;"></div>
 					</div>
@@ -113,8 +113,8 @@
 					</div>
 				</div>
 			</div>
-
 		</div>
+
 		<!-- Footer -->
 		<div class="mastfoot">
 			<div class="footer_name"> 
@@ -128,5 +128,6 @@
 				<p id="dev_note">*site under development, more coming soon!</p>
 			</div>
 		</div>
+
 	</body>
 </html>

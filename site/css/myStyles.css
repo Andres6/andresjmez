@@ -237,8 +237,8 @@ label {
 
 #my_image { 
 	display: block;
-/*	width: auto;
-	height: auto;*/
+	max-width: 470px;
+	height: auto;
 }
 
 /*.bg {
@@ -250,18 +250,13 @@ label {
 	margin-left: 350px;
 }*/
 
-
 /* home page area under image of me */
 
 .intro_line {
-	max-width: 800px;
-	border: 2px solid #313136;
-	border-left: none;
-	border-right: none;
-	border-bottom: none;
-	position: relative;
-	left: 50%;
-	transform: translateX(-50%);
+    max-width: 800px;
+    margin: 0 auto;
+    border: none;
+    border-top: 2px solid #313136;
 }
 
 .hello-world p{
@@ -658,13 +653,6 @@ button.dogAgeButton {
 
 .mobi.phone .pages { display: none; }
 
-/*.mobi.phone .top-menu > li {
-	display: block;
-	width: auto;
-}
-
-.mobi.phone .top-menu > li > a { width: auto; }*/
-
 .mobi.phone .name {
 	float: initial;
     position: initial;
@@ -689,7 +677,7 @@ button.dogAgeButton {
 
 .mobi.tablet .my_image_div { float: initial; }
 .mobi.tablet #my_image {
-	max-width: 100%;
+	max-width: 500px;
     height: auto;
     margin: 0 auto;
 }
