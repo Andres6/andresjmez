@@ -49,7 +49,6 @@
 		<title>Web-site of Andres Jimenez</title>
 		
 		
-		
 		<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
 		<!--[if lt IE 9]>
@@ -95,7 +94,7 @@
 				</ul>
 			</div>
 
-			<!-- Main Body of Page -->
+			<!-- Main Content of Page -->
 			<div class="content">
 				<div id="about_content">
 					<div class="about_heading">
@@ -116,7 +115,7 @@
 				</div>
 			</div>
 		</div>
-		
+
 		<!-- Footer -->
 		<div class="mastfoot">
 			<div class="footer_name">
