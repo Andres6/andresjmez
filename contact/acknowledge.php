@@ -12,7 +12,16 @@
 
 		//echo $message;
 
-		$success = mail($to, $subject, $message, $headers);
+
+		$headers = "From: user@andresjmez.com\r\n";
+		$headers .= 'Content-Type: text/plain; charset=utf-8';
+
+		$email = filter_input(INPUT_POST, 'email', FILTER_VALIDATE_EMAIL);
+		if ($email) {
+			$headers .= "\r\nReply-To: $email";
+		}
+
+		$success = mail($to, $subject, $message, $headers, '-fandresjmez@gmail.com');
 
 	}
 
