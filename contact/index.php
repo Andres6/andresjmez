@@ -103,25 +103,6 @@
 					</div>
 					<div id="contact_line"></div>
 					<div id="contact_area">
-						<!-- <?php
-							// if(isset($_POST['submit'])) {
-							// 	$to = "andresjmez@gmail.com";
-							// 	$from = $_POST['email'];
-							// 	$name = $_POST['name'];
-							// 	$subject = "Hello, I'm " . $name;
-							// 	$message = $_POST['message'];
-
-							// 	$headers = "From:" . $from;
-							// 	$newUrl = "http://www.andresjmez.com/contact/sent.php";
-
-							// 	if (mail($to,$subject,$message,$headers)){
-							// 		echo "sent ok";
-							// 		header('Location: '.$newUrl);
-							// 	} else {
-							// 		echo "Error sending mail, please check all fields and try again";
-							// 	}
-							// }
-						?> -->
 						<div id="mail_logo">
 							<a href="mailto:andresjmez@gmail.com"><img src="../site/media/mail.png" id="contact_logo"></a>
 						</div>
@@ -130,7 +111,7 @@
 							<p>--or--</p>
 						</div>
 						<div id="contact_form_div">
-							<form id="contactForm" method="post" action="acknowledge.php">
+							<form id="contactForm" method="post" action="mailSent.php">
 								<label><input type="text" class="contactMe" id="contactMeName" name="name" placeholder="Your Name" required></label>
 								<label><input type="text" class="contactMe" id="contactMeEmail" name="email" type="email" placeholder="Your Email Address" required></label>
 								<label><textarea id="contactMeMessage" name="message" placeholder="Your Message..." required></textarea></label>
@@ -140,6 +121,7 @@
 					</div>
 				</div>
 			</div>
+
 		</div>
 
 		<!-- Footer -->

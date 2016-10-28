@@ -1,22 +1,27 @@
-<!-- <?php
-							// if(isset($_POST['submit'])) {
-							// 	$to = "andresjmez@gmail.com";
-							// 	$from = $_POST['email'];
-							// 	$name = $_POST['name'];
-							// 	$subject = "Hello, I'm " . $name;
-							// 	$message = $_POST['message'];
+<?php
 
-							// 	$headers = "From:" . $from;
-							// 	$newUrl = "http://www.andresjmez.com/contact/sent.php";
+	if(isset($_POST['send'])) {
 
-							// 	if (mail($to,$subject,$message,$headers)){
-							// 		echo "sent ok";
-							// 		header('Location: '.$newUrl);
-							// 	} else {
-							// 		echo "Error sending mail, please check all fields and try again";
-							// 	}
-							// }
-?> -->
+		$to = 'andresjmez@gmail.com';
+		$subject = 'Whats up, this is me';
+
+		$message = 'Name: ' . $_POST['name'] . "\r\n\r\n";
+		$message .= 'Email: ' . $_POST['email'] . "\r\n\r\n";
+		$message .= 'Comments: ' . $_POST['message'];
+
+		$headers = "From: user@andresjmez.com\r\n";
+		$headers .= 'Content-Type: text/plain; charset=utf-8';
+
+		$email = filter_input(INPUT_POST, 'email', FILTER_VALIDATE_EMAIL);
+		if ($email) {
+			$headers .= "\r\nReply-To: $email";
+		}
+
+		$success = mail($to, $subject, $message, $headers, '-fandresjmez@gmail.com');
+	}
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 	<head>
@@ -66,14 +71,6 @@
 		<link rel="icon" href="../site/media/favicon.ico" type="image/x-icon">
 		<link rel="shortcut icon" href="../site/media/favicon.ico" type="image/x-icon">
 		<title>Web-site of Andres Jimenez</title>
-
-
-		<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-		<!--[if lt IE 9]>
-		  <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-		  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-		<![endif]-->
 		
 		<!-- Google Analytics -->
 		<script>
@@ -115,15 +112,20 @@
 
 			<!-- Main Content of Page -->
 			<div class="content">
-				<div id="contact_content">
-					<div class="sent_area">
-						<div class="mail_logo">
-							<img src="../site/media/mail.png" id="sent_logo"> 
-						</div>
-						<p>Thank you, your message has been sent!</p>
+				<div id="sent_content">
+					<div id="mail_status">
+						<img src="../site/media/mail.png" id="sent_logo">
+						<?php if(isset($success) && $success) { ?>
+							<h2>Thank you</h2>
+							<p>Your message has been sent</p>
+						<?php } else { ?>
+							<h2>Oops</h2>
+							<p>Sorry, There was an error sending your message</p>
+						<?php } ?>
 					</div>
 				</div>
 			</div>
+
 		</div>
 
 		<!-- Footer -->
@@ -131,13 +133,14 @@
 			<div class="footer_name">
 				<div class="social_icons">
 					<ul id="social_list">
-						<li><a href="https://github.com/Andres6" target="_blank" title="GitHub"><img src="../site/media/github_white.png" id="footer_github"/></a></li> 
+						<li><a href="https://github.com/Andres6" target="_blank" title="GitHub"><img src="../site/media/github_white.png" id="footer_github"/></a></li>
 						<li><a href="../contact/" title="Contact Me"><img src="../site/media/mail.png" id="footer_contact"/></a></li>
 					</ul>
 				</div>
 				<p>Website designed and built by Andres Jimenez</p>
-				<p id="dev_note">*site under development, more coming soon!</p> 
+				<p id="dev_note">*site under development, more coming soon!</p>
 			</div>
 		</div>
+
 	</body>
 </html>

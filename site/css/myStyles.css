@@ -431,25 +431,16 @@ input:focus, textarea:focus {
 
 /****************************************************************** contact sent page **************************************************************/
 
-.sent_area { 
-	margin-top: 50px;
-}
+div#sent_content { margin: 0 20px; }
 
-.sent_area p {
-	margin-top: 10px;
-	font-size: 16px;
-	font-weight: 400;
-	letter-spacing: 1px;
-}
-
-#sent_logo {
-	height: 90px;
-	width: 90px;
-	border: 0;
+div#mail_status {
+	max-width: 800px;
 	margin: 0 auto;
-	/*background-image: url(../media/mail.png);
-	background-repeat: no-repeat;
-	background-size: contain;*/
+}
+
+img#sent_logo {
+	display: block;
+	margin: 0 auto;
 }
 
 /*************************************************************** dog age calculator page ************************************************************/
