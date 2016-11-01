@@ -54,7 +54,8 @@ function showTrueAge() {
 		finalAge = finalAge.toFixed(1);
 
 		$("#ageResult").hide();
-		$("#ageResult").show("blind", 1000);
+		$("#ageResult").show();
+		//$("#ageResult").show("blind", 1000);
 		$("#answer").empty();
 		$("#answer").append(finalAge);
 		//alert("dog is " + finalAge);
@@ -67,7 +68,7 @@ function showTrueAge() {
 $(function(){
 	$("#dogAgeCalcDiv").show();
 
-	$( "input[type='radio']" ).checkboxradio({
+	$( "input[name='dogAgeRadio']" ).checkboxradio({
 		icon: false
 	});
 	
