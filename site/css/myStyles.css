@@ -168,22 +168,20 @@ body#projects a#projectsNav {
 }
 
 .name {
+	margin: 0 auto;
 	float: left;
-	/*width: 350px;*/
 	/*position: absolute;
 	top: 50%;
 	transform: translateY(-50%);*/
 }
 
 .name p {
-	margin-top: 0;
-	margin-bottom: 0;
-	font-family: 'Roboto', sans-serif;
-	font-size: 90px;
+	margin: 0;
+	font-size: 4em;
 	font-weight: 300;
-	letter-spacing: -8px;
-	/*line-height: 55px;*/
+	/*letter-spacing: -8px;*/
 	text-transform: uppercase;
+	/*line-height: 55px;*/
 }
 
 #First  { color: #313136; }
@@ -221,12 +219,7 @@ body#projects a#projectsNav {
 	border-top: 2px solid #313136;
 }
 
-.hello-world p{
-	color: #313136;
-	font-size: 15px;
-	font-weight: 400;
-	letter-spacing: 1px;
-}
+.hello-world p { letter-spacing: 1px; }
 
 /********************************************************************** about page ******************************************************************/
 
@@ -631,31 +624,25 @@ button.dogAgeButton {
 	display: inline-block;
 	background: #313136;
 	width: 100%;
-	font-size: 4em;
+	font-size: 1.6em;
 }
 
 .mobi.phone .slicknav_btn {
   display: inline-block;
-  float: none;
+  float: left;
 }
 
 .mobi.phone .pages { display: none; }
 
 .mobi.phone .name {
 	float: initial;
-	position: initial;
-	top: initial;
-	transform: initial;
 }
 
-.mobi.phone p#First { float: left; }
-.mobi.phone p#Last { float: right; }
+/*.mobi.phone p#First { float: left; }
+.mobi.phone p#Last { float: right; }*/
 
 .mobi.tablet .name {
 	float: initial;
-	position: initial;
-	top: initial;
-	transform: initial;
 }
 
 /* center image of me on main page */
@@ -673,7 +660,4 @@ button.dogAgeButton {
 	margin: 0 auto;
 }
 
-.mobi.phone .hello-world p {
-	font-size: 2.5em;
-}
 
