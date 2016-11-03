@@ -122,7 +122,7 @@
 									<input type="radio" id="dogXLarge" name="dogAgeRadio" value="4" required>
 								</fieldset>
 								<fieldset id="dog_human_age">
-									<legend id="dog_age_years">Enter pup's age in human years</legend>
+									<legend id="dog_age_years">Enter pup's current age</legend>
 									<div id="humanAgeError"></div>
 									<input class="ageInput" id="humanAge" name="humanAge" type="text" maxlength="4" required><br>
 								</fieldset>

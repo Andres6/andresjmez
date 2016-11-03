@@ -106,10 +106,26 @@
 					<div id="projects_list">
 						<div id="dog_age_link">
 							<a href="dog-age-calculator/">Dog Age Calculator</a>
-							<p>This is a calculator to find out how old your best friend actually is in years when considering the maturity and life span of dogs.</p>
+							<p>The common myth of 1 year for your dog equals 7 "human years" is not exactly accurate as there are more factors to consider and a little more math involved in calculating your best friend's age. Use this calculator to learn more and find out how old your pup actually is in "human years" considering 4 different sizes of dogs depending on weight.</p>
 						</div>
-						<p>Oops! still under development, more coming soon...</p>
+						<div id="projects_divide"></div>
+						<div id="project_x">
+							<a href="#">Project X</a>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque sapien libero, ultricies eu placerat sed, condimentum in elit. Duis placerat nulla convallis elit aliquet, a elementum ex porta. Vivamus mauris ante, faucibus ac rutrum a, venenatis non massa. Nam id dolor non ante pharetra auctor euismod vitae lectus.</p>
+						</div>
+						<div id="projects_divide"></div>
+						<div id="project_y">
+							<a href="#">Project Y</a>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque sapien libero, ultricies eu placerat sed, condimentum in elit. Duis placerat nulla convallis elit aliquet, a elementum ex porta. Vivamus mauris ante, faucibus ac rutrum a, venenatis non massa. Nam id dolor non ante pharetra auctor euismod vitae lectus.</p>
+						</div>
+						<div id="projects_divide"></div>
+						<div id="project_z">
+							<a href="#">Project Z</a>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque sapien libero, ultricies eu placerat sed, condimentum in elit. Duis placerat nulla convallis elit aliquet, a elementum ex porta. Vivamus mauris ante, faucibus ac rutrum a, venenatis non massa. Nam id dolor non ante pharetra auctor euismod vitae lectus.</p>
+						</div>
+						<div id="projects_divide"></div>
 					</div>
+					<p>Oops! still under development, more coming soon...</p>
 				</div>
 			</div>	
 		</div>

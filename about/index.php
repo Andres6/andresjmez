@@ -98,15 +98,13 @@
 			<!-- Main Content of Page -->
 			<div class="content">
 				<div id="about_content">
-					<div class="about_heading">
+					<div id="about_heading">
 						<p id="about_name">Andres Jimenez</p>
 						<p id="about_punchline">a little about me...</p> 
 						<!-- <p id="about_last">Jimenez</p> -->
 					</div>
-					<div class="about_line">
-					</div>
-					<div class="about_text">
-						<!-- <p>About Me</p> -->
+					<div id="about_line"></div>
+					<div id="about_text">
 						<p>I am a software developer based in northern New Jersey/New York City. I enjoy designing and programming software for different types of applications. I like taking intricate problems and applying logic to solve and create efficient applications.</p>
 						<p>I developed this website myself to learn the ways of web development and also to play around with some fun project ideas. I am constantly working and updating my website and learning new skills in the process which is something I really enjoy.</p>
 						<p>When my face is not chock-full o' code, I enjoy playing video games, playing sports, and just being outside(also inside) with my dogs. Pretty simple huh. Well thats me!</p>

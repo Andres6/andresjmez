@@ -90,9 +90,9 @@
 			<!-- Main Content of Page -->
 			<div class="content">
 				<div id="contact_content">
-					<div class="about_heading">
-						<p id="about_name">Andres Jimenez</p>
-						<p id="about_punchline">reach me at my email address below or simply fill out the form and send...</p>
+					<div id="contact_heading">
+						<p id="contact_name">Andres Jimenez</p>
+						<p id="contact_punchline">reach me at my email address below or simply fill out the form and send...</p>
 					</div>
 					<div id="contact_line"></div>
 					<div id="contact_area">

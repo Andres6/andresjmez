@@ -223,38 +223,15 @@ body#projects a#projectsNav {
 
 /********************************************************************** about page ******************************************************************/
 
-#about_content { margin: 0 20px; }
+div#about_content { margin: 0 20px; }
 
-.about_text {
+div#about_heading { 
 	max-width: 800px;
 	margin: 0 auto;
 }
 
-.about_line {
-	max-width: 800px;
-	margin: 0 auto;
-	border: none;
-	border-top: 2px solid #313136;
-}
-
-.about_heading { 
-	max-width: 800px;
-	margin: 0 auto;
-}
-
-#about_punchline {
-	color: #313136;
-	text-align: left;
-	font-size: 17px;
-	font-weight: 400;
-	letter-spacing: 1px;
-	/*line-height: 50px;*/
-}
-
-#about_name {
+p#about_name {
 	margin: 0;
-	color: #313136;
-	font-family: 'Roboto', sans-serif;
 	font-size: 30px;
 	font-weight: 300;
 	letter-spacing: -1px;
@@ -262,10 +239,27 @@ body#projects a#projectsNav {
 	text-align: left;
 }
 
-.about_text p{
-	color: #313136;
+p#about_punchline {
+	text-align: left;
+	font-size: 17px;
+	font-weight: 400;
+	letter-spacing: 1px;
+}
+
+div#about_line {
+	max-width: 800px;
+	margin: 0 auto;
+	border: none;
+	border-top: 2px solid #313136;
+}
+
+div#about_text {
+	max-width: 800px;
+	margin: 0 auto;
+}
+
+div#about_text p {
 	text-align: justify;
-	font-size: 15px;
 	letter-spacing: 1px;
 	line-height: 27px;
 }
@@ -273,16 +267,49 @@ body#projects a#projectsNav {
 
 /********************************************************************* contact page *****************************************************************/
 
-#contact_content { margin: 0 20px; }
+div#contact_content { margin: 0 20px; }
 
-#contact_line {
+div#contact_heading { 
+	max-width: 800px;
+	margin: 0 auto;
+}
+
+p#contact_name {
+	margin: 0;
+	font-size: 30px;
+	font-weight: 300;
+	letter-spacing: -1px;
+	text-transform: uppercase;
+	text-align: left;
+}
+
+p#contact_punchline {
+	text-align: left;
+	font-size: 17px;
+	font-weight: 400;
+	letter-spacing: 1px;
+}
+
+div#contact_line {
 	max-width: 800px;
 	margin: 0 auto 10px;
 	border: none;
 	border-top: 2px solid #313136;
 }
 
-#contact_logo {
+div#contact_area {
+	max-width: 800px;
+	margin: 0 auto;
+}
+
+div#contact_area p {
+	margin-top: 10px;
+	font-size: 15px;
+	font-weight: 400;
+	letter-spacing: 1px;
+}
+
+img#contact_logo {
 	height: 70px;
 	width: 70px;
 	border: 0;
@@ -292,28 +319,14 @@ body#projects a#projectsNav {
 	background-size: contain;*/
 }
 
-div#contact_area {
-	max-width: 800px;
-	margin: 0 auto;
-}
-
-#contact_area p {
-	margin-top: 10px;
-	font-size: 15px;
-	font-weight: 400;
-	letter-spacing: 1px;
-}
-
-#contactForm {
+form#contactForm {
 	max-width: 400px;
 	margin: 0 auto;
 }
 
-#contactMeEmail {
-	margin: 10px auto;
-}
+input#contactMeEmail { margin: 10px auto; }
 
-.contactMe {
+input.contactMe {
 	display: block;
 	outline: none;
 	width: 100%;
@@ -332,7 +345,7 @@ div#contact_area {
 }
 
 
-#contactMeMessage {
+textarea#contactMeMessage {
 	display: block;
 	outline: none;
 	width: 100%;
@@ -355,7 +368,7 @@ input:focus, textarea:focus {
 	box-shadow: 0px 1px 5px 0px #494950;
 }
 
-#contactMeSubmit {
+input#contactMeSubmit {
 	display: block;
 	margin: 0 auto;
 	padding: 0;
@@ -373,7 +386,7 @@ input:focus, textarea:focus {
 	-webkit-border-radius: 5px;
 }
 
-#contactMeSubmit:hover {
+input#contactMeSubmit:hover {
 	background-color: #e21c15;
 	background-image: linear-gradient(to bottom, #bc1526, #fa1f18);
 }
@@ -404,14 +417,14 @@ div#projects_heading {
 
 p#projects_name {
 	margin: 0;
-	color: #313136;
 	font-size: 30px;
+	font-weight: 300;
+	letter-spacing: -1px;
 	text-transform: uppercase;
 	text-align: left;
 }
 
 p#projects_punchline {
-	color: #313136;
 	text-align: left;
 	font-size: 17px;
 	letter-spacing: 1px;
@@ -428,14 +441,22 @@ div#projects_list {
 	max-width: 800px;
 	margin: 0 auto;
 }
+div#projects_divide {
+	max-width: 800px;
+	margin: 0 auto 10px;
+	border: none;
+	border-top: 1px dashed #313136;
+}
 
-div#dog_age_link { text-align: initial; }
+div#projects_list{ text-align: initial; }
 
-div#dog_age_link a { color: #0073ea; }
+div#projects_list a { color: #0073ea; }
 
-div#dog_age_link p { 
-	text-indent: 1em;
-	padding-left: 1em;
+div#projects_list p {
+	padding-left: 0.4em;
+	text-align: justify;
+	letter-spacing: 0.01em;
+	line-height: 1.4em;
 }
 
 
@@ -629,6 +650,13 @@ button.dogAgeButton {
 
 .mobi.phone .mobile_nav { display: none; }
 
+.mobi.phone div#projects_content,
+.mobi.phone div#about_content,
+.mobi.phone div#contact_content,
+.mobi.phone div#home_content {
+	margin: 0 20px;
+}
+
 .mobi.phone .slicknav_menu {
 	display: inline-block;
 	background: #313136;
@@ -636,9 +664,15 @@ button.dogAgeButton {
 	font-size: 1.6em;
 }
 
+ul.slicknav_nav {
+	margin: 0;
+	text-align: initial;
+}
+
 .mobi.phone .slicknav_btn {
-  display: inline-block;
-  float: left;
+	display: inline-block;
+	float: left;
+	margin: 0;
 }
 
 .mobi.phone .pages { display: none; }
