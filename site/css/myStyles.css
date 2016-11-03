@@ -419,7 +419,7 @@ p#projects_punchline {
 
 div#projects_line {
 	max-width: 800px;
-	margin: 0 auto;
+	margin: 0 auto 10px;
 	border: none;
 	border-top: 2px solid #313136;
 }
@@ -427,6 +427,15 @@ div#projects_line {
 div#projects_list {
 	max-width: 800px;
 	margin: 0 auto;
+}
+
+div#dog_age_link { text-align: initial; }
+
+div#dog_age_link a { color: #0073ea; }
+
+div#dog_age_link p { 
+	text-indent: 1em;
+	padding-left: 1em;
 }
 
 

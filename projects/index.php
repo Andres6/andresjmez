@@ -104,7 +104,11 @@
 					</div>
 					<div id="projects_line"></div>
 					<div id="projects_list">
-						<p>Oops! still under development, come back soon...</p>
+						<div id="dog_age_link">
+							<a href="dog-age-calculator/">Dog Age Calculator</a>
+							<p>This is a calculator to find out how old your best friend actually is in years when considering the maturity and life span of dogs.</p>
+						</div>
+						<p>Oops! still under development, more coming soon...</p>
 					</div>
 				</div>
 			</div>	
