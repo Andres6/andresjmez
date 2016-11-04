@@ -162,17 +162,11 @@ body#projects a#projectsNav {
 .text-photo {
 	margin: 0 auto;
 	max-width: 800px;
-	/*position: relative;
-	left: 50%;
-	transform: translateX(-50%);*/
 }
 
 .name {
 	margin: 0 auto;
 	float: left;
-	/*position: absolute;
-	top: 50%;
-	transform: translateY(-50%);*/
 }
 
 .name p {
@@ -661,7 +655,7 @@ button.dogAgeButton {
 	display: inline-block;
 	background: #313136;
 	width: 100%;
-	font-size: 1.6em;
+	font-size: 1.2em;
 }
 
 ul.slicknav_nav {

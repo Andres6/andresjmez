@@ -31,8 +31,7 @@
 		<link rel="stylesheet" href="../site/css/slicknav.css">
 		<link href="../site/css/myStyles.css" rel="stylesheet">
 		<!-- jQuery and jQuery UI -->
-		<script   src="https://code.jquery.com/jquery-3.1.0.js"   integrity="sha256-slogkvB1K3VOkzAI8QITxV3VzpOnkeNVsKvtkYLMjfk="   crossorigin="anonymous"></script>
-		<!-- <script   src="https://code.jquery.com/ui/1.12.0/jquery-ui.js"   integrity="sha256-0YPKAwZP7Mp3ALMRVB2i8GXeEndvCq3eSl/WsAl1Ryk="   crossorigin="anonymous"></script> -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 		<!-- Responsive links -->
 		<script   src="../site/js/jquery.slicknav.min.js"></script>
 		<script   src="../site/js/initResponsive.js"></script>
@@ -63,7 +62,8 @@
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<!-- for site responsiveness -->
-		<!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		
 		<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 		<meta name="keywords" content="andres, jimenez, tenafly, njit, software">
 		<meta name="description" content="Personal Web Page of Andres Jimenez">
