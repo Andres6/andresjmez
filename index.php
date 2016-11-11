@@ -74,15 +74,17 @@
 		<div class="wrapper">
 
 			<!-- Main Menu -->
-			<div class="pages">
-				<ul class="top-menu">
-					<li><a href="." id="homeNav">Home</a></li>
-					<li><a href="about/" id="aboutNav">About</a></li>
-					<li><a href="contact/" id="contactNav">Contact</a></li>
-					<li><a href="projects/" id="projectsNav">Projects</a></li>
-					<!-- <li><a href="cs345f14.html">Fall</a></li>  -->
-				</ul>
-			</div>
+			<nav id="global-nav">
+				<div class="pages">
+					<ul class="top-menu">
+						<li><a href="." id="homeNav">Home</a></li>
+						<li><a href="about/" id="aboutNav">About</a></li>
+						<li><a href="contact/" id="contactNav">Contact</a></li>
+						<li><a href="projects/" id="projectsNav">Projects</a></li>
+						<!-- <li><a href="cs345f14.html">Fall</a></li>  -->
+					</ul>
+				</div>
+			</nav>
 			<!-- Mobile Menu -->
 			<div class="mobile_nav">
 				<ul class="mobile_menu">
