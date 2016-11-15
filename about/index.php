@@ -108,7 +108,7 @@
 						<p>I developed this website myself to learn the ways of web development and also to play around with some fun project ideas. I am constantly working and updating my website and learning new skills in the process which is something I really enjoy.</p>
 						<p>When my face is not chock-full o' code, I enjoy playing video games, playing sports, and just being outside(also inside) with my dogs. Pretty simple huh. Well thats me!</p>
 						<p>If you want to know more feel free to contact me or view my resume below</p>
-						<p><u>Link to resume coming soon</u></p>
+						<u><a href="https://docs.google.com/document/d/1WWeqOfruzmxj5I7ay0reWW7TDyH0GGjrbCotRoZMjK0/edit?usp=sharing">Andres' resume</a></u>
 					</div>
 				</div>
 			</div>
