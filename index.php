@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<!-- google font roboto -->
-		<link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300|Open+Sans:400,300' rel='stylesheet' type='text/css'>
+		<!-- google fonts -->
+		<link href="https://fonts.googleapis.com/css?family=Chelsea+Market|Roboto:300,400" rel="stylesheet">
 		<!-- Custom styles for site  -->
 		<link rel="stylesheet" href="site/css/slicknav.css">
 		<link href="site/css/myStyles.css" rel="stylesheet">
@@ -98,8 +98,8 @@
 			<!-- Main Content of Page -->
 			<div class="content">
 				<div id="home_content">
-					<div class="text-photo">
-						<div class="name">
+					<div id="text-photo">
+						<div id="name">
 							<p id="First">Andres</p>
 							<p id="Last">Jimenez</p> 
 							<div style="clear: both;"></div>

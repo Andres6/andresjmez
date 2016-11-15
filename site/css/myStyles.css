@@ -10,7 +10,10 @@ p {
 
 /******* some default colors used on site ********
 	color:		#0073ea; blue color (hover on dog calc buttons)
-	color:		#fa1f18; red color (submit on contact page and dog calc page, mail logo on footer, )
+	color:		#fa1f18; red color (submit on contact page and dog calc page, mail logo on footer)
+	color:		#4bbee5; sky blue color
+	color:		#d2302b; red color (first name on home page)
+	color:		#1c7694; blue color (last name on home page)
 */
 
 /****************************************************************************************************************************************************
@@ -154,36 +157,35 @@ body#projects a#projectsNav {
 
 /********************************************************************** home page *******************************************************************/
 
-#home_content {
+div#home_content {
 	margin-left: 20px;
 	margin-right: 20px;
 }
 
-.text-photo {
+div#text-photo {
 	margin: 0 auto;
 	max-width: 800px;
 }
 
-.name {
+div#name {
 	margin: 0 auto;
 	float: left;
 }
 
-.name p {
+div#name p {
 	margin: 0;
-	font-size: 4em;
-	font-weight: 300;
+	font-family: 'Chelsea Market', cursive;
+	font-size: 3.5em;
+	/*text-transform: uppercase;*/
 	/*letter-spacing: -8px;*/
-	text-transform: uppercase;
 	/*line-height: 55px;*/
 }
 
-#First  { color: #313136; }
-#Last  { color: #313136; }
+#First  { color: #d2302b; }
+#Last  { color: #1c7694; }
 
 /*#First  { color: #dea98c; }
 #Last   { color: #4bbee5; }*/
-
 
 /* home page image of me */
 
