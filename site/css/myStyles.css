@@ -675,14 +675,14 @@ ul.slicknav_nav {
 
 .mobi.phone .pages { display: none; }
 
-.mobi.phone .name {
+.mobi.phone div#name {
 	float: initial;
 }
 
 /*.mobi.phone p#First { float: left; }
 .mobi.phone p#Last { float: right; }*/
 
-.mobi.tablet .name {
+.mobi.tablet div#name {
 	float: initial;
 }
 
