@@ -126,7 +126,7 @@
 						<li><a href="contact/" title="Contact Me"><img src="site/media/mail.png" id="footer_contact"/></a></li> 
 					</ul>
 				</div> 
-				<p>Website designed and built by Andres Jimenez</p> 
+				<p>Website designed & built by Andres Jimenez</p> 
 				<p id="dev_note">*site under development, more coming soon!</p>
 			</div>
 		</div>
