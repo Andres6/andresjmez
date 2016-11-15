@@ -155,6 +155,15 @@ body#projects a#projectsNav {
 
 .content { margin-top: 20px; }
 
+div#pagetop-name p{ 
+	margin: 0;
+	font-family: 'Chelsea Market', cursive;
+	font-size: 2em; 
+}
+
+p#pagetop-first { color: #d2302b; float: left; padding-right: 0.1em; }
+p#pagetop-last { color: #1c7694; float: left; }
+
 /********************************************************************** home page *******************************************************************/
 
 div#home_content {
@@ -227,14 +236,7 @@ div#about_heading {
 	margin: 0 auto;
 }
 
-p#about_name {
-	margin: 0;
-	font-size: 30px;
-	font-weight: 300;
-	letter-spacing: -1px;
-	text-transform: uppercase;
-	text-align: left;
-}
+p#about_name { display: none; }
 
 p#about_punchline {
 	text-align: left;
@@ -272,6 +274,8 @@ div#contact_heading {
 	max-width: 800px;
 	margin: 0 auto;
 }
+
+p#contact_name { display: none; }
 
 p#contact_name {
 	margin: 0;
@@ -414,6 +418,8 @@ div#projects_heading {
 	margin: 0 auto;
 }
 
+p#projects_name { display: none; }
+
 p#projects_name {
 	margin: 0;
 	font-size: 30px;
@@ -467,6 +473,8 @@ div#dog_calc_content { margin: 0 20px; }
 	max-width: 800px;
 	margin: 0 auto;
 }
+
+p#dogAge_name { display: none; }
 
 #dogAge_name {
 	margin: 0;

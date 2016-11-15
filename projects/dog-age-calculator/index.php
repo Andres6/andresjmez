@@ -97,6 +97,11 @@
 			<div class="content">
 				<div id="dog_calc_content">
 					<div id="dogAge_heading">
+						<div id="pagetop-name">
+							<p id="pagetop-first">Dog Age</p>
+							<p id="pagetop-last">Calculator</p> 
+							<div style="clear: both;"></div>
+						</div>
 						<p id="dogAge_name">Dog Age Calculator</p>
 						<p id="dogAge_punchline">find out how old your dog really is...</p>
 					</div>

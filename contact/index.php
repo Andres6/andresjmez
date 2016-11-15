@@ -90,6 +90,11 @@
 			<div class="content">
 				<div id="contact_content">
 					<div id="contact_heading">
+						<div id="pagetop-name">
+							<p id="pagetop-first">Andres</p>
+							<p id="pagetop-last">Jimenez</p> 
+							<div style="clear: both;"></div>
+						</div>
 						<p id="contact_name">Andres Jimenez</p>
 						<p id="contact_punchline">reach me at my email address below or simply fill out the form and send...</p>
 					</div>
