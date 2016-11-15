@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<!-- google font Roboto -->
+		<!-- google font roboto -->
 		<link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300|Open+Sans:400,300' rel='stylesheet' type='text/css'>
 		<!-- Custom styles for site  -->
 		<link rel="stylesheet" href="site/css/slicknav.css">
