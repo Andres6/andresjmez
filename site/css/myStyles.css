@@ -168,6 +168,7 @@ div#text-photo {
 }
 
 div#name {
+	max-width: 320px;
 	margin: 0 auto;
 	float: left;
 }
@@ -176,13 +177,13 @@ div#name p {
 	margin: 0;
 	font-family: 'Chelsea Market', cursive;
 	font-size: 3.5em;
+	line-height: 1em;
 	/*text-transform: uppercase;*/
 	/*letter-spacing: -8px;*/
-	/*line-height: 55px;*/
 }
 
-#First  { color: #d2302b; }
-#Last  { color: #1c7694; }
+#First  { color: #d2302b; float: left; }
+#Last  { color: #1c7694; float: right; }
 
 /*#First  { color: #dea98c; }
 #Last   { color: #4bbee5; }*/
@@ -675,16 +676,12 @@ ul.slicknav_nav {
 
 .mobi.phone .pages { display: none; }
 
-.mobi.phone div#name {
-	float: initial;
-}
-
+.mobi.phone div#name { float: initial; }
+.mobi.phone div#name p { line-height: 1em; }
 /*.mobi.phone p#First { float: left; }
 .mobi.phone p#Last { float: right; }*/
 
-.mobi.tablet div#name {
-	float: initial;
-}
+.mobi.tablet div#name { float: initial; }
 
 /* center image of me on main page */
 .mobi.phone .my_image_div { float: initial; }
