@@ -26,6 +26,6 @@ HTML, CSS, JavaScript, and various libraries and plug-ings
 **Andres Jimenez**
 
 ## Status
-Live
+Live*
 
 *currently in development
