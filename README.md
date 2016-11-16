@@ -1,5 +1,5 @@
-# andresjmez.com
-Personal web-site   [andresjmez](http://andresjmez.com/)
+# [andresjmez.com](http://andresjmez.com/)
+Personal web-site 
 
 ## Web Server
 Self-hosted running on a rasberry pi configured as a web server
@@ -26,6 +26,8 @@ HTML, CSS, JavaScript, and various libraries and plug-ings
 **Andres Jimenez**
 
 ## Status
-Live*
+Live* 
+
+[andresjmez.com](http://andresjmez.com/)
 
 *currently in development
