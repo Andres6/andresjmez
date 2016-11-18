@@ -28,6 +28,6 @@ HTML, CSS, JavaScript, and various libraries and plug-ings
 ## Status
 Live
 
-[andresjmez.com](http://andresjmez.com/)**
+[andresjmez.com](http://andresjmez.com/)*
 
 *currently in development
