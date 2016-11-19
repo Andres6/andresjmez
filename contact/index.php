@@ -101,7 +101,7 @@
 					<div id="contact_line"></div>
 					<div id="contact_area">
 						<div id="mail_logo">
-							<a href="mailto:andresjmez@gmail.com"><img src="../site/media/mail.png" id="contact_logo"></a>
+							<a href="mailto:andresjmez@gmail.com"><img src="../site/media/mail.png" alt="Email me" title="Email me" id="contact_logo"></a>
 						</div>
 						<div id="email_text_div">
 							<p>andresjmez@gmail.com</p>

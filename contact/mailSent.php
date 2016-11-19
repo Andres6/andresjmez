@@ -114,7 +114,7 @@
 			<div class="content">
 				<div id="sent_content">
 					<div id="mail_status">
-						<img src="../site/media/mail.png" id="sent_logo">
+						<img src="../site/media/mail.png" alt="Mail Icon" id="sent_logo">
 						<?php if(isset($success) && $success) { ?>
 							<h2>Thank you</h2>
 							<p>Your message has been sent</p>
