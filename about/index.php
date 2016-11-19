@@ -113,7 +113,7 @@
 						<p>I developed this website myself to learn the ways of web development and also to play around with some fun project ideas. I am constantly working and updating my website and learning new skills in the process which is something I really enjoy.</p>
 						<p>When my face is not chock-full o' code, I enjoy playing video games, playing sports, and just being outside(also inside) with my dogs. Pretty simple huh. Well thats me!</p>
 						<p>If you want to know more feel free to contact me or view my resume below</p>
-						<u><a id="resume-link" href="https://docs.google.com/document/d/1WWeqOfruzmxj5I7ay0reWW7TDyH0GGjrbCotRoZMjK0/edit?usp=sharing" target="_blank">Resume Here</a></u>
+						<p><a id="resume-link" href="https://docs.google.com/document/d/1WWeqOfruzmxj5I7ay0reWW7TDyH0GGjrbCotRoZMjK0/edit?usp=sharing" target="_blank">Check out my resume</a></p>
 					</div>
 				</div>
 			</div>
@@ -124,8 +124,8 @@
 			<div class="footer_name">
 				<div class="social_icons">
 					<ul id="social_list">
-						<li><a href="https://github.com/Andres6" target="_blank" title="GitHub"><img src="../site/media/github_white.png" id="footer_github"/></a></li>
-						<li><a href="../contact/" title="Contact Me"><img src="../site/media/mail.png" id="footer_contact"/></a></li>
+						<li><a href="https://github.com/Andres6" target="_blank" title="GitHub"><img src="../site/media/github_white.png" alt="GitHub" id="footer_github"/></a></li>
+						<li><a href="../contact/" title="Contact Me"><img src="../site/media/mail.png" alt="Contact Me" id="footer_contact"/></a></li>
 					</ul>
 				</div>
 				<p>Website designed and built by Andres Jimenez</p>

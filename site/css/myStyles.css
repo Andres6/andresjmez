@@ -153,6 +153,7 @@ body#projects a#projectsNav {
  *                                                                      Body content                                                                *
  ****************************************************************************************************************************************************/
 
+/** default heading for each page**/
 .content { margin-top: 20px; }
 
 div#pagetop-name p{ 
