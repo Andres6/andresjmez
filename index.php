@@ -44,7 +44,7 @@
 		<meta name="keywords" content="andres, jimenez, tenafly, software, developer, software engineer, software developer">
 		<meta name="description" content="Personal Web Page of Andres Jimenez">
 		<meta name="author" content="Andres Jimenez">
-		<link rel="icon" href="site/media/favicon.ico" type="image/x-icon">
+		<link rel="icon" href="/favicon.ico" type="image/x-icon">
 		<link rel="shortcut icon" href="site/media/favicon.ico" type="image/x-icon">
 		<title>Web-site of Andres Jimenez</title>
 		
