@@ -41,20 +41,12 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		
 		<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-		<meta name="keywords" content="andres, jimenez, tenafly, software, developer, software engineer, software developer">
+		<meta name="keywords" content="andres, jimenez, software, developer, software engineer, software developer">
 		<meta name="description" content="Personal Web Page of Andres Jimenez">
 		<meta name="author" content="Andres Jimenez">
 		<link rel="icon" href="/favicon.ico" type="image/x-icon">
 		<link rel="shortcut icon" href="site/media/favicon.ico" type="image/x-icon">
 		<title>Web-site of Andres Jimenez</title>
-		
-		
-		<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-		<!--[if lt IE 9]>
-		  <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-		  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-		<![endif]-->
 
 		<!-- Google Analytics -->
 		<script>
@@ -76,7 +68,7 @@
 			<!-- Main Menu -->
 			<nav id="global-nav">
 				<div class="pages">
-					<ul class="top-menu">
+					<ul id="top-menu">
 						<li><a href="." id="homeNav">Home</a></li>
 						<li><a href="about/" id="aboutNav">About</a></li>
 						<li><a href="contact/" id="contactNav">Contact</a></li>

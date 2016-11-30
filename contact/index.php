@@ -41,7 +41,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		
 		<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-		<meta name="keywords" content="andres, jimenez, tenafly, njit, software">
+		<meta name="keywords" content="andres, jimenez, software, developer, software engineer, software developer">
 		<meta name="description" content="Personal Web Page of Andres Jimenez">
 		<meta name="author" content="Andres Jimenez">
 		<link rel="icon" href="/favicon.ico" type="image/x-icon">
@@ -67,7 +67,7 @@
 
 			<!-- Main Menu -->
 			<div class="pages">
-				<ul class="top-menu">
+				<ul id="top-menu">
 					<li><a href="../" id="homeNav">Home</a></li>
 					<li><a href="../about/" id="aboutNav">About</a></li>
 					<li><a href="../contact/" id="contactNav">Contact</a></li>
