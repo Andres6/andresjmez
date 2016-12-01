@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<?php 
+		<?php
 		$slicknav_styles = "../site/css/slicknav.css";
 		$site_styles = "../site/css/myStyles.css";
 		$slicknav_min_js = "../site/js/jquery.slicknav.min.js";
 		$init_responsive = "../site/js/initResponsive.js";
 		$restive_min_js = "../site/js/restive.min.js";
+		$favicon = "../favicon.ico";
 		include("../site/includes/header.php"); ?>
 	</head>
 
@@ -61,18 +62,13 @@
 		</div>
 
 		<!-- Footer -->
-		<div class="mastfoot">
-			<div class="footer_name">
-				<div class="social_icons">
-					<ul id="social_list">
-						<li><a href="https://github.com/Andres6" target="_blank" title="GitHub"><img src="../site/media/github_white.png" alt="GitHub" id="footer_github"/></a></li>
-						<li><a href="../contact/" title="Contact Me"><img src="../site/media/mail.png" alt="Contact Me" id="footer_contact"/></a></li>
-					</ul>
-				</div>
-				<p>Website designed and built by Andres Jimenez</p>
-				<p id="dev_note">*site under development, more coming soon!</p>
-			</div> 
-		</div>
+			<?php
+			$github_footer = "../site/media/github_white.png";
+			$contact_page = "../contact/";
+			$mail_footer = "../site/media/mail.png";
+			include("../site/includes/footer.php"); ?>
+
+		<!-- end Footer -->
 
 	</body>
 </html>

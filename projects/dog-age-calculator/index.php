@@ -11,11 +11,11 @@
 		<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
 		<!-- Custom UI theme and jQuery Validate-->
         <link href="jquery-ui.css" rel="stylesheet">
-        <script   src="http://cdn.jsdelivr.net/jquery.validation/1.15.1/jquery.validate.min.js"></script>
+        <script src="http://cdn.jsdelivr.net/jquery.validation/1.15.1/jquery.validate.min.js"></script>
 
 		<!-- Responsive links -->
-		<script   src="../../site/js/jquery.slicknav.min.js"></script>
-		<script   src="../../site/js/initResponsive.js"></script>
+		<script src="../../site/js/jquery.slicknav.min.js"></script>
+		<script src="../../site/js/initResponsive.js"></script>
 		<!-- restive js -->
 		<script type="text/javascript" src="../../site/js/restive.min.js"></script>
 		<script type="text/javascript">
@@ -49,8 +49,7 @@
 		<meta name="keywords" content="andres, jimenez, software, developer, software engineer, software developer">
 		<meta name="description" content="Personal Web Page of Andres Jimenez">
 		<meta name="author" content="Andres Jimenez">
-		<link rel="icon" href="/favicon.ico" type="image/x-icon">
-		<link rel="shortcut icon" href="../../site/media/favicon.ico" type="image/x-icon">
+		<link rel="icon" href="../../favicon.ico" type="image/x-icon">
 		<title>Web-site of Andres Jimenez</title>
 		
 
@@ -147,18 +146,13 @@
 		</div>
 
 		<!-- Footer -->
-		<div class="mastfoot">
-			<div class="footer_name"> 
-				<div class="social_icons"> 
-					<ul id="social_list"> 
-						<li><a href="https://github.com/Andres6" target="_blank" title="GitHub"><img src="../site/media/github_white.png" alt="GitHub" id="footer_github"/></a></li>
-						<li><a href="../contact/" title="Contact Me"><img src="../site/media/mail.png" alt="Contact Me" id="footer_contact"/></a></li>
-					</ul> 
-				</div> 
-				<p>Website designed and built by Andres Jimenez</p> 
-				<p id="dev_note">*site under development, more coming soon!</p>  
-			</div>
-		</div>
+			<?php
+			$github_footer = "../../site/media/github_white.png";
+			$contact_page = "../../contact/";
+			$mail_footer = "../../site/media/mail.png";
+			include("../../site/includes/footer.php"); ?>
+
+		<!-- end Footer -->
 
 		<script type="text/javascript" src="dog.js"></script>
 

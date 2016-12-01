@@ -1,3 +1,4 @@
+
 		<!-- google fonts -->
 		<link href="https://fonts.googleapis.com/css?family=Chelsea+Market|Roboto:300,400" rel="stylesheet">
 		<!-- Custom styles for site  -->
@@ -41,7 +42,7 @@
 		<meta name="keywords" content="andres, jimenez, software, developer, software engineer, software developer">
 		<meta name="description" content="Personal Web Page of Andres Jimenez">
 		<meta name="author" content="Andres Jimenez">
-		<link rel="icon" href="/favicon.ico" type="image/x-icon">
+		<link rel="icon" href="<?php echo $favicon; ?>" type="image/x-icon">
 		
 		<title>Web-site of Andres Jimenez</title>
 		
