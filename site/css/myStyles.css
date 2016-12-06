@@ -77,6 +77,7 @@ ul#top-menu > li > a {
 	color: #ffffff;
 	text-transform: uppercase;
     text-decoration: none;
+    /*font-family: 'Chelsea Market', cursive;*/
 } 
 
 /** hover of main menu items **/
@@ -124,6 +125,7 @@ div#pagetop-name p{
 p#pagetop-first { color: #d2302b; float: left; margin-right: 10px !important; }
 p#pagetop-last { color: #1c7694; float: left; }
 
+div#pagetop-name { overflow: auto; width: 100%; }
 /********************************************************************** home page *******************************************************************/
 
 div#home_content {
@@ -132,11 +134,15 @@ div#home_content {
 }
 
 div#text-photo {
+	overflow: auto;
+	width: 100%;
 	margin: 0 auto;
 	max-width: 800px;
 }
 
 div#name {
+	overflow: auto;
+	width: 100%;
 	max-width: 320px;
 	margin: 0 auto;
 	float: left;

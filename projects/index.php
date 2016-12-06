@@ -43,7 +43,6 @@
 						<div id="pagetop-name">
 							<p id="pagetop-first">Andres</p>
 							<p id="pagetop-last">Jimenez</p> 
-							<div style="clear: both;"></div>
 						</div>
 						<p id="projects_name">Andres Jimenez</p>
 						<p id="projects_punchline">check out some of my projects...</p>
