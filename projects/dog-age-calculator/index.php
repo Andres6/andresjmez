@@ -50,7 +50,7 @@
 		<meta name="description" content="Personal Web Page of Andres Jimenez">
 		<meta name="author" content="Andres Jimenez">
 		<link rel="icon" href="../../favicon.ico" type="image/x-icon">
-		<title>Web-site of Andres Jimenez</title>
+		<title>Dog Age - Andres J.</title>
 		
 
 

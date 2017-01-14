@@ -32,6 +32,7 @@
 		$init_responsive = "../site/js/initResponsive.js";
 		$restive_min_js = "../site/js/restive.min.js";
 		$favicon = "../favicon.ico";
+		$current_title = "Sent Mail";
 		include("../site/includes/header.php"); ?>
 	</head>
 
