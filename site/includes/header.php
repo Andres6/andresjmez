@@ -44,7 +44,7 @@
 		<meta name="author" content="Andres Jimenez">
 		<link rel="icon" href="<?php echo $favicon; ?>" type="image/x-icon">
 		
-		<title>Web-site of Andres Jimenez</title>
+		<title>Home of Andres Jimenez</title>
 		
 		<!-- Google Analytics -->
 		<script>
