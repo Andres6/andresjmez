@@ -63,12 +63,13 @@ ul#top-menu {
 	max-width: 800px;
 	padding: 0px 10px;
 	margin: 0 auto;
-	text-align: center;
+	text-align: initial;
 }
 
 ul#top-menu > li {
 	display: inline-block;
-	margin: 0 15px;
+	margin: 0 0;
+	/*margin: 0 15px; */
 }
 
 ul#top-menu > li > a {
@@ -79,6 +80,11 @@ ul#top-menu > li > a {
     text-decoration: none;
     /*font-family: 'Chelsea Market', cursive;*/
 } 
+
+ul#top-menu > li:last-child {float: right; }
+ul#top-menu > li:last-child > a {
+	text-transform: initial;
+}
 
 /** hover of main menu items **/
 ul#top-menu > li > a:hover,
