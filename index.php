@@ -24,6 +24,7 @@
 						<li><a href="about/" id="aboutNav">About</a></li>
 						<li><a href="contact/" id="contactNav">Contact</a></li>
 						<li><a href="projects/" id="projectsNav">Projects</a></li>
+						<!-- <li><a href="login/" id="loginNav">Login</a></li> -->
 						<!-- <li><a href="cs345f14.html">Fall</a></li>  -->
 					</ul>
 				</div>
@@ -38,6 +39,11 @@
 				</ul>
 			</div>
 
+			<!-- Login for Site -->
+			<div id="loginArea">
+				<a href="login/" id="loginPage">Login</a>
+			</div>
+			
 			<!-- Main Content of Page -->
 			<div class="content">
 				<div id="home_content">

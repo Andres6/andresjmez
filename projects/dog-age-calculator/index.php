@@ -140,6 +140,11 @@
 							</div>
 						</div>
 					</div>
+					<div id="dogAgeInfo">
+						<h3>A more accurate calculator</h3>
+						<p>This tool calculates your dog's age considering </p>
+						
+					</div>
 				</div>
 			</div>
 		</div>

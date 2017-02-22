@@ -52,7 +52,7 @@
 					<div id="projects_list">
 						<div id="dog_age_link">
 							<a href="dog-age-calculator/">Dog Age Calculator</a>
-							<p>The common myth of 1 year for your dog equals 7 "human years" is not exactly accurate as there are more factors to consider and a little more math involved in calculating your best friend's age. Use this calculator to learn more and find out how old your pup actually is in "human years" considering 4 different sizes of dogs depending on weight.</p>
+							<p>The common myth that 1 year is equal to 7 "human years" is actually not very accurate and it is only a quick quess that does not consider breed, weight, or size of an individual dog. If we consider some of these specific factors you can get a better approximation of the true age of your best friend. Use this tool to learn more and find out how old your dog actually is in "human years" considering 4 different sizes of dogs depending on weight.</p>
 						</div>
 						<div id="projects_divide"></div>
 						<div id="project_x">
