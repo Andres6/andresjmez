@@ -81,10 +81,9 @@ ul#top-menu > li > a {
     /*font-family: 'Chelsea Market', cursive;*/
 } 
 
-ul#top-menu > li:last-child {float: right; }
-ul#top-menu > li:last-child > a {
-	text-transform: initial;
-}
+/** makes login link move to right side **/
+li#loginLink {float: right; }
+li#loginLink > a { text-transform: initial !important; }
 
 /** hover of main menu items **/
 ul#top-menu > li > a:hover,

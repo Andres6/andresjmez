@@ -24,8 +24,7 @@
 						<li><a href="about/" id="aboutNav">About</a></li>
 						<li><a href="contact/" id="contactNav">Contact</a></li>
 						<li><a href="projects/" id="projectsNav">Projects</a></li>
-						<li><a href="login/" id="loginHerePage">Login</a></li>
-						<!-- <li><a href="login/" id="loginNav">Login</a></li> -->
+						<!-- <li><a href="login/" id="loginHerePage">Login</a></li> -->
 						<!-- <li><a href="cs345f14.html">Fall</a></li>  -->
 					</ul>
 				</div>
