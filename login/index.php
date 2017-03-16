@@ -12,7 +12,7 @@
 		include("../site/includes/header.php"); ?>
 	</head>
 
-	<body id="contact">
+	<body id="login">
 		<!-- Full Site -->
 		<div class="wrapper">
 
@@ -47,23 +47,16 @@
 							<p id="pagetop-last">Jimenez</p> 
 						</div>
 						<p id="contact_name">Andres Jimenez</p>
-						<p id="contact_punchline">reach me at my email address below or simply fill out the form and send...</p>
+						<p id="contact_punchline">login here with your username and password</p>
 					</div>
 					<div id="contact_line"></div>
 					<div id="contact_area">
-						<div id="mail_logo">
-							<a href="mailto:andresjmez@gmail.com"><img src="../site/media/mail.png" alt="Email me" title="Email me" id="contact_logo"></a>
-						</div>
-						<div id="email_text_div">
-							<p>andresjmez@gmail.com</p>
-							<p>--or--</p>
-						</div>
 						<div id="contact_form_div">
-							<form id="contactForm" method="post" action="mailSent.php">
-								<label><input type="text" class="contactMe" id="contactMeName" name="name" placeholder="Your Name" required></label>
-								<label><input type="text" class="contactMe" id="contactMeEmail" name="email" type="email" placeholder="Your Email Address" required></label>
-								<label><textarea id="contactMeMessage" name="message" placeholder="Your Message..." required></textarea></label>
-								<input type="submit" id="contactMeSubmit" name="send" value="Deliver">
+							<form id="contactForm" method="post" action="mailSentt.php">
+								<label><input type="text" class="contactMe" id="contactMeName" name="name" placeholder="Username" required></label>
+								<label><input type="text" class="contactMe" id="contactMeEmail" name="email" type="email" placeholder="Password" required></label>
+								<!-- <label><textarea id="contactMeMessage" name="message" placeholder="Your Message..." required></textarea></label> -->
+								<input type="submit" id="contactMeSubmit" name="send" value="Login">
 							</form>
 						</div>
 					</div>
