@@ -128,8 +128,9 @@ div#pagetop-name p{
 	font-size: 2em; 
 }
 
+/** name heading on all pages **/
 p#pagetop-first { float: left; margin-right: 10px !important; }
-p#pagetop-last { color: #1c7694; float: left; }
+p#pagetop-last { color: #d2302b; float: left; }
 
 div#pagetop-name { overflow: auto; width: 100%; }
 /********************************************************************** home page *******************************************************************/
@@ -163,10 +164,10 @@ div#name p {
 }
 
 #First  { float: left; }
-#Last  { color: #1c7694; float: right; }
+#Last  { color: #d2302b; float: right; }
 
 /*#First  { color: #d2302b; color:  #dea98c; }
-#Last   { color: #4bbee5; }*/
+#Last   { color: #1c7694 color: #4bbee5; }*/
 
 /* home page image of me */
 
