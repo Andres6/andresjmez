@@ -35,6 +35,7 @@
 					<li><a href="../about/" id="aboutNav">About</a></li>
 					<li><a href="../contact/" id="contactNav">Contact</a></li>
 					<li><a href="../projects/" id="projectsNav">Projects</a></li>
+					<li id="loginLink"><a href="login/">Login</a></li>
 				</ul>
 			</div>
 
