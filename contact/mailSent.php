@@ -1,6 +1,6 @@
 <?php
 
-	if(isset($_POST['send'])) {
+	// if(isset($_POST['send'])) {
 
 		$to = 'andresjmez@gmail.com';
 		$subject = 'Whats up, this is me';
@@ -18,7 +18,7 @@
 		}
 
 		$success = mail($to, $subject, $message, $headers, '-fandresjmez@gmail.com');
-	}
+	//}
 
 ?>
 
