@@ -53,7 +53,6 @@
 		<title>Dog Age - Andres J.</title>
 		
 
-
 		<!-- Google Analytics -->
 		<script>
 			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -78,6 +77,7 @@
 					<li><a href="../../about/" id="aboutNav">About</a></li>
 					<li><a href="../../contact/" id="contactNav">Contact</a></li>
 					<li><a href="../../projects/" id="projectsNav">Projects</a></li>
+					<li id="loginLink"><a href="../../login">Login</a></li>
 					<!-- <li><a href="cs345f14.html">Fall</a></li>  -->
 				</ul>
 			</div>
@@ -89,12 +89,13 @@
 					<li><a href="../../about/" id="aboutNav">About</a></li>
 					<li><a href="../../contact/" id="contactNav">Contact</a></li>
 					<li><a href="../../projects/" id="projectsNav">Projects</a></li>
+					<li id="loginLink"><a href="../../login">Login</a></li>
 				</ul>
 			</div>
 
 			<!-- Main Content of Page -->
 			<div class="content">
-				<div id="dog_calc_content">
+				<div class="page_content">
 					<div id="dogAge_heading">
 						<div id="pagetop-name">
 							<p id="pagetop-first">Dog Age</p>
@@ -142,7 +143,7 @@
 					</div>
 					<div id="dogAgeInfo">
 						<h3>A more accurate calculator</h3>
-						<p>This tool calculates your dog's age considering </p>
+						<p>There is no scientifically proven or agreed upon formula to calculate the exact age of your dog. Instead in order to get the best approximation of your dog's age, we need to consider some factors such as the breed, size, or weight of an individual dog. Here you can choose the size of your dog depending on their weight and enter their current age in "human years". You can get a more accurate result by entering a decimal after the year to represent months as well. ( e.g. for a 3 year 6 month old dog, enter 3.5 in years )</p>
 						
 					</div>
 				</div>

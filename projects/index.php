@@ -1,3 +1,4 @@
+<?php session_start(); ?>
 <!DOCTYPE html>
 <html lang="en">
 	<head>
@@ -9,42 +10,30 @@
 		$restive_min_js = "../site/js/restive.min.js";
 		$favicon = "../favicon.ico";
 		$current_title = "Projects";
-		include("../site/includes/header.php"); ?>
+		include('../site/includes/header.php'); ?>
 	</head>
 
 	<body id="projects">    
 		<!-- Full Site -->
 		<div class="wrapper">
 
-			<!-- Main Menu -->
-			<div class="pages">
-				<ul id="top-menu">
-					<li><a href="../" id="homeNav">Home</a></li>
-					<li><a href="../about/" id="aboutNav">About</a></li>
-					<li><a href="../contact/" id="contactNav">Contact</a></li>
-					<li><a href="../projects/" id="projectsNav">Projects</a></li>
-					<li id="loginLink"><a href="login/">Login</a></li>
-					<!-- <li><a href="cs345f14.html">Fall</a></li>  -->
-				</ul>
-			</div>
-
-			<!-- Mobile Menu -->
-			<div class="mobile_nav">
-				<ul class="mobile_menu">
-					<li><a href="../" id="homeNav">Home</a></li>
-					<li><a href="../about/" id="aboutNav">About</a></li>
-					<li><a href="../contact/" id="contactNav">Contact</a></li>
-					<li><a href="../projects/" id="projectsNav">Projects</a></li>
-				</ul>
-			</div>
+			<!-- Menu nav inserted-->
+			<?php include('../site/includes/menu.php'); ?>
 
 			<!-- Main Content of Page -->
 			<div class="content">
 				<div id="projects_content">
 					<div id="projects_heading">
+						<p id="welcome_name">
+							<?php
+								if (isset($_SESSION['login_user'])) {
+									echo "Hello " . $_SESSION['login_user'];
+								}
+							?>
+						</p>
 						<div id="pagetop-name">
-							<p id="pagetop-first">Andres</p>
-							<p id="pagetop-last">Jimenez</p> 
+							<p id="pagetop-first-link">andres</p>
+							<p id="pagetop-last-link">jmez.com</p> 
 						</div>
 						<p id="projects_name">Andres Jimenez</p>
 						<p id="projects_punchline">check out some of my projects...</p>
@@ -53,7 +42,7 @@
 					<div id="projects_list">
 						<div id="dog_age_link">
 							<a href="dog-age-calculator/">Dog Age Calculator</a>
-							<p>The common myth that 1 year is equal to 7 "human years" is actually not very accurate and it is only a quick quess that does not consider breed, weight, or size of an individual dog. If we consider some of these specific factors you can get a better approximation of the true age of your best friend. Use this tool to learn more and find out how old your dog actually is in "human years" considering 4 different sizes of dogs depending on weight.</p>
+							<p>A popular myth is that one "human year" is equal to "seven dog years". This is not very accurate because there are many factors to consider when approximating your best friend's age. Click on my calculator link above to get a much closer estimate of their age and how it is calculated.</p>
 						</div>
 						<div id="projects_divide"></div>
 						<div id="project_x">
@@ -74,7 +63,8 @@
 					</div>
 					<p>Oops! still under development, more coming soon...</p>
 				</div>
-			</div>	
+			</div>
+
 		</div>
 
 		<!-- Footer -->

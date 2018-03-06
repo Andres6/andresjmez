@@ -130,13 +130,28 @@ div#pagetop-name p{
 p#pagetop-first { color: #d2302b; float: left; margin-right: 10px !important; }
 p#pagetop-last { color: #1c7694; float: left; }
 
+p#pagetop-first-link { color: #d2302b; float: left; }
+p#pagetop-last-link { color: #1c7694; float: left; }
+
+p#pagetop-last-link { float: left; }
+
+p#welcome_name {
+	margin: 0;
+	text-align: right;
+	letter-spacing: 1px;
+}
+
 div#pagetop-name { overflow: auto; width: 100%; }
+
+.page_content { margin: 0 20px; }
+
+
 /********************************************************************** home page *******************************************************************/
 
-div#home_content {
+/*div#home_content {
 	margin-left: 20px;
 	margin-right: 20px;
-}
+}*/
 
 div#text-photo {
 	overflow: auto;
@@ -198,8 +213,7 @@ div#name p {
 
 /********************************************************************** about page ******************************************************************/
 
-div#about_content { margin: 0 20px; }
-
+/*div#about_content { margin: 0 20px; } */
 div#about_heading { 
 	max-width: 800px;
 	margin: 0 auto;
@@ -237,7 +251,7 @@ a#resume-link { color: #0073ea; }
 
 /********************************************************************* contact page *****************************************************************/
 
-div#contact_content { margin: 0 20px; }
+/*div#contact_content { margin: 0 20px; }*/
 
 div#contact_heading { 
 	max-width: 800px;
@@ -364,9 +378,9 @@ input#contactMeSubmit:hover {
 }
 
 
-/****************************************************************** contact sent page **************************************************************/
+/******************************************************************** mail sent page ****************************************************************/
 
-div#sent_content { margin: 0 20px; }
+/*div#sent_content { margin: 0 20px; }*/
 
 div#mail_status {
 	max-width: 800px;
@@ -380,7 +394,7 @@ img#sent_logo {
 
 /******************************************************************** projects page *****************************************************************/
 
-div#projects_content { margin: 0 20px; }
+/*div#projects_content { margin: 0 20px; }*/
 
 div#projects_heading { 
 	max-width: 800px;
@@ -436,7 +450,7 @@ div#projects_list p {
 
 /*************************************************************** dog age calculator page ************************************************************/
 
-div#dog_calc_content { margin: 0 20px; }
+/*div#dog_calc_content { margin: 0 20px; }*/
 
 #dogAge_heading { 
 	max-width: 800px;
@@ -463,6 +477,17 @@ p#dogAge_name { display: none; }
 	margin: 0 auto 10px;
 	border: none;
 	border-top: 2px solid #313136;
+}
+
+div#dogAgeInfo{
+	max-width: 800px;
+	margin: 0 auto;
+}
+
+div#dogAgeInfo p {
+    text-align: justify;
+    letter-spacing: 0.01em;
+    line-height: 1.4em;
 }
 
 /* fixes glitch of flashing radio buttons on load*/

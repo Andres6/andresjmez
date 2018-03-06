@@ -1,3 +1,4 @@
+<?php session_start(); ?>
 <!DOCTYPE html>
 <html lang="en">
 	<head>
@@ -16,32 +17,20 @@
 		<!-- Full Site -->
 		<div class="wrapper">
 
-			<!-- Main Menu -->
-			<div class="pages">
-				<ul id="top-menu">
-					<li><a href="../" id="homeNav">Home</a></li>
-					<li><a href="../about/" id="aboutNav">About</a></li>
-					<li><a href="../contact/" id="contactNav">Contact</a></li>
-					<li><a href="../projects/" id="projectsNav">Projects</a></li>
-					<!-- <li><a href="login/" id="loginHerePage">Login</a></li> -->
-					<!-- <li><a href="cs345f14.html">Fall</a></li>  -->
-				</ul>
-			</div>
-
-			<!-- Mobile Menu -->
-			<div class="mobile_nav">
-				<ul class="mobile_menu">
-					<li><a href="../" id="homeNav">Home</a></li>
-					<li><a href="../about/" id="aboutNav">About</a></li>
-					<li><a href="../contact/" id="contactNav">Contact</a></li>
-					<li><a href="../projects/" id="projectsNav">Projects</a></li>
-				</ul>
-			</div>
+			<!-- Menu nav inserted-->
+			<?php include('../site/includes/menu.php'); ?>
 
 			<!-- Main Content of Page -->
 			<div class="content">
-				<div id="contact_content">
+				<div class="page_content">
 					<div id="contact_heading">
+						<p id="welcome_name">
+							<?php
+								if (isset($_SESSION['login_user'])) {
+									echo "Hello " . $_SESSION['login_user'];
+								}
+							?>
+						</p>
 						<div id="pagetop-name">
 							<p id="pagetop-first">Andres</p>
 							<p id="pagetop-last">Jimenez</p> 
