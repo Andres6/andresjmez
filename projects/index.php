@@ -21,17 +21,6 @@
 			<!-- Menu nav inserted-->
 			<?php include('../site/includes/menu.php'); ?>
 
-			<!-- Mobile Menu -->
-			<div class="mobile_nav">
-				<ul class="mobile_menu">
-					<li><a href="../" id="homeNav">Home</a></li>
-					<li><a href="../about/" id="aboutNav">About</a></li>
-					<li><a href="../contact/" id="contactNav">Contact</a></li>
-					<li><a href="../projects/" id="projectsNav">Projects</a></li>
-					<li id="loginLink"><a href="../login/">Login</a></li>
-				</ul>
-			</div>
-
 			<!-- Main Content of Page -->
 			<div class="content">
 				<div id="projects_content">

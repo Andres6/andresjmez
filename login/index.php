@@ -4,7 +4,6 @@
 		header("Location: ../projects/index.php");
 	}
 ?>
-
 <!DOCTYPE html>
 <html lang="en">
 	<head>
