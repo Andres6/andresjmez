@@ -123,12 +123,14 @@ body#projects a#projectsNav {
 
 div#pagetop-name p{ 
 	margin: 0;
-	font-family: 'Chelsea Market', cursive;
+	/*font-family: 'Chelsea Market', cursive;*/
+	font-family: cursive;
 	font-size: 2em; 
 }
 
-p#pagetop-first { color: #d2302b; float: left; margin-right: 10px !important; }
-p#pagetop-last { color: #1c7694; float: left; }
+/** name heading on all pages **/
+p#pagetop-first { float: left; margin-right: 10px !important; }
+p#pagetop-last { color: #d2302b; float: left; }
 
 p#pagetop-first-link { color: #d2302b; float: left; }
 p#pagetop-last-link { color: #1c7694; float: left; }
@@ -170,16 +172,17 @@ div#name {
 
 div#name p {
 	margin: 0;
-	font-family: 'Chelsea Market', cursive;
+	/*font-family: 'Chelsea Market', cursive;*/
+	font-family: cursive;
 	font-size: 3.5em;
 	line-height: 1em;
 }
 
-#First  { color: #d2302b; float: left; }
-#Last  { color: #1c7694; float: right; }
+#First  { float: left; }
+#Last  { color: #d2302b; float: right; }
 
-/*#First  { color: #dea98c; }
-#Last   { color: #4bbee5; }*/
+/*#First  { color: #d2302b; color:  #dea98c; }
+#Last   { color: #1c7694 color: #4bbee5; }*/
 
 /* home page image of me */
 

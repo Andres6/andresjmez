@@ -1,6 +1,6 @@
 <?php
 
-	if(isset($_POST['send'])) {
+	// if(isset($_POST['send'])) {
 
 		$to = 'andresjmez@gmail.com';
 		$subject = 'Whats up, this is me';
@@ -17,8 +17,10 @@
 			$headers .= "\r\nReply-To: $email";
 		}
 
-		$success = mail($to, $subject, $message, $headers, '-fandresjmez@gmail.com');
-	}
+		//$success = mail($to, $subject, $message, $headers, '-fandresjmez@gmail.com');
+	//}
+
+		$success = mail($to, $subject, $message);
 
 ?>
 
