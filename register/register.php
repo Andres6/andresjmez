@@ -22,13 +22,14 @@
 				// 	$_SESSION['message'] = "connection success";
 				// }
 
-				//escapes special characters for use in SQL
+				//escapes special characters for use in SQL queries, helps with sql injections
 				$regUsername = mysqli_real_escape_string($db, $regUsername);
 				$regEmail = mysqli_real_escape_string($db, $regEmail);
 				$regPass = mysqli_real_escape_string($db, $regPass);
 				$regConfirmPass = mysqli_real_escape_string($db, $regConfirmPass);
 
 				$userCheckQuery = "SELECT username FROM user WHERE username = '$regUsername'";
+
 				//echo $userCheckQuery;
 
 				//query database for entered user
@@ -49,7 +50,7 @@
 					//try to register user to the database and log them in
 					if ($db -> query($insertQuery)) {
 						$_SESSION['login_user'] = $regUsername;
-						header('Location: ../projects/index.php');
+						header('Location: ../profile/index.php');
 					}
 					else {
 						$_SESSION['login_user'] = "database insert did not work";

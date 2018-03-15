@@ -1,3 +1,4 @@
+<?php session_start(); ?>
 <!DOCTYPE html>
 <html lang="en">
 	<head>
@@ -77,8 +78,13 @@
 					<li><a href="../../about/" id="aboutNav">About</a></li>
 					<li><a href="../../contact/" id="contactNav">Contact</a></li>
 					<li><a href="../../projects/" id="projectsNav">Projects</a></li>
-					<li id="loginLink"><a href="../../login">Login</a></li>
-					<!-- <li><a href="cs345f14.html">Fall</a></li>  -->
+					<?php
+						if (isset($_SESSION['login_user'])) {
+							echo "<li id='loginLink'><a href='../../login/logout.php'>Logout</a></li>";
+						} else {
+							echo "<li id='loginLink'><a href='../../login'>Login</a></li>";
+						}
+					?>
 				</ul>
 			</div>
 
@@ -97,6 +103,13 @@
 			<div class="content">
 				<div class="page_content">
 					<div id="dogAge_heading">
+						<p id="welcome_name">
+							<?php
+								if (isset($_SESSION['login_user'])) {
+									echo "Hello " . $_SESSION['login_user'] . ". " . "<a href='../../profile/'>Profile</a>";
+								}
+							?>
+						</p>
 						<div id="pagetop-name">
 							<p id="pagetop-first">Dog Age</p>
 							<p id="pagetop-last">Calculator</p> 

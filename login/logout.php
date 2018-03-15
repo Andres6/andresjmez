@@ -5,5 +5,5 @@
 	session_destroy();
 
 	//redirect back to login page
-	header("Location: ../about/index.php");
+	header("Location: ../index.php");
 ?>

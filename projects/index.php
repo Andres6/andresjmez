@@ -28,7 +28,7 @@
 						<p id="welcome_name">
 							<?php
 								if (isset($_SESSION['login_user'])) {
-									echo "Hello " . $_SESSION['login_user'];
+									echo "Hello " . $_SESSION['login_user'] . ". " . "<a href='../profile/'>Profile</a>";
 								}
 							?>
 						</p>

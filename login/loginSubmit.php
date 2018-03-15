@@ -29,7 +29,7 @@
 
 
 		$sqlQuery = "SELECT id FROM user WHERE username = '$myUsername' AND password = '$myPassword'";
-		$result = mysqli_query($db, $sqlQuery);	
+		$result = mysqli_query($db, $sqlQuery);
 		$row = mysqli_fetch_array($result, MYSQLI_ASSOC);		
 		$active = $row['active'];
 
@@ -40,7 +40,7 @@
 		//if query result matched table row count must be 1, otherwise credentials were incorrect
 		if ($count == 1) {
 			$_SESSION['login_user'] = $myUsername;
-			header('Location: ../projects/index.php');
+			header('Location: ../profile/index.php');
 		} else {
 			$_SESSION['login_error'] = "invalid credentials";
 			header('Location: index.php');
