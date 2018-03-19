@@ -1,5 +1,5 @@
 <?php
-
-	error_log("hello");
-
+	foreach ($_GET as $value) {
+		error_log($value);
+	}
 ?>
