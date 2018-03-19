@@ -1,9 +1,9 @@
 OK
 <?php 
 
-echo $_REQUEST;
+echo $_GET;
 
-foreach ($_REQUEST as $value) {
+foreach ($_GET as $value) {
 	echo $value;
 }
 
