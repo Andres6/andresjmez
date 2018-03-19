@@ -10,25 +10,25 @@
 			echo "Mega Super Programmer";
 		}
 		else if ($value === 'Resume'){
-			echo "BobbyBobsResume.com";
+			echo "https://bobbybobs.com/resume";
 		}
 		else if ($value === 'Source'){
-			echo "BobbyBobResume/download";
+			echo "https://bobbybobs.com/source";
 		}
 		else if ($value === 'Status'){
 			echo "Yes";
 		}
 		else if ($value === 'Years'){
-			echo "300+";
+			echo "750+";
 		}
 		else if ($value === 'Referrer'){
-			echo "Billy";
+			echo "Billy Bill";
 		}
 		else if ($value === 'Degree'){
-			echo "Phd in Mega Programming";
+			echo "PhD in Super Mega Programming";
 		}
 		else if ($value === 'Email Address'){
-			echo "Bobby@Bob.com";
+			echo "Bobby@bobbybobs.com";
 		}
 		else if ($value === 'Phone'){
 			echo "+1 (111) 111-1111";
@@ -38,7 +38,7 @@
 			$puzzleString = next($_GET);
 			$puzzleString = str_replace('Please solve this puzzle:', '', $puzzleString);
 			$puzzleString = str_replace('ABCD', '', $puzzleString);
-			$puzzleString = trim(preg_replace('/\s+/', '', $puzzleString));
+			$puzzleString = trim(preg_split('/\s+/', '', $puzzleString));
 
 			echo $puzzleString;
 
