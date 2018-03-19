@@ -36,7 +36,10 @@
 		else if ($value === 'Puzzle'){
 			
 			$puzzleString = next($_GET);
+
 			$puzzleString = explode('\n', $puzzleString);
+
+			echo $puzzleString[0];
 
 			array_splice($puzzleString, -1);
 			array_splice($puzzleString, 0, 2);
