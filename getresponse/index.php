@@ -37,6 +37,8 @@
 			
 			$puzzleString = next($_GET);
 			$puzzleString = explode('\n', $puzzleString);
+
+			echo $puzzleString;
 			array_splice($puzzleString, 0, 2);
 
 			print_r($puzzleString);
