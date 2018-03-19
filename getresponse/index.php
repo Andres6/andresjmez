@@ -38,21 +38,18 @@
 			$puzzleString = next($_GET);
 			$puzzleString = explode('\n', $puzzleString);
 
-			$puzzleString = array_splice($puzzleString, 0, 2);
-
-			foreach ($puzzleString as $value2) {
-				echo $value2;
-			}
+			array_splice($puzzleString, -1);
+			array_splice($puzzleString, 0, 2);
 
 			//print_r($puzzleString);
 
 			echo "\n";
 
 			echo " ABCD\n";
-			echo "A\n";
-			echo "B\n";
-			echo "C\n";
-			echo "D\n";
+			echo "A" . $puzzleString[0] . "\n";
+			echo "B" . $puzzleString[1] . "\n";
+			echo "C" . $puzzleString[2] . "\n";
+			echo "D" . $puzzleString[3] . "\n";
 
 
 

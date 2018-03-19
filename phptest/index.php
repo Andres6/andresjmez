@@ -1,12 +1,18 @@
 <?php
 	$string = 'Please solve this puzzle:\n ABCD\nA=---\nB<---\nC--->\nD>---\n';
 
-	echo $string;
-
+	//echo $string;
 
 	$string = explode('\n', $string);
 
+	array_splice($string, -1);
 	array_splice($string, 0, 2);
+	foreach ($string as $key) {
+		echo($key . "\n");
+	}
+	//echo $string[0];
+
+	//array_splice($string, 0, 2);
 
 	//unset($string[0], $string[1]);
 	//unset($string[1]);
@@ -16,7 +22,7 @@
 
 
 
-	print_r($string);
+	//print_r($string);
 
 
 
