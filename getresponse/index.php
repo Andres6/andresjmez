@@ -1,5 +1,11 @@
 <?php
-	foreach ($_GET as $value) {
-		echo "<script>console.log(" . $value . ");</script>";
-	}
+	
+	$reqInfo = print_r($_REQUEST, TRUE);
+	
+	$fp = fopen('request.log', 'a');
+	
+	fwrite($fp, $reqInfo);
+
+	fclose($fp);
+
 ?>
