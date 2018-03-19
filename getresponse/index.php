@@ -37,19 +37,14 @@
 			
 			$puzzleString = next($_GET);
 
-			$puzzleString = str_replace(PHP_EOL, ',', $puzzleString);
+			//$puzzleString = str_replace(PHP_EOL, ',', $puzzleString);
 
-			echo $puzzleString;
-
-			$puzzleString = explode(',', $puzzleString);
-
-			echo $puzzleString[0];
+			$puzzleString = explode(PHP_EOL, $puzzleString);
 
 			array_splice($puzzleString, -1);
 			array_splice($puzzleString, 0, 2);
 
-
-			echo $puzzleString[0];
+			echo $puzzleString;
 
 			//print_r($puzzleString);
 
