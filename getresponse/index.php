@@ -1,11 +1,12 @@
 <?php
-	
-	$reqInfo = print_r($_REQUEST, TRUE);
-	
-	$fp = fopen('request.log', 'a');
-	
-	fwrite($fp, $reqInfo);
+header("HTTP/1.1 200 OK");
 
-	fclose($fp);
+
+if ('PingPlease return OK so that I know your service works.'){
+	echo "OK";
+	foreach ($_REQUEST as $value) {
+		echo $value;
+	}
+}
 
 ?>
