@@ -33,6 +33,23 @@
 		else if ($value === 'Phone'){
 			echo "+1 (111) 111-1111";
 		}
+		else if ($value === 'Puzzle'){
+			
+			$puzzleString = next($_GET);
+			echo $puzzleString;
+
+
+
+			echo " ABCD";
+			echo "A";
+			echo "B";
+			echo "C";
+			echo "D";
+
+
+
+		}
+
 		else {
 			error_log($value);
 		} 
