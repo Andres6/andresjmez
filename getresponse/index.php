@@ -37,7 +37,7 @@
 			
 			$puzzleString = next($_GET);
 
-			$puzzleString = str_replace('\n', ',', $puzzleString);
+			$puzzleString = str_replace(' ', ',', $puzzleString);
 
 			echo $puzzleString;
 
