@@ -44,7 +44,7 @@
 			array_splice($puzzleString, -1);
 			array_splice($puzzleString, 0, 2);
 
-			echo $puzzleString;
+			echo $puzzleString[0];
 
 			//print_r($puzzleString);
 
