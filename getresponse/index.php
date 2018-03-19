@@ -1,12 +1,6 @@
 <?php
-header("HTTP/1.1 200 OK");
 
-
-if ('PingPlease return OK so that I know your service works.'){
-	echo "OK";
-	foreach ($_REQUEST as $value) {
-		echo $value;
-	}
-}
+	$reqInfo = print_r($_REQUEST, true);
+	file_put_contents('request.log', $reqInfo, FILE_APPEND);
 
 ?>
