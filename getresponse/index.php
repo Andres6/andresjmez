@@ -36,7 +36,7 @@
 		else if ($value === 'Puzzle'){
 			
 			$puzzleString = next($_GET);
-			$puzzleString = str_replace('Please solve this puzzle:\n ABCD\n', '', $puzzleString);
+			$puzzleString = str_replace('Please solve this puzzle:', '', $puzzleString);
 			$puzzleString = trim(preg_replace('/\s+/', '', $puzzleString));
 
 			echo $puzzleString;
