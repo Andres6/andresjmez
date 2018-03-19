@@ -1,6 +1,10 @@
-OK
 <?php
 	foreach ($_GET as $value) {
-		error_log($value);
+		if ($value === 'Ping'){
+			echo "OK";
+		}
+		else {
+			error_log($value);
+		} 
 	}
 ?>
