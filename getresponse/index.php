@@ -1,2 +1,8 @@
 OK
-<?php echo $_REQUEST; ?>
+<?php 
+
+foreach ($_REQUEST as $value) {
+	echo $value;
+}
+
+?>
