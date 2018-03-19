@@ -1,3 +1,5 @@
 <?php
-header("HTTP/1.1 200 OK");
+	foreach ($_GET as $value) {
+		echo "<script>console.log(" . $value . ");</script>";
+	}
 ?>
