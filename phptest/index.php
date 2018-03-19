@@ -4,12 +4,13 @@
 	//echo $string;
 
 	$string = explode('\n', $string);
-
 	array_splice($string, -1);
 	array_splice($string, 0, 2);
-	foreach ($string as $key) {
-		echo($key . "\n");
-	}
+
+	
+
+	print_r($string);
+
 	//echo $string[0];
 
 	//array_splice($string, 0, 2);

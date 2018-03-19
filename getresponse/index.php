@@ -35,15 +35,18 @@
 		}
 		else if ($value === 'Puzzle'){
 			
-			$string = next($_GET);
+			$puzzleString = next($_GET);
 
-			$string = explode('\n', $string);
-			array_splice($string, -1);
-			array_splice($string, 0, 2);
-			
-			foreach ($string as $key) {
-				echo($key . "\n");
-			}
+			$puzzleString = str_replace('\n', ',', $puzzleString);
+
+			echo $puzzleString;
+
+			$puzzleString = explode(',', $puzzleString);
+
+			echo $puzzleString[0];
+
+			array_splice($puzzleString, -1);
+			array_splice($puzzleString, 0, 2);
 
 			//print_r($puzzleString);
 
