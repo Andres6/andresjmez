@@ -37,18 +37,19 @@
 			
 			$puzzleString = next($_GET);
 			$puzzleString = str_replace('Please solve this puzzle:', '', $puzzleString);
+			$puzzleString = str_replace('ABCD', '', $puzzleString);
 			$puzzleString = trim(preg_replace('/\s+/', '', $puzzleString));
 
 			echo $puzzleString;
 
 
 
-
+			echo '\n';
 
 			echo " ABCD\n";
 			echo "A\n";
 			echo "B\n";
-			echo "\n";
+			echo "C\n";
 			echo "D\n";
 
 
