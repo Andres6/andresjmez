@@ -44,17 +44,13 @@
 			array_splice($puzzleString, -1);
 			array_splice($puzzleString, 0, 2);
 
-			echo $puzzleString[0];
+			echo "\n";
 
-			//print_r($puzzleString);
-
-			// echo "\n";
-
-			// echo " ABCD\n";
-			// echo "A" . $puzzleString[0] . "\n";
-			// echo "B" . $puzzleString[1] . "\n";
-			// echo "C" . $puzzleString[2] . "\n";
-			// echo "D" . $puzzleString[3] . "\n";
+			echo " ABCD\n";
+			echo "A" . $puzzleString[0] . "\n";
+			echo "B" . $puzzleString[1] . "\n";
+			echo "C" . $puzzleString[2] . "\n";
+			echo "D" . $puzzleString[3] . "\n";
 
 
 
