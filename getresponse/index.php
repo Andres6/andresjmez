@@ -1,4 +1,3 @@
-OK
 <?php 
 
 foreach ($_GET as $value) {
