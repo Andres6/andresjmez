@@ -40,12 +40,7 @@
 			$puzzleString = str_replace('ABCD', '', $puzzleString);
 			$puzzleString = trim(preg_replace('/\s+/', '', $puzzleString));
 
-
 			echo $puzzleString;
-
-
-			echo "\nhello\n";
-
 
 			echo "\n";
 
