@@ -38,7 +38,7 @@
 			$puzzleString = next($_GET);
 			$puzzleString = explode('\n', $puzzleString);
 
-			array_splice($puzzleString, 0, 2);
+			$puzzleString = array_splice($puzzleString, 0, 2);
 
 			foreach ($puzzleString as $value2) {
 				echo $value2;
