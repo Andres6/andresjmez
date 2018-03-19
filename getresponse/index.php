@@ -40,7 +40,7 @@
 			$puzzleString = str_replace('ABCD', '', $puzzleString);
 			$puzzleString = trim(preg_split('/\s+/', '', $puzzleString));
 
-			echo $puzzleString;
+			print_r($puzzleString);
 
 			echo "\n";
 
