@@ -1,5 +1,5 @@
 <?php
-	$string = 'Please solve this puzzle:\n ABCD\nA=---\nB<---\nC--->\nD>---\n';
+	$string = 'Please solve this puzzle:\n ABCD\nA---<\nB-->-\nC--->\nD---=\n';
 
 	//echo $string;
 
@@ -11,8 +11,6 @@
 	$puzzleString[1] = substr($puzzleString[1], 1);
 	$puzzleString[2] = substr($puzzleString[2], 1);
 	$puzzleString[3] = substr($puzzleString[3], 1);
-
-	//echo $puzzleString[1];
 
 	for ($i=0; $i < count($puzzleString); $i++) { 
 		$puzzleString[$i][$i] = "=";
@@ -44,6 +42,16 @@
 
 	for ($i=0; $i < count($puzzleString); $i++) { 
 		for ($j= count($puzzleString) - 1; $j > $i; $j--) { 
+			if ($puzzleString[$i][$j] === "<" && $nums[$i] > $nums[$j]) {
+				$temp = $nums[$i];
+				$nums[$i] = $nums[$j];
+				$nums[$j] = $temp; 
+			}
+		}
+	}
+
+	for ($i=0; $i < count($puzzleString); $i++) { 
+		for ($j= count($puzzleString) - 1; $j > $i; $j--) { 
 			if ($puzzleString[$i][$j] === "-" ) {
 				$puzzleString[$i][$j] = ($nums[$i] < $nums[$j]) ? "<" : ">";
 				$puzzleString[$j][$i] = ($nums[$i] === ">" ) ? "<" : ">";
@@ -52,7 +60,7 @@
 	}
 
 	$letters = "ABCD";
-	echo "ABCD" . PHP_EOL;
+	echo " ABCD" . PHP_EOL;
 	for ($i=0; $i < count($puzzleString); $i++) {
 		echo $letters[$i];
 		for ($j=0; $j < count($puzzleString) ; $j++) { 
