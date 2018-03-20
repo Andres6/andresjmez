@@ -1,5 +1,5 @@
 <?php
-	$string = 'Please solve this puzzle:\n ABCD\nA---<\nB-->-\nC--->\nD---=\n';
+	$string = 'Please solve this puzzle:\n ABCD\nA->--\nB-->-\nC--=-\nD--<-\n';
 
 	//echo $string;
 
@@ -26,35 +26,36 @@
 
 	$nums = array(0, 1, 2, 3);
 	for ($i=0; $i < count($puzzleString); $i++) { 
-		for ($j= count($puzzleString) - 1; $j > $i; $j--) { 
+		for ($j=0; $j < count($puzzleString); $j++) { 
 			if ($puzzleString[$i][$j] === ">" ) {
-				$temp = $nums[$i];
-				$nums[$i] = $nums[$j];
-				$nums[$j] = $temp; 
+				$temp = $nums[$j];
+				$nums[$j] = $nums[$i];
+				$nums[$i] = $temp; 
 			}
 			else if ($puzzleString[$i][$j] === "<" && $nums[$i] > $nums[$j]) {
-				$temp = $nums[$i];
-				$nums[$i] = $nums[$j];
-				$nums[$j] = $temp; 
+				$temp = $nums[$j];
+				$nums[$j] = $nums[$i];
+				$nums[$i] = $temp; 
 			}
 		}
 	}
 
 	for ($i=0; $i < count($puzzleString); $i++) { 
-		for ($j= count($puzzleString) - 1; $j > $i; $j--) { 
+		for ($j=0; $j < count($puzzleString); $j++) { 
 			if ($puzzleString[$i][$j] === "<" && $nums[$i] > $nums[$j]) {
 				$temp = $nums[$i];
 				$nums[$i] = $nums[$j];
-				$nums[$j] = $temp; 
+				$nums[$j] = $temp;
 			}
 		}
 	}
+	print_r($nums);
 
 	for ($i=0; $i < count($puzzleString); $i++) { 
-		for ($j= count($puzzleString) - 1; $j > $i; $j--) { 
+		for ($j= count($puzzleString) - 1 ; $j > $i ; $j--) { 
 			if ($puzzleString[$i][$j] === "-" ) {
 				$puzzleString[$i][$j] = ($nums[$i] < $nums[$j]) ? "<" : ">";
-				$puzzleString[$j][$i] = ($nums[$i] === ">" ) ? "<" : ">";
+				$puzzleString[$j][$i] = ($nums[$i] < $nums[$j]) ? ">" : "<";
 			}
 		}
 	}
@@ -64,9 +65,9 @@
 	for ($i=0; $i < count($puzzleString); $i++) {
 		echo $letters[$i];
 		for ($j=0; $j < count($puzzleString) ; $j++) { 
-		 	echo $puzzleString[$i][$j];
-		 } 
-		 echo PHP_EOL;
+			echo $puzzleString[$i][$j];
+		} 
+		echo PHP_EOL;
 	}
 
 	//print_r($string);
