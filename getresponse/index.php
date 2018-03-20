@@ -82,7 +82,6 @@
 					}
 				}
 			}
-			print_r($nums);
 
 			for ($i=0; $i < count($puzzleString); $i++) { 
 				for ($j= count($puzzleString) - 1 ; $j > $i ; $j--) { 
