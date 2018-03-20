@@ -36,23 +36,61 @@
 		else if ($value === 'Puzzle'){
 			
 			$puzzleString = next($_GET);
-
-			//$puzzleString = str_replace(PHP_EOL, ',', $puzzleString);
-
 			$puzzleString = explode(PHP_EOL, $puzzleString);
-
 			array_splice($puzzleString, -1);
 			array_splice($puzzleString, 0, 2);
 
-			echo "\n";
+			$puzzleString[0] = substr($puzzleString[0], 1);
+			$puzzleString[1] = substr($puzzleString[1], 1);
+			$puzzleString[2] = substr($puzzleString[2], 1);
+			$puzzleString[3] = substr($puzzleString[3], 1);
 
-			echo " ABCD\n";
-			echo $puzzleString[0] . "\n";
-			echo $puzzleString[1] . "\n";
-			echo $puzzleString[2] . "\n";
-			echo $puzzleString[3] . "\n";
+			for ($i=0; $i < count($puzzleString); $i++) { 
+				$puzzleString[$i][$i] = "=";
+				for ($j=0; $j < $i; $j++) { 
+					if ($puzzleString[$i][$j] !== "-" ) {
+						$puzzleString[$j][$i] = ($puzzleString[$i][$j] === ">" ) ? "<" : ">";
+					}
+					else if ($puzzleString[$j][$i] !== "-" ) {
+						$puzzleString[$i][$j] = ($puzzleString[$j][$i] === ">" ) ? "<" : ">";
+					}
+				}
+			}
 
+			$nums = array(0, 1, 2, 3);
+			for ($i=0; $i < count($puzzleString); $i++) { 
+				for ($j= count($puzzleString) - 1; $j > $i; $j--) { 
+					if ($puzzleString[$i][$j] === ">" ) {
+						$temp = $nums[$i];
+						$nums[$i] = $nums[$j];
+						$nums[$j] = $temp; 
+					}
+					else if ($puzzleString[$i][$j] === "<" && $nums[$i] > $nums[$j]) {
+						$temp = $nums[$i];
+						$nums[$i] = $nums[$j];
+						$nums[$j] = $temp; 
+					}
+				}
+			}
 
+			for ($i=0; $i < count($puzzleString); $i++) { 
+				for ($j= count($puzzleString) - 1; $j > $i; $j--) { 
+					if ($puzzleString[$i][$j] === "-" ) {
+						$puzzleString[$i][$j] = ($nums[$i] < $nums[$j]) ? "<" : ">";
+						$puzzleString[$j][$i] = ($nums[$i] === ">" ) ? "<" : ">";
+					}
+				}
+			}
+
+			$letters = "ABCD";
+			echo "ABCD" . PHP_EOL;
+			for ($i=0; $i < count($puzzleString); $i++) {
+				echo $letters[$i];
+				for ($j=0; $j < count($puzzleString) ; $j++) { 
+				 	echo $puzzleString[$i][$j];
+				 } 
+				 echo PHP_EOL;
+			}
 
 		}
 
