@@ -12,6 +12,8 @@
 	$puzzleString[2] = substr($puzzleString[2], 1);
 	$puzzleString[3] = substr($puzzleString[3], 1);
 
+	$start = microtime(true);
+
 	for ($i=0; $i < count($puzzleString); $i++) { 
 		$puzzleString[$i][$i] = "=";
 		for ($j=0; $j < $i; $j++) { 
@@ -49,7 +51,7 @@
 			}
 		}
 	}
-	print_r($nums);
+	//print_r($nums);
 
 	for ($i=0; $i < count($puzzleString); $i++) { 
 		for ($j= count($puzzleString) - 1 ; $j > $i ; $j--) { 
@@ -61,14 +63,25 @@
 	}
 
 	$letters = "ABCD";
-	echo " ABCD" . PHP_EOL;
+	echo " ";
+	echo "ABCD" . PHP_EOL;
+	echo "<br>";
 	for ($i=0; $i < count($puzzleString); $i++) {
 		echo $letters[$i];
 		for ($j=0; $j < count($puzzleString) ; $j++) { 
 			echo $puzzleString[$i][$j];
 		} 
-		echo PHP_EOL;
+		PHP_EOL;
+		echo "<br>";
 	}
+
+	$elapsed = microtime(true) - $start;
+
+	$elapsed = $elapsed * 1000000000;
+
+
+	echo $elapsed;
+	//echo $nanoEnd;
 
 	//print_r($string);
 
