@@ -585,6 +585,50 @@ button.dogAgeButton {
 	font-size: 1em;
 }
 
+/* #breed_img_div {
+	border: 3px solid white;
+} */
+
+/* .ui-selectmenu-menu .ui-menu {
+	overflow-y: 200px;
+} */
+
+.mylength {
+	height: 200px;
+}
+
+#breed_img_div {
+	max-width: 600px;
+	margin: 0 auto;
+	margin-top: 15px;
+}
+
+#breed_img {
+	max-width: 100%;
+	border: 3px solid #ffffff;
+	box-sizing: border-box;
+}
+
+#breed_info td {
+	color: #ffffff;
+}
+
+#breed_info {
+	max-width: 600px;
+	margin: 0 auto;
+	padding: 20px;
+	border: 3px solid #f6f6f6;
+	background: #313136;
+	box-shadow: 0px 2px 10px 0px #494950;
+	box-sizing: border-box;
+}
+
+#breed_table {
+	margin: 0 auto;
+	text-align: right;
+}
+
+
 
 /******************************************************************* end of body ********************************************************************/
 

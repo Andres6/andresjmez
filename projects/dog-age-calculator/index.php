@@ -156,8 +156,32 @@
 					</div>
 					<div id="dogAgeInfo">
 						<h3>A more accurate calculator</h3>
-						<p>There is no scientifically proven or agreed upon formula to calculate the exact age of your dog. Instead in order to get the best approximation of your dog's age, we need to consider some factors such as the breed, size, or weight of an individual dog. Here you can choose the size of your dog depending on their weight and enter their current age in "human years". You can get a more accurate result by entering a decimal after the year to represent months as well. ( e.g. for a 3 year 6 month old dog, enter 3.5 in years )</p>
+						<p>There is no scientifically proven or agreed upon formula to calculate the exact age of your dog. 
+						Instead, studies have shown that to better determine the approximate age of your dog, we need to consider other factors 
+						such as the dog's breed and size or weight. With this calculator you can choose the size of your dog depending 
+						on their weight and enter their current age in "human years". With this extra factor, it should give us a more precise 
+						estimate of your puppie's actual age. You can get a more accurate result by entering	a decimal after the year to represent 
+						months as well. ( e.g. for a 3 year 6 month old dog, enter 3.5 in years )</p>
 						
+					</div>
+					<div id="dogInfo">
+						<h4>Get more information about your dog</h4>
+						<div id="breeds">
+							<!-- <p>Select your breed below</p> -->
+							<div id="breedSelectid">
+								<select class="breedSelect">
+									<option>Select a breed</option>
+									<option></option>
+								</select>
+							</div>
+							<div id="breed_img_div">
+								<img id="breed_img"scr="" />
+							</div>
+							<div id="breed_info">
+								<table id="breed_table">
+								</table>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>

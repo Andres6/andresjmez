@@ -686,12 +686,13 @@ button.ui-button::-moz-focus-inner {
 .ui-selectmenu-menu {
 	padding: 0;
 	margin: 0;
-	position: absolute;
+	position: initial !important;
 	top: 0;
 	left: 0;
 	display: none;
 }
 .ui-selectmenu-menu .ui-menu {
+	margin: 0 auto;
 	overflow: auto;
 	overflow-x: hidden;
 	padding-bottom: 1px;
@@ -706,8 +707,18 @@ button.ui-button::-moz-focus-inner {
 	border: 0;
 }
 .ui-selectmenu-open {
-	display: block;
+	display: initial;
 }
+
+.ui-selectmenu-open, .ui-menu {
+	height: 250px;
+}
+
+.ui-menu {
+	max-width: 14em;
+	padding: .4em 1em;
+}
+
 .ui-selectmenu-text {
 	display: block;
 	margin-right: 20px;
@@ -1311,3 +1322,10 @@ a.ui-button:active,
 	-webkit-box-shadow: -4px -4px 4px #aaaaaa;
 	box-shadow: -4px -4px 4px #aaaaaa;
 }
+
+
+
+
+
+
+
