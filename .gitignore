@@ -2,5 +2,5 @@
 
 .DS_store
 .DS_store?
-phpmyadmin/*
+phpmyadmin/
 reelfeed/twitterapi/index.php
