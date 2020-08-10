@@ -10,6 +10,8 @@
 		<link rel="stylesheet" href="./aj.css">
 		<link rel="icon" href="../../favicon.ico" type="image/x-icon">
 
+		<link href="https://fonts.googleapis.com/css2?family=Srisakdi:wght@700&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Contrail+One&family=Handlee&family=Poiret+One&family=Roboto+Mono&display=swap" rel="stylesheet">
 		<title>Pua</title>
 
 		<!-- Google Analytics -->
@@ -52,9 +54,10 @@
                 <div class="container-lg content">
                     <div class="row">
                         <div class="col-lg-5 align-self-center">
-                            <div class=" text-center">
-                                <h3 class="display-4 text-light font-weight-bold">Andres Jimenez</h3>
-                                <p class="display-5 text-light font-weight-bold">Hello World! I'm a software engineer, welcome.</p>
+                            <div class="intro text-center">
+								<h3 class="display-3 text-light font-weight-bold">I'm Andres.</h3>
+								<h4 class="display-5 text-light font-weight-bold">***</h4>
+                                <h4 class="display-5 text-light font-weight-bold">software engineer, welcome!</h4>
                             </div>
                         </div>
                         <div class="col-lg-7">
@@ -68,8 +71,11 @@
                 </div>
             </section>
 			<svg viewBox="0 0 1000 80" preserveAspectRatio="none">
- 				<path class="svgMain" d="m 0 0 l 0 40 q 80 50 350 0 q 270 -50 650 30 l 1000 -80 z " fill="#a0d0e4" />
+ 				<path class="svgMain" d="m 0 0 l 0 40 q 80 50 350 0 q 270 -50 650 30 l 1000 -80 z " fill="#92c8de" />
 			</svg>
+			<section class="container">
+
+			</section>
 		</div>
 
         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>

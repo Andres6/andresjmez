@@ -5,16 +5,19 @@
 }
 
 .acti {
-    border-bottom: 3px solid #ffffff;
+    border-bottom: 2px solid #ffffff;
 }
 
 .nav-link:hover {
-    border-bottom: 3px dashed #ffffff;
+    transform: rotateZ(-35deg);
+    border-bottom: 2px dotted #ffffff;
 }
 
 .nav-link {
     margin-left: .5rem;
     margin-right: .5rem;
+    font-family: 'Poiret One', cursive;
+    transition: all 0.4s ease-in-out;
 }
 
 .navbar-light .navbar-toggler-icon {
@@ -26,7 +29,15 @@
 } 
 
 .welcome, .navbar  {
-    background-color: #a0d0e4!important;
+    background-color: #92c8de!important;
+}
+
+.navbar-brand {
+    font-family: 'Poiret One', cursive;
+}
+
+.intro {
+    font-family: 'Handlee', cursive;
 }
 
 .figure-caption {
@@ -47,6 +58,8 @@
     
     .nav-link:hover {
         border-bottom: unset;
+        transform: unset;
+        opacity: 0.8;
     }
     
 }
@@ -54,3 +67,4 @@
 /* svg {
     width: 100%;
 } */
+
