@@ -61,7 +61,7 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent23">
                     <ul class="navbar-nav ml-auto mr-2 mt-2 mt-lg-0" id="top-menu">
                         <li class="nav-item"><a href="../../" class="nav-link acti" id="homeNav">home</a></li>
-                        <li class="nav-item"><a href="../../about/" class="nav-link" id="aboutNav">about</a></li>
+                        <li class="nav-item"><a href="#aboutme" class="nav-link" id="aboutNav">about</a></li>
                         <li class="nav-item"><a href="../../contact/" class="nav-link" id="contactNav">contact</a></li>
                         <li class="nav-item"><a href="../../projects/" class="nav-link" id="projectsNav">projects</a>
                         </li>
@@ -85,7 +85,7 @@
                     <div class="col-lg-7">
                         <div class="text-center">
                             <figure class="figure mt-3 mb-0">
-                                <img src="./binmebr.png" class="me figure-img img-fluid mb-0" alt="Stupid Pig">
+                                <img src="./BinaryMeDraw.png" class="me figure-img img-fluid mb-0" alt="Stupid Pig">
                                 <figcaption class="figure-caption font-italic text-right">It's me</figcaption>
                         </div>
                     </div>
@@ -102,12 +102,12 @@
                 <img class="img-fluid" src="./blob_hi.png" alt="blob">
             </div> -->
         </section>
-        <section class="container">
+        <section id="aboutme" class="container">
             <div class="row about-intro">
                 <div class="col-lg-6">
-                    <h3 class="h3-responsive font-weight-bold sect-title text-center">about</h3>
-                    <p class="infotext">I'm a software engineer based around New York, NY. I enjoy
-                        building/designing
+                    <h3 class="h3-responsive font-weight-bold sect-title">about</h3>
+                    <p class="infotext">I'm a software engineer based around New York, NY. I
+                        build/design
                         applications with
                         clean and reusable code. I enjoy creating projects across the spectrum from designing
                         websites(like
@@ -129,11 +129,21 @@
 
             <div class="row">
                 <div class="col-lg-6"></div>
-                <div class="col-lg-6 text-center">
-                    <h3 class="h3-responsive font-weight-bold sect-title text-center">more about</h3>
-                    <p class="">Name: Andres Jimenez </p>
-                    <p class="">Location: 40°48'08.3"N 73°58'50.1"W </p>
-                    <p class="">Age: 31 </p>
+                <div class="stats col-lg-6 text-right">
+                    <h3 class="h3-responsive font-weight-bold sect-title">simple stats</h3>
+                    <p class="h5-responsive statsTitle mb-0">Name</p>
+                    <p class="h4-responsive">Andres Jimenez </p>
+                    <p class="h5-responsive statsTitle mb-0">Location</p>
+                    <p class="h4-responsive">40°48'08.3"N 73°58'50.1"W </p>
+                    <p class="h5-responsive statsTitle mb-0">Age</p>
+                    <div class="countup" id="countup1">
+                        <span class="timeel years">00</span>
+                        <span class="timeel days">00</span>
+                        <span class="timeel hours">00</span>
+                        <span class="timeel minutes">00</span>
+                        <span class="timeel seconds">00</span>
+
+                    </div>
                 </div>
         </section>
 

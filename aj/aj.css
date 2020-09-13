@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background-color: #fff8dc;
 }
@@ -152,7 +156,8 @@ body {
 }
 
 .intro {
-    font-family: 'Handlee', cursive;
+    /* font-family: 'Handlee', cursive; */
+    font-family: 'Poiret One', cursive;
     color: #ffffff;
 }
 
@@ -161,7 +166,8 @@ body {
 }
 
 .figure {
-    max-width: 30em;
+    max-width: 30rem;
+    mix-blend-mode: hard-light;
 }
 
 
@@ -187,6 +193,29 @@ body {
     display: block;
 }
 
+
+/* .countup {
+    padding: 1.5rem 0;
+} */
+
+.statsTitle {
+    font-weight: bold;
+    font-family: 'Poiret One', cursive;
+    color: #f15a3c;
+}
+
+.timeel {
+    border-radius: 7%;
+    background-color: #414141;
+    background-image: linear-gradient(315deg, #3ebcde 0%, #fff8dc 74%);
+    padding: 1rem 1rem;
+    color: #414141;
+    font-family: 'Poiret One', cursive;
+    font-weight: bold;
+    display: inline-block;
+    width: 3rem;
+}
+
 .page-footer {
     background-color: #2097b7;
 }
@@ -203,6 +232,9 @@ body {
         opacity: 0.5;
     }
     .figure {
-        max-width: 25em;
+        max-width: 20rem;
+    }
+    .stats {
+        text-align: center!important;
     }
 }
