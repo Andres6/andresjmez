@@ -234,7 +234,8 @@ body {
     .figure {
         max-width: 20rem;
     }
-    .stats {
+    .stats,
+    .sect-title {
         text-align: center!important;
     }
 }
