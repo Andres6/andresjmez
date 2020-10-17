@@ -1,0 +1,750 @@
+/****************************************************************************************************************************************************
+ *																		Defaults																	*
+ ****************************************************************************************************************************************************/
+
+p {
+	color: #313136;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 400;
+}
+
+/******* some default colors used on site ******** 
+	color:		#0073ea; blue color (hover on dog calc buttons)
+	color:		#fa1f18; red color (submit on contact page and dog calc page, mail logo on footer)
+	color:		#4bbee5; sky blue color
+	color:		#d2302b; red color (first name on home page)
+	color:		#1c7694; blue color (last name on home page)
+*/
+
+/****************************************************************************************************************************************************
+ *																	Base structure 																	*
+ ****************************************************************************************************************************************************/
+
+/*html {
+	box-shadow: inset 0 0 100px rgba(0,0,0,.5);
+}*/
+
+html,
+body {
+	height: 100%;
+	background-image: url(../media/wavegrid_tan.png);
+	background-repeat: repeat;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 400;
+	text-align: center;
+}
+
+.wrapper {
+	height: auto;
+	margin: 0 auto -170px;
+	min-height: 100%;
+	padding: 0 0 170px;
+	box-sizing: border-box;
+	overflow: auto;
+	/*height: 100%;  For at least Firefox */
+	/*-webkit-box-shadow: inset 0 0 100px rgba(0,0,0,.5);
+	box-shadow: inset 0 0 100px rgba(0,0,0,.5);*/
+}
+
+/*************************************************************** end of base structure **************************************************************/
+
+/****************************************************************************************************************************************************
+ *																	Top menu content 																*
+ ****************************************************************************************************************************************************/
+
+.pages { background: #313136; }
+
+ul#top-menu {
+	max-width: 800px;
+	padding: 0px 10px;
+	margin: 0 auto;
+	text-align: initial;
+}
+
+ul#top-menu > li {
+	display: inline-block;
+	margin: 0 0;
+	/*margin: 0 15px; */
+}
+
+ul#top-menu > li > a {
+	display: inline-block;
+	padding: 13px 20px;
+	color: #ffffff;
+	text-transform: uppercase;
+    text-decoration: none;
+    /*font-family: 'Chelsea Market', cursive;*/
+} 
+
+/** makes login link move to right side **/
+li#loginLink {float: right; }
+li#loginLink > a { text-transform: initial !important; }
+
+/** hover of main menu items **/
+ul#top-menu > li > a:hover,
+ul#top-menu > li > a:focus {
+	color: #4092bd;
+	background-color: transparent;	
+}
+
+/** current page indicator **/
+body#home a#homeNav,
+body#about a#aboutNav,
+body#contact a#contactNav,
+body#projects a#projectsNav {
+	background: #ffffff;
+	color: #313136;
+	text-decoration: none;
+}
+
+/** hide menus initially. shown with php (device-dependent) **/ 
+.mobile_nav { display: none; }
+
+.slicknav_menu { display: none; }
+
+.slicknav_nav a { text-transform: uppercase; }
+
+.slicknav_btn { background-color: initial; }
+
+
+/********************************************************************* end of header ****************************************************************/
+
+/****************************************************************************************************************************************************
+ *                                                                      Body content                                                                *
+ ****************************************************************************************************************************************************/
+
+/** default heading for each page**/
+.content { margin-top: 20px; }
+
+div#pagetop-name p{ 
+	margin: 0;
+	/*font-family: 'Chelsea Market', cursive;*/
+	font-family: cursive;
+	font-size: 2em; 
+}
+
+/** name heading on all pages **/
+p#pagetop-first { float: left; margin-right: 10px !important; }
+p#pagetop-last { color: #d2302b; float: left; }
+
+p#pagetop-first-link { color: #d2302b; float: left; }
+p#pagetop-last-link { color: #1c7694; float: left; }
+
+p#pagetop-last-link { float: left; }
+
+p#welcome_name {
+	margin: 0;
+	text-align: right;
+	letter-spacing: 1px;
+}
+
+div#pagetop-name { overflow: auto; width: 100%; }
+
+.page_content { margin: 0 20px; }
+
+
+/********************************************************************** home page *******************************************************************/
+
+/*div#home_content {
+	margin-left: 20px;
+	margin-right: 20px;
+}*/
+
+div#text-photo {
+	overflow: auto;
+	width: 100%;
+	margin: 0 auto;
+	max-width: 800px;
+}
+
+div#name {
+	/*overflow: auto;*/
+	width: 100%;
+	max-width: 320px;
+	margin: 0 auto;
+	float: left;
+}
+
+div#name p {
+	margin: 0;
+	/*font-family: 'Chelsea Market', cursive;*/
+	font-family: cursive;
+	font-size: 3.5em;
+	line-height: 1em;
+}
+
+#First  { float: left; }
+#Last  { color: #d2302b; float: right; }
+
+/*#First  { color: #d2302b; color:  #dea98c; }
+#Last   { color: #1c7694 color: #4bbee5; }*/
+
+/* home page image of me */
+
+.my_image_div { float: left; }
+
+#my_image { 
+	display: block;
+	max-width: 470px;
+	height: auto;
+}
+
+/*.bg {
+	background-image: url(../media/silhouette12k.png);
+	background-repeat: no-repeat;
+	background-size: contain;
+	height: 624px; 
+	width: 450px;
+	margin-left: 350px;
+}*/
+
+/* home page area under image of me */
+
+.intro_line {
+	max-width: 800px;
+	margin: 0 auto;
+	border: none;
+	border-top: 2px solid #313136;
+}
+
+.hello-world p { letter-spacing: 1px; }
+
+/********************************************************************** about page ******************************************************************/
+
+/*div#about_content { margin: 0 20px; } */
+div#about_heading { 
+	max-width: 800px;
+	margin: 0 auto;
+}
+
+p#about_name { display: none; }
+
+p#about_punchline {
+	text-align: left;
+	font-size: 17px;
+	font-weight: 400;
+	letter-spacing: 1px;
+}
+
+div#about_line {
+	max-width: 800px;
+	margin: 0 auto;
+	border: none;
+	border-top: 2px solid #313136;
+}
+
+div#about_text {
+	max-width: 800px;
+	margin: 0 auto;
+}
+
+div#about_text p {
+	text-align: justify;
+	letter-spacing: 1px;
+	line-height: 27px;
+}
+
+a#resume-link { color: #0073ea; }
+
+
+/********************************************************************* contact page *****************************************************************/
+
+/*div#contact_content { margin: 0 20px; }*/
+
+div#contact_heading { 
+	max-width: 800px;
+	margin: 0 auto;
+}
+
+p#contact_name { display: none; }
+
+p#contact_name {
+	margin: 0;
+	font-size: 30px;
+	font-weight: 300;
+	letter-spacing: -1px;
+	text-transform: uppercase;
+	text-align: left;
+}
+
+p#contact_punchline {
+	text-align: left;
+	font-size: 17px;
+	font-weight: 400;
+	letter-spacing: 1px;
+}
+
+div#contact_line {
+	max-width: 800px;
+	margin: 0 auto 10px;
+	border: none;
+	border-top: 2px solid #313136;
+}
+
+div#contact_area {
+	max-width: 800px;
+	margin: 0 auto;
+}
+
+div#contact_area p {
+	margin-top: 10px;
+	font-size: 15px;
+	font-weight: 400;
+	letter-spacing: 1px;
+}
+
+img#contact_logo {
+	height: 70px;
+	width: 70px;
+	border: 0;
+	margin: 0 auto;
+	/*background-image: url(../media/mail.png);
+	background-repeat: no-repeat;
+	background-size: contain;*/
+}
+
+form#contactForm {
+	max-width: 400px;
+	margin: 0 auto;
+}
+
+input#contactMeEmail { margin: 10px auto; }
+
+input.contactMe {
+	display: block;
+	outline: none;
+	width: 100%;
+	/*height: 37px;*/
+	background: #efefef;
+	border: none;
+	border-bottom: 3px solid #c9c9c9;
+	transition: border 0.5s;
+	padding: 10px;
+	font-size: 15px;
+	color: #313136;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	box-sizing: border-box;
+}
+
+
+textarea#contactMeMessage {
+	display: block;
+	outline: none;
+	width: 100%;
+	background: #efefef;
+	border: none;
+	border-bottom: 3px solid #c9c9c9;
+	transition: border 0.5s;
+	padding: 10px;
+	font-size: 15px;
+	color: #313136;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	height: 200px;
+	box-sizing: border-box;
+}
+
+input:focus, textarea:focus {
+	border-bottom: 3px solid #494950;
+	box-shadow: 0px 1px 5px 0px #494950;
+}
+
+input#contactMeSubmit {
+	display: block;
+	margin: 0 auto;
+	padding: 0;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	border: none;
+	width: 150px;
+	height: 37px;
+	color: #efefef;
+	background-color: #fa1f18;
+	background-image: linear-gradient(to bottom, #fa1f18, #bc1526);
+	box-shadow: 0px 1px 3px 0px #494950;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+}
+
+input#contactMeSubmit:hover {
+	background-color: #e21c15;
+	background-image: linear-gradient(to bottom, #bc1526, #fa1f18);
+}
+
+
+/******************************************************************** mail sent page ****************************************************************/
+
+/*div#sent_content { margin: 0 20px; }*/
+
+div#mail_status {
+	max-width: 800px;
+	margin: 0 auto;
+}
+
+img#sent_logo {
+	display: block;
+	margin: 0 auto;
+}
+
+/******************************************************************** projects page *****************************************************************/
+
+/*div#projects_content { margin: 0 20px; }*/
+
+div#projects_heading { 
+	max-width: 800px;
+	margin: 0 auto;
+}
+
+p#projects_name { display: none; }
+
+p#projects_name {
+	margin: 0;
+	font-size: 30px;
+	font-weight: 300;
+	letter-spacing: -1px;
+	text-transform: uppercase;
+	text-align: left;
+}
+
+p#projects_punchline {
+	text-align: left;
+	font-size: 17px;
+	letter-spacing: 1px;
+}
+
+div#projects_line {
+	max-width: 800px;
+	margin: 0 auto 10px;
+	border: none;
+	border-top: 2px solid #313136;
+}
+
+div#projects_list {
+	max-width: 800px;
+	margin: 0 auto;
+}
+div#projects_divide {
+	max-width: 800px;
+	margin: 0 auto 10px;
+	border: none;
+	border-top: 1px dashed #313136;
+}
+
+div#projects_list{ text-align: initial; }
+
+div#projects_list a { color: #0073ea; }
+
+div#projects_list p {
+	padding-left: 0.4em;
+	text-align: justify;
+	letter-spacing: 0.01em;
+	line-height: 1.4em;
+}
+
+
+/*************************************************************** dog age calculator page ************************************************************/
+
+/*div#dog_calc_content { margin: 0 20px; }*/
+
+#dogAge_heading { 
+	max-width: 800px;
+	margin: 0 auto;
+}
+
+p#dogAge_name { display: none; }
+
+#dogAge_name {
+	margin: 0;
+	font-size: 30px;
+	/*font-weight: 300;*/
+	text-transform: uppercase;
+	text-align: left;
+}
+
+#dogAge_punchline {
+	font-size: 17px;
+	letter-spacing: 1px;
+}
+
+#dogAge_line {
+	max-width: 800px;
+	margin: 0 auto 10px;
+	border: none;
+	border-top: 2px solid #313136;
+}
+
+div#dogAgeInfo{
+	max-width: 800px;
+	margin: 0 auto;
+}
+
+div#dogAgeInfo p {
+    text-align: justify;
+    letter-spacing: 0.01em;
+    line-height: 1.4em;
+}
+
+/* fixes glitch of flashing radio buttons on load*/
+div#dogAgeCalcDiv { 
+	display: none; 
+	max-width: 800px;
+	margin: 0 auto;
+}
+
+#dogFormDiv {
+	max-width: 500px;
+	margin: 0 auto;
+	padding: 20px;
+	border: 3px solid #f6f6f6;
+	background: #313136;
+	box-shadow: 0px 2px 10px 0px #494950;
+	box-sizing: border-box;
+}
+
+h3#dog_calc_heading { 
+	margin: 0;
+	color: #ffffff;
+}
+
+form#getDogInfo fieldset {
+	border: none;
+	margin-top: 20px;
+}
+
+legend#dog_size,
+legend#dog_age_years { 
+	display: inline-block;
+	color: #ffffff;
+	margin: 0 auto;
+}
+
+.error { color: #fa1f18; }
+
+fieldset#dog_radioSet label.ui-button.ui-widget {
+	font-size: 1em;
+	margin-top: 20px;
+}
+
+#humanAge {
+	margin-top: 20px;
+	width: 100px;
+	height: 40px;
+	font-size: 1.5em;
+	text-align: center;
+	outline: none;
+	background: #efefef;
+	border: none;
+	border-radius: 2px;
+	/*border: 2px solid #0073ea;*/
+	/*transition: border 0.5s;*/
+}
+
+#humanAge:focus {
+	border-radius: 2px;
+	border: 2px solid #0073ea;
+	box-shadow: 0px 1px 5px 0px #494950;
+}
+
+#ageResult {
+	width: 150px;
+	margin: 0 auto;
+	margin-top: 20px;
+	border-radius: 3px;
+	background: #f6f6f6;
+}
+
+#ageResult p{
+	font-size: 1em;
+	font-weight: bold;
+	text-align: center;
+	color: #0073ea;
+	margin-bottom: 0;
+	margin-top:	0;
+}
+
+p#answer{
+	color: #fa1f18;
+	font-size: 1.6em;
+	font-weight: bold;
+	padding: 5px
+}
+
+button.dogAgeButton {
+	width: 100px;
+	height: 40px;
+	margin: 0;
+	font-size: 1em;
+}
+
+/* #breed_img_div {
+	border: 3px solid white;
+} */
+
+/* .ui-selectmenu-menu .ui-menu {
+	overflow-y: 200px;
+} */
+
+.mylength {
+	height: 200px;
+}
+
+#breed_img_div {
+	max-width: 600px;
+	margin: 0 auto;
+	margin-top: 15px;
+}
+
+#breed_img {
+	max-width: 100%;
+	border: 3px solid #ffffff;
+	box-sizing: border-box;
+}
+
+#breed_info td {
+	color: #ffffff;
+}
+
+#breed_info {
+	max-width: 600px;
+	margin: 0 auto;
+	padding: 20px;
+	border: 3px solid #f6f6f6;
+	background: #313136;
+	box-shadow: 0px 2px 10px 0px #494950;
+	box-sizing: border-box;
+}
+
+#breed_table {
+	margin: 0 auto;
+	text-align: right;
+}
+
+
+
+/******************************************************************* end of body ********************************************************************/
+
+/****************************************************************************************************************************************************
+ *                                                                      Footer                                                                      *
+ ****************************************************************************************************************************************************/
+
+
+.mastfoot {
+	background-color: #313136;
+	color: red;
+	height: 150px;  /* footer height */
+	display: block;
+	margin-top: 20px; /* space between content and footer */
+	box-sizing: border-box;
+	position: relative;
+	width: 100%;
+}
+
+.footer_name {
+	position: relative;
+	top: 50%;
+	left: 50%;
+	transform: translateY(-50%) translateX(-50%);
+}
+
+.footer_name p {
+	color: #ffffff;
+	line-height: 8px;
+	letter-spacing: 1px;
+	font-size: 12px;
+	text-transform: uppercase;
+}
+
+#dev_note {
+	font-size: 10px;
+	line-height: 10px;
+}
+
+#social_list {
+	padding: 0;
+}
+
+#social_list li {
+	display: inline;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+#footer_github {
+	width: 48px;
+	height: 48px;
+}
+
+#footer_contact {
+	width: 48px;
+	height: 48px;
+}
+
+/************************************************************* end of footer and styles *************************************************************/
+
+/****************************************************************************************************************************************************
+ *                                                                      Restiv			                                   							*
+ ****************************************************************************************************************************************************/
+
+/*.mobi.phone .top-menu { display: none; }*/
+
+.mobi.phone .mobile_nav { display: none; }
+
+.mobi.phone div#projects_content,
+.mobi.phone div#about_content,
+.mobi.phone div#contact_content,
+.mobi.phone div#home_content {
+	margin: 0 20px;
+}
+
+.mobi.phone .slicknav_menu {
+	display: inline-block;
+	background: #313136;
+	width: 100%;
+	font-size: 1.2em;
+}
+
+ul.slicknav_nav {
+	margin: 0;
+	text-align: initial;
+}
+
+.mobi.phone .slicknav_btn {
+	display: inline-block;
+	float: left;
+	margin: 0;
+}
+
+.mobi.phone .pages { display: none; }
+
+.mobi.phone div#name { float: initial; }
+.mobi.phone div#name p { line-height: 1em; }
+/*.mobi.phone p#First { float: left; }
+.mobi.phone p#Last { float: right; }*/
+
+.mobi.tablet div#name { float: initial; }
+
+/* center image of me on main page */
+.mobi.phone .my_image_div { float: initial; }
+.mobi.phone #my_image {
+	max-width: 100%;
+	height: auto;
+	margin: 0 auto;
+}
+
+.mobi.tablet .my_image_div { float: initial; }
+.mobi.tablet #my_image {
+	max-width: 500px;
+	height: auto;
+	margin: 0 auto;
+}
+
+
