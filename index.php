@@ -88,7 +88,7 @@
                     <div class="col-lg-7">
                         <div class="text-center">
                             <figure class="figure mt-3 mb-0">
-                                <img src="./BinaryMeDraw.png" class="me figure-img img-fluid mb-0" alt="Stupid Pig">
+                                <img src="./BinaryMeFinal.png" class="me figure-img img-fluid mb-0" alt="Stupid Pig">
                                 <figcaption class="figure-caption font-italic text-right">It's me</figcaption>
                         </div>
                     </div>
