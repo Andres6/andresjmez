@@ -141,12 +141,12 @@
                         <!--/Second slide-->
                         <!--Third slide-->
                         <div class="carousel-item">
-                            <img class="d-block w-100" src="park3BW.jpg" alt="Third slide">
+                            <img class="d-block w-100" src="parrk3BW.jpg" alt="Third slide">
                         </div>
                         <!--/Third slide-->
                         <!--Fourth slide-->
                         <div class="carousel-item">
-                            <img class="d-block w-100" src="park3Colorize.jpg" alt="Fourth slide">
+                            <img class="d-block w-100" src="parrk3Colorize.jpg" alt="Fourth slide">
                         </div>
                         <!--/Fourth slide-->
                         <!--Fifth slide-->
@@ -161,7 +161,7 @@
                         <!--/Sixth slide-->
                         <!--Seventh slide-->
                         <div class="carousel-item">
-                            <img class="d-block w-100" src="park2.jpg" alt="Seventh slide">
+                            <img class="d-block w-100" src="parrk2.jpg" alt="Seventh slide">
                         </div>
                         <!--/Seventh slide-->
                     </div>
