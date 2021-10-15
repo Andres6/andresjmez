@@ -106,7 +106,7 @@
 
 
     <section class="container-fluid">
-        <div class="container-lg content">
+        <div class="content">
 
             <!-- Video 1 -->
             <div class="z-depth-1 my-5 py-5 px-5 text-center bg-white">
