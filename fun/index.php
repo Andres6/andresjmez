@@ -134,36 +134,36 @@
                             <img class="d-block w-100" src="nyackBW.jpg" alt="First slide">
                         </div>
                         <!--/First slide-->
-                        <!--Third slide-->
-                        <div class="carousel-item">
-                            <img class="d-block w-100" src="nyack1.jpg" alt="Third slide">
-                        </div>
-                        <!--/Third slide-->
                         <!--Second slide-->
                         <div class="carousel-item">
-                            <img class="d-block w-100" src="Park3BW.jpg" alt="Second slide">
+                            <img class="d-block w-100" src="nyack1.jpg" alt="Second slide">
                         </div>
                         <!--/Second slide-->
                         <!--Third slide-->
                         <div class="carousel-item">
-                            <img class="d-block w-100" src="Park3Colorize.jpg" alt="Third slide">
+                            <img class="d-block w-100" src="Park3BW.jpg" alt="Third slide">
                         </div>
                         <!--/Third slide-->
-                        <!--Third slide-->
+                        <!--Fourth slide-->
                         <div class="carousel-item">
-                            <img class="d-block w-100" src="Park4BW.jpg" alt="Third slide">
+                            <img class="d-block w-100" src="Park3Colorize.jpg" alt="Fourth slide">
                         </div>
-                        <!--/Third slide-->
-                        <!--Third slide-->
+                        <!--/Fourth slide-->
+                        <!--Fifth slide-->
                         <div class="carousel-item">
-                            <img class="d-block w-100" src="Park4Colorize.jpg" alt="Third slide">
+                            <img class="d-block w-100" src="park4BW.jpg" alt="Fifth slide">
                         </div>
-                        <!--/Third slide-->
-                        <!--Third slide-->
+                        <!--/Fifth slide-->
+                        <!--Sixth slide-->
                         <div class="carousel-item">
-                            <img class="d-block w-100" src="Park2.jpg" alt="Third slide">
+                            <img class="d-block w-100" src="Park4Colorize.jpg" alt="Sixth slide">
                         </div>
-                        <!--/Third slide-->
+                        <!--/Sixth slide-->
+                        <!--Seventh slide-->
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="Park2.jpg" alt="Seventh slide">
+                        </div>
+                        <!--/Seventh slide-->
                     </div>
                     <!--/.Slides-->
                     <!--Controls-->
