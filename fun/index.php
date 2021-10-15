@@ -108,8 +108,8 @@
     <section class="container-fluid">
         <div class="content">
 
-            <!-- Video 1 -->
-            <div class="z-depth-1 my-5 py-5 px-5 text-center bg-white">
+            <!-- Carousel 1 -->
+            <div class="z-depth-2 my-2 py-2 px-2 text-center bg-white">
                 <h6 class="font-weight-bold grey-text text-uppercase small mb-4">Photoshoot</h6>
                 <h3 class="font-weight-bold dark-grey-text pb-2">Wedding</h3>
                 <hr class="w-header my-3">
@@ -179,13 +179,13 @@
                 </div>
                 <!--/.Carousel Wrapper-->
             </div>
-            <!-- End Video 1 -->
+            <!-- End Carousel 1 -->
 
 
 
 
             <!-- Video 1 -->
-            <div class="z-depth-1 my-5 py-5 px-5 text-center bg-white">
+            <div class="z-depth-2 my-2 py-2 px-2 text-center bg-white">
                 <h6 class="font-weight-bold grey-text text-uppercase small mb-4">video</h6>
                 <h3 class="font-weight-bold dark-grey-text pb-2"><i class="fas fa-snowboarding"></i> Snow</h3>
                 <hr class="w-header my-3">
@@ -197,7 +197,7 @@
             <!-- End Video 1 -->
 
             <!-- Video 2 -->
-            <div class="z-depth-1 my-5 py-5 px-5 text-center bg-white">
+            <div class="z-depth-2 my-2 py-2 px-2 text-center bg-white">
                 <h6 class="font-weight-bold grey-text text-uppercase small mb-4">video</h6>
                 <h3 class="font-weight-bold dark-grey-text pb-2">Skate</h3>
                 <hr class="w-header my-3">
