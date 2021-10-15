@@ -141,12 +141,12 @@
                         <!--/Second slide-->
                         <!--Third slide-->
                         <div class="carousel-item">
-                            <img class="d-block w-100" src="Park3BW.jpg" alt="Third slide">
+                            <img class="d-block w-100" src="park3BW.jpg" alt="Third slide">
                         </div>
                         <!--/Third slide-->
                         <!--Fourth slide-->
                         <div class="carousel-item">
-                            <img class="d-block w-100" src="Park3Colorize.jpg" alt="Fourth slide">
+                            <img class="d-block w-100" src="park3Colorize.jpg" alt="Fourth slide">
                         </div>
                         <!--/Fourth slide-->
                         <!--Fifth slide-->
@@ -156,12 +156,12 @@
                         <!--/Fifth slide-->
                         <!--Sixth slide-->
                         <div class="carousel-item">
-                            <img class="d-block w-100" src="Park4Colorize.jpg" alt="Sixth slide">
+                            <img class="d-block w-100" src="park4Colorize.jpg" alt="Sixth slide">
                         </div>
                         <!--/Sixth slide-->
                         <!--Seventh slide-->
                         <div class="carousel-item">
-                            <img class="d-block w-100" src="Park2.jpg" alt="Seventh slide">
+                            <img class="d-block w-100" src="park2.jpg" alt="Seventh slide">
                         </div>
                         <!--/Seventh slide-->
                     </div>
