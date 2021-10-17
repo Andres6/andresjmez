@@ -410,6 +410,11 @@
         </svg>
 
 
+        <!-- Scroll up button -->
+        <button type="button" class="btn-floating btn-lg" id="btn-back-to-top">
+            <i class="fas fa-arrow-up"></i>
+        </button>
+
         <!-- Footer -->
         <footer class="page-footer font-small pt-4">
 
@@ -551,10 +556,7 @@
         </footer>
         <!-- Footer -->
 
-        <!-- Scroll up button -->
-        <button type="button" class="btn-floating btn-lg" id="btn-back-to-top">
-            <i class="fas fa-arrow-up"></i>
-        </button>
+        
     </div>
 
 
