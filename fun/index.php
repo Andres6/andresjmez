@@ -74,6 +74,7 @@
             </div>
         </header>
 
+
         <section class="container-fluid welcome pt-5">
             <div class="container-lg content pt-5">
                 <div class="intro text-center">
@@ -361,7 +362,12 @@
     </div>
 
 
+    <!-- Scroll up button -->
+    <button type="button" class="btn-floating btn-lg" id="btn-back-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
 
+    
     <!-- JQuery -->
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <!-- Bootstrap tooltips -->

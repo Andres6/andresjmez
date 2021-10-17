@@ -62,6 +62,8 @@
     </script>
 </head>
 
+
+
 <body id="projects">
     <!-- Full Site -->
     <div class="wrapper container-fluid px-0">
@@ -91,6 +93,9 @@
                 </div>
             </div>
         </header>
+
+
+        
 
 
         <!-- Main Content of Page -->
@@ -547,6 +552,11 @@
         <!-- Footer -->
     </div>
 
+    
+    <!-- Scroll up button -->
+    <button type="button" class="btn-floating btn-lg" id="btn-back-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
 
 
     <!-- JQuery -->
