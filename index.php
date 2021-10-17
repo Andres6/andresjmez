@@ -410,10 +410,12 @@
         </svg>
 
 
-        <!-- Scroll up button -->
+        <!-- Scroll up button
         <button type="button" class="btn-floating btn-lg" id="btn-back-to-top">
             <i class="fas fa-arrow-up"></i>
-        </button>
+        </button> -->
+
+        
 
         <!-- Footer -->
         <footer class="page-footer font-small pt-4">
@@ -560,7 +562,7 @@
     </div>
 
 
-    
+    <i class="fas fa-arrow-up" id="upbutton"></i>
 
 
     <!-- JQuery -->

@@ -61,6 +61,24 @@ function scrollUp() {
 }
 
 
+function upButton() {
+    var btn = $('#upbutton');
+
+    $(window).scroll(function() {
+        if ($(window).scrollTop() > 300) {
+            btn.addClass('show');
+        } else {
+            btn.removeClass('show');
+        }
+    });
+
+    btn.on('click', function(e) {
+        e.preventDefault();
+        $('html, body').animate({ scrollTop: 0 }, '300');
+    });
+}
+
+
 $(document).ready(function() {
     $('.second-button').on('click', function() {
         $('.animated-icon2').toggleClass('open');
@@ -70,6 +88,8 @@ $(document).ready(function() {
     countUpFromTime("Jan 6, 1989 19:00:00", 'countup1');
 
     //scroll up button
-    scrollUp();
+    //scrollUp();
+
+    upButton();
 
 });

@@ -127,8 +127,49 @@ body {
     box-shadow: 0 2px 5px 0 rgb(0 0 0 / 16%), 0 2px 10px 0 rgb(0 0 0 / 12%);
 }
 
+#upbutton {
+    display: inline-block;
+    padding: 1rem;
+    color: #ffffff;
+    background-color: #f15a3c;
+    text-align: center;
+    border-radius: 50%;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    transition: background-color .3s, opacity .5s, visibility .5s;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 1000;
+}
 
-/**/
+
+/* #upbutton::after {
+    content: "\f077";
+    font-family: FontAwesome;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 2em;
+    line-height: 50px;
+    color: #fff;
+} */
+
+#upbutton:hover {
+    cursor: pointer;
+    background-color: #333;
+}
+
+#upbutton:active {
+    background-color: #555;
+}
+
+#upbutton.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+
+/***********************************************************/
 
 .acti {
     color: #414141!important;
