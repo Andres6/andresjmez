@@ -550,13 +550,15 @@
 
         </footer>
         <!-- Footer -->
+
+        <!-- Scroll up button -->
+        <button type="button" class="btn-floating btn-lg" id="btn-back-to-top">
+            <i class="fas fa-arrow-up"></i>
+        </button>
     </div>
 
+
     
-    <!-- Scroll up button -->
-    <button type="button" class="btn-floating btn-lg" id="btn-back-to-top">
-        <i class="fas fa-arrow-up"></i>
-    </button>
 
 
     <!-- JQuery -->
