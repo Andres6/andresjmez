@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-73977107-1"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
@@ -11,6 +11,7 @@
 
         gtag('config', 'UA-73977107-1');
     </script>
+
 
     <!-- Required meta tags -->
     <meta charset="utf-8">
